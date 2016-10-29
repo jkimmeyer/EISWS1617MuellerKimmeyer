@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^nodejs/(.*) http://localhost:61000/$1 [P]

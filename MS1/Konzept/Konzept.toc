@@ -4,8 +4,9 @@
 \contentsline {section}{\numberline {2.1}Problemstellung}{4}
 \contentsline {section}{\numberline {2.2}Entwicklungsziele}{4}
 \contentsline {chapter}{\numberline {3}Nutzungskontext}{6}
-\contentsline {section}{\numberline {3.1}Dom\"anenrecherche}{6}
-\contentsline {section}{\numberline {3.2}Stakeholder}{7}
+\contentsline {section}{\numberline {3.1}Nuzungskontext}{6}
+\contentsline {section}{\numberline {3.2}Dom\"anenrecherche}{6}
+\contentsline {section}{\numberline {3.3}Stakeholder}{7}
 \contentsline {chapter}{\numberline {4}Anforderungen}{8}
 \contentsline {section}{\numberline {4.1}Funktionale Anforderungen}{8}
 \contentsline {section}{\numberline {4.2}Nicht-Funktionale Anforderungen}{9}
@@ -22,8 +23,12 @@
 \contentsline {section}{\numberline {6.2}Wahl eines Vorgehensmodelles}{14}
 \contentsline {chapter}{\numberline {7}Architektur}{15}
 \contentsline {section}{\numberline {7.1}Erkl\"arung}{15}
-\contentsline {section}{\numberline {7.2}Alternative}{15}
-\contentsline {chapter}{\numberline {8}Proof of Concept}{16}
-\contentsline {section}{\numberline {8.1}Risiken}{16}
-\contentsline {section}{\numberline {8.2}Alternativen}{16}
-\contentsline {section}{\numberline {8.3}Proof of Concept}{16}
+\contentsline {subsection}{\numberline {7.1.1}Server}{15}
+\contentsline {subsection}{\numberline {7.1.2}Datenaustausch und Datenbank}{15}
+\contentsline {subsection}{\numberline {7.1.3}Benutzer Client}{16}
+\contentsline {subsection}{\numberline {7.1.4}Fachhandlung Client}{17}
+\contentsline {section}{\numberline {7.2}Alternative}{17}
+\contentsline {chapter}{\numberline {8}Proof of Concept}{18}
+\contentsline {section}{\numberline {8.1}Risiken}{18}
+\contentsline {section}{\numberline {8.2}Alternativen}{19}
+\contentsline {section}{\numberline {8.3}Proof of Concept}{19}

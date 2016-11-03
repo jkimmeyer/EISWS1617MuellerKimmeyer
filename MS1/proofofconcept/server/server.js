@@ -18,6 +18,10 @@ global.FCM = require('fcm-node');
 
 global.app = express();
 app.use(bodyParser.json());
+
+// Zum lokalen Testen folgende Zeile auskommentieren und Zeile 25 entfernen!
+//mongoose.connect('mongodb://localhost/fcm');
+
 mongoose.connect("mongodb://eis1617_mongoadmin:ohcie9Choo@localhost:21045/fcm", { auth: { authdb: "admin" } });
 
 // Einstellungen

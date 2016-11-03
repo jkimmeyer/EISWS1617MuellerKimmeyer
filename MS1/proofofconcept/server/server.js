@@ -1,7 +1,7 @@
 /*
  *  EISWS1617
  * 
- *  Server
+ *  Proof of Concept - Server
  *
  *  (c) 2016 by Moritz Müller, Johannes Kimmeyer
  */

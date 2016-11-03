@@ -3,12 +3,20 @@ module.exports = {
 
         app.route('/')
 
+            /* * * * * * * * * * *
+             *  Liste aller User *
+             * * * * * * * * * * */
+
             .get(function (req, res) {
                 mongoose.model('users').find(function (err, users) {
                     var json = {"users": users};
                     res.json(json);
                 });
             })
+
+            /* * * * * * * * * * *
+             *  User hinzufügen  *
+             * * * * * * * * * * */
 
             .post(function (req, res) {
                 if (!req.body.Token) {
@@ -40,8 +48,12 @@ module.exports = {
             }
 
         );
-        
+
         app.route('/send')
+
+            /* * * * * * * * * * * * * * *
+             *  Nachrichten verschicken  *
+             * * * * * * * * * * * * * * */
 
             .post(function (req, res) {
 
@@ -97,6 +109,10 @@ module.exports = {
         );
 
         app.route('/wasserwerte')
+
+            /* * * * * * * * * * * * * *
+             *  Wasserwerte ausgeben   *
+             * * * * * * * * * * * * * */
 
             .get(function (req, res) {
 

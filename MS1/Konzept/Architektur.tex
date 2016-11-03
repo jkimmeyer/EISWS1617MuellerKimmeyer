@@ -1,3 +1,20 @@
 \chapter{Architektur}
+
+Da die Kommunikation zwischen den verschiedenen Clients eine bedeutende Rolle spielt, wird diese im Folgenden skizziert. Zuvor sind hier die verschiedenen Komponenten aufgelistet:
+\begin{itemize}\item Server\item Mobiler Client für Benutzer\item Desktop Client für Fachhandlungen\item Firebase Cloud Messaging
+\item Datenbank
+\end{itemize}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=2]{../workinprogress/Architektur.jpg}
+\captionbelow[Architekturmodell]{Architekturmodell}
+\label{mylabel}
+\end{figure}
+
 \section{Erklärung}
+
+\subsection{Server}Der Server dient zum Datenaustausch zwischen den Komponenten. Bei der Umsetzung des Servers konnten wir zwischen PHP und Node.js wählen. Hier haben wir uns für eine Umsetzung mit Node.js und Express.js entschieden, da wir bereits Erfahrung damit haben und da es sich gut für unser System eignet. \subsection{Datenaustausch und Datenbank}Über http können Daten im JSON Format zwischen den Clients und dem Server ausgetauscht werden und diese können ggf. vom Server in der Datenbank gespeichert werden. Als Datenbank benutzen wir MongoDB, da diese gut in Verbindung mit Node.js eingesetzt werden kann. Als Middleware für die Interaktion mit MongoDB benutzen wir das Node Modul mongoose.js. In der Datenbank werden zum Beispiel die Tokens für das Firebase Cloud Messaging gespeichert. Dieses benutzen wir, um Nachrichten direkt mit ?Push-Notification? an den App-Nutzer zu verschicken. Wenn zum Beispiel die Fachhandlung die Ergebnisse einer Wasseranalyse verschickt, gehen diese erst an den Server und der übermittelt diese per FCM an den Benutzer. Im Vergleich zum Google Cloud Messaging ist das Firebase Cloud Messaging (die neue Version vom Google Cloud Messaging) leichter in die App zu integrieren und hat weitere Features. \subsection{Benutzer Client}Für den Benutzer Client haben wir uns für eine Android App entschieden, da diese mit Java realisiert wird und es somit sich gut für das Projekt eignet. Der Client hat sowohl eigene Anwendungslogik, wie zum Beispiel das Berechnen der Düngemittel, als auch eigene Präsentationslogik und einen Datenspeicher. Dort werden zum Beispiel die Aquarium Daten gespeichert, damit der Benutzer auch offline darauf zugreifen kann.\subsection{Fachhandlung Client}Für die Fachhandlung haben wir uns für eine Desktop Anwendung entschieden, die wir ebenfalls mit Java realisieren. Die Fachhandlung soll eine gute Übersicht über ihre Kunden und deren Daten bekommen, weshalb eine Desktop Anwendung hier mehr geeignet ist als eine App, da der sichtbare Bereich größer ist. Auch dieser Client hat eigene Anwendungslogik, Präsentationslogik und Datenspeicher.
+
+
 \section{Alternative}

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\libs\okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_4898078379c86400832d5a9c23a94f3cb8b4cc0c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_aad7cb57adcc592e80b1ac09e1df5dfd273377c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_095186d2530d65f4f4d51a7dc63520e115a9924a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.8.0_b06ece902bea675d34dff00c296de5fbcbdee0c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_0fa92c62d78f8c9ea0e32ece6a91516fedd5d0dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\libs\okio-1.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\okio-1.11.0_5e9c448ce19b111a7c4977478b365b9c9775dc7b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.8.0_ec972c182a23fb9e75d61cc8f441a43e9c48019e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_5255ab37fbdfe0cf43e5fd107bf02df4452b23c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_d6507150d02c451a1f67061f157a5632c9d05454.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.8.0_4cc8dbaf033d84a255a7ed625f2347e2ff9bd901.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_4f5f2794b3655b159a25f6e7e4c7c4b4b77c08b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_4de02e05db66e7a7fdbcb9c7ad2e37c41fe338df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.8.0_02a97f7ca75f25544446aae8a56afc830f3c5f6e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.8.0_1994fd7bd6d8640446a59358326b31e124c15055.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_fdad5dab1eff149921d295b3fd3c625e65a2ef58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_24a20cd3a444d58e5922398f94956f4884af5ea8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_08a65ed862a70a9b90fafaa1eeb506225e97b01a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-messaging-9.8.0_6a4b1fcd6de97ece3e15b4922d385de668c5b357.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_af5fb20c6dfb052d72b5be93745ac41fe4c52fb1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_fc3610977947db9879570481ac7311db087fdce5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_04c7f146684b6819043e77b139f34e48027d4ec8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_8e8dd46ad8cd3acb540c13d8685f1425f5d179aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_40ff756f93b0003095c351594e415a0474821a08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="C:\Users\morit\AndroidStudioProjects\Aquaapp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.8.0_31c39c145839269c9ebe062cabb300d8fc03143a.jar" />
+    </item>
+
+</items>

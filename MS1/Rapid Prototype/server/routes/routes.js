@@ -52,10 +52,10 @@ module.exports = {
                             mongoose.model('users').insertMany([{ "token": token }], function (error, docs) {
 
                                 if (error) {
-                                    res.send(error);
+                                    res.json(error);
                                 }
                                 else {
-                                    res.send("Eingetragen!");
+                                    res.json({ "success": "true" });
                                 }
 
                             });
@@ -140,7 +140,7 @@ module.exports = {
 
                     fcm.send(message, function (err, response) {
                         if (err) {
-                            res.status(200).send(error);
+                            res.status(200).json(error);
                         }
                         else {
                             res.status(200).json(response);

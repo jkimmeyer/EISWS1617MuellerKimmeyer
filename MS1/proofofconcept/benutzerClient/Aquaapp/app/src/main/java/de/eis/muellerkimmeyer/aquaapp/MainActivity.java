@@ -21,7 +21,7 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView phTv, kalziumTv, duengerTv;
+    private TextView phTv, duengerTv,khTv,co2Tv ;
     private ServerRequest request;
     private String token;
     private JSONObject wasserwerte;
@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         duengerTv = (TextView) findViewById(R.id.duengerTv);
         phTv = (TextView) findViewById(R.id.phTv);
-        kalziumTv = (TextView) findViewById(R.id.kalziumTv);
+        khTv = (TextView) findViewById(R.id.khTv);
+        co2Tv = (TextView) findViewById(R.id.co2Tv);
 
         /*
          *  Prüfen ob bereits Wasserwerte für den Benutzer in der Datenbank stehen
@@ -50,12 +51,15 @@ public class MainActivity extends AppCompatActivity {
             JSONArray ww = wasserwerte.getJSONArray("wasserwerte");
             if(ww.length() > 0){
                 int ph = ww.getJSONObject(ww.length()-1).getInt("ph");
-                long nutrientsDay1 = ww.getJSONObject(ww.length()-1).getLong("nutrientsDay1");
-                long nutrientsDayX = ww.getJSONObject(ww.length()-1).getLong("nutrientsDayX");
-                int anzTage = ww.getJSONObject(ww.length()-1).getInt("anzTage");
+                int KH = ww.getJSONObject(ww.length()-1).getInt("KH");
+                long dailyUse = ww.getJSONObject(ww.length()-1).getLong("dailyUse");
 
-                duengerTv.setText(Long.toString(calcDailyUse(nutrientsDay1,nutrientsDayX,anzTage)));
+
+                co2Tv.setText(Double.toString(calcCo2(KH,ph)));
+                duengerTv.setText(Long.toString(dailyUse));
                 phTv.setText(Integer.toString(ph));
+                khTv.setText(Integer.toString(KH));
+
             }
         }
         catch (JSONException e){
@@ -64,11 +68,10 @@ public class MainActivity extends AppCompatActivity {
 
         FirebaseMessaging.getInstance().subscribeToTopic("test");
     }
-    protected long calcDailyUse(long n1, long nX, int X){
-        /**Berechnung des täglichen Nährstoffverbrauches
-         Formel: (Menge Nährstoff am Tag 1 - Menge Nährstoff an Tag X)/Anzahl der Tage
+    protected double calcCo2(int kh, int ph){
+        /**Berechnung des Co2 Gehalts pro Liter
+         Formel: (KH/2,8)*10^7,91-pH
          **/
-        return (n1-nX)/(long)(X-1);
-
+        return (kh/2.8)*Math.pow(10,(7.91-(double)ph));
     }
 }

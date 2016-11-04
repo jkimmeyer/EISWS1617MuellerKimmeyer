@@ -20,25 +20,6 @@
         android:id="@+id/wwLabel" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:id="@+id/phLabel"
-        android:layout_below="@+id/wwLabel"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:text="pH Wert:" />
-
-    <TextView
-        android:text="Kalzium:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/phLabel"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/kalziumLabel" />
-
-    <TextView
         android:text="-"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,19 +28,11 @@
         android:id="@+id/phTv" />
 
     <TextView
-        android:text="-"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/kalziumLabel"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/kalziumTv" />
-
-    <TextView
         android:text="tägl. Verbrauch:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/duengerLabel"
-        android:layout_below="@+id/kalziumLabel"
+        android:layout_below="@+id/wwLabel"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -67,8 +40,87 @@
         android:text="-"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/kalziumTv"
+        android:id="@+id/duengerTv"
+        android:layout_below="@+id/wwLabel"
+        android:layout_alignLeft="@+id/phTv"
+        android:layout_alignStart="@+id/phTv" />
+
+    <TextView
+        android:text="Aquariumgröße:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/aquaSizeLabel" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:ems="10"
+        android:id="@+id/aqSizeTf"
+        android:inputType="number"
+        tools:text="-"
+        android:layout_width="wrap_content"
+        android:contentDescription="1"
+        android:layout_below="@+id/phTv"
+        android:layout_toRightOf="@+id/wwLabel"
+        android:layout_toEndOf="@+id/wwLabel"
+        android:layout_alignBottom="@+id/aquaSizeLabel" />
+
+    <Button
+        android:text="Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/calcButton"
+        android:visibility="visible"
+        android:layout_below="@+id/co2Label"
+        android:layout_alignLeft="@+id/aqSizeTf"
+        android:layout_alignStart="@+id/aqSizeTf" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:id="@+id/phLabel"
+        android:text="pH Wert:"
+        android:layout_below="@+id/duengerLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Karbonathärte:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/khLabel"
+        android:layout_above="@+id/phTv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="CO2-Gehalt:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/co2Label"
+        android:layout_below="@+id/aquaSizeLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/khLabel"
         android:layout_centerHorizontal="true"
-        android:id="@+id/duengerTv" />
+        android:id="@+id/khTv" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aqSizeTf"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/co2Tv" />
 
 </RelativeLayout>

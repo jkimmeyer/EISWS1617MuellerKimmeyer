@@ -97,7 +97,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="adaa6ce41d5b53bdbe20bed7369998abff309c50">
+        sha1="10b2c9d9b465b2c4c068a0ed1e743057621ec127">
         <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_14ed026baae192b04ebafa34bbc0eb5b0ea96844/classes.dex" />
     </item>
     <item
@@ -178,7 +178,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="0f57c004e20e7cc87e1b02d65be29bc3263c8651">
+        sha1="52223592533d2f4250997522f0d32a880a6d521c">
         <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_48bf045c4a7e0e1202aeb17721057ca2732005af/classes.dex" />
     </item>
     <item

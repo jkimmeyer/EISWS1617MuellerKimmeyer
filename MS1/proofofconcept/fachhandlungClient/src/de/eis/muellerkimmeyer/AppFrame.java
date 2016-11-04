@@ -20,8 +20,8 @@ public class AppFrame extends JFrame {
 	private static final long serialVersionUID = 1L;
 	
 	private JButton absendenBtn;
-    private JLabel phWertLabel, nährstoff1WertLabel, dayXLabel, nährstoffXWertLabel, tokenLabel;
-    private JTextField phWertTf, dayXTf, nährstoff1WertTf, nährstoffXWertTf, tokenTf;
+    private JLabel phWertLabel, nutrient1WertLabel, dayXLabel, nutrientXWertLabel, tokenLabel;
+    private JTextField phWertTf, dayXTf, nutrient1WertTf, nutrientXWertTf, tokenTf;
     private ServerRequest server;
     
     public AppFrame(){
@@ -43,13 +43,13 @@ public class AppFrame extends JFrame {
         this.phWertLabel.setText("PH-Wert:");
         this.phWertLabel.setBounds(10, 10, 150, 30);
         
-        this.nährstoff1WertLabel = new JLabel();
-        this.nährstoff1WertLabel.setText("Nährstoff-Wert1:");
-        this.nährstoff1WertLabel.setBounds(10, 50, 150, 30);
+        this.nutrient1WertLabel = new JLabel();
+        this.nutrient1WertLabel.setText("Nährstoff-Wert1:");
+        this.nutrient1WertLabel.setBounds(10, 50, 150, 30);
         
-        this.nährstoffXWertLabel = new JLabel();
-        this.nährstoffXWertLabel.setText("Nährstoff-WertX:");
-        this.nährstoffXWertLabel.setBounds(10, 90, 150, 30);
+        this.nutrientXWertLabel = new JLabel();
+        this.nutrientXWertLabel.setText("Nährstoff-WertX:");
+        this.nutrientXWertLabel.setBounds(10, 90, 150, 30);
         
         this.dayXLabel = new JLabel();
         this.dayXLabel.setText("TagX:");
@@ -62,11 +62,11 @@ public class AppFrame extends JFrame {
         this.phWertTf = new JTextField();
         this.phWertTf.setBounds(160, 10, 50, 30);
         
-        this.nährstoff1WertTf = new JTextField();
-        this.nährstoff1WertTf.setBounds(160, 50, 50, 30);
+        this.nutrient1WertTf = new JTextField();
+        this.nutrient1WertTf.setBounds(160, 50, 50, 30);
         
-        this.nährstoffXWertTf = new JTextField();
-        this.nährstoffXWertTf.setBounds(160, 90, 50, 30);
+        this.nutrientXWertTf = new JTextField();
+        this.nutrientXWertTf.setBounds(160, 90, 50, 30);
         
         this.dayXTf = new JTextField();
         this.dayXTf.setBounds(160, 130, 50, 30);
@@ -78,13 +78,13 @@ public class AppFrame extends JFrame {
         this.absendenBtn.setBounds(10, 150, 100, 30);
         
         this.getContentPane().add(this.phWertLabel);
-        this.getContentPane().add(this.nährstoff1WertLabel);
-        this.getContentPane().add(this.nährstoffXWertLabel);
+        this.getContentPane().add(this.nutrient1WertLabel);
+        this.getContentPane().add(this.nutrientXWertLabel);
         this.getContentPane().add(this.dayXLabel);
         this.getContentPane().add(this.tokenLabel);
         this.getContentPane().add(this.phWertTf);
-        this.getContentPane().add(this.nährstoff1WertTf);
-        this.getContentPane().add(this.nährstoffXWertTf);
+        this.getContentPane().add(this.nutrient1WertTf);
+        this.getContentPane().add(this.nutrientXWertTf);
         this.getContentPane().add(this.dayXTf);
         this.getContentPane().add(this.tokenTf);
         this.getContentPane().add(this.absendenBtn);
@@ -100,12 +100,12 @@ public class AppFrame extends JFrame {
                 String urlString = "http://eis1617.lupus.uberspace.de/nodejs/wasserwerte";
                 
                 String phWert = phWertTf.getText();
-                String n1 = nährstoff1WertTf.getText();
-                String nX = nährstoffXWertTf.getText();
+                String n1 = nutrient1WertTf.getText();
+                String nX = nutrientXWertTf.getText();
                 String X = dayXTf.getText();
                 String token = tokenTf.getText();
                 
-                String urlParameters = "{\"tokens\": \""+ token +"\", \"message\": {\"Kalzium\": \""+ phWert +"\",\"X\": \""+ X +"\",\"nX\": \""+ nX +"\",\"ph\": \""+ phWert +"\", \"N1\": \""+ n1 +"\"}}";
+                String urlParameters = "{\"tokens\": \""+ token +"\", \"message\": {\"X\": \""+ X +"\",\"nX\": \""+ nX +"\",\"ph\": \""+ phWert +"\", \"n1\": \""+ n1 +"\"}}";
                 server = new ServerRequest();
                 server.sendPost(urlString, urlParameters);
                 

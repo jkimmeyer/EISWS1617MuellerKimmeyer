@@ -5,7 +5,7 @@ package de.eis.muellerkimmeyer;
  *
  *  Proof of Concept - Desktop Anwendung (Fachhandlung Client)
  *
- *  Autor: Moritz Müller
+ *  Autor: Moritz MÃ¼ller, Johannes Kimmeyer
  */
 public class Main {
     

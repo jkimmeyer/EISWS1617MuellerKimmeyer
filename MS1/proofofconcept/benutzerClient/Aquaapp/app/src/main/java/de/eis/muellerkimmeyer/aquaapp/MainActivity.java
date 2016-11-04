@@ -49,14 +49,12 @@ public class MainActivity extends AppCompatActivity {
             JSONArray ww = wasserwerte.getJSONArray("wasserwerte");
             if(ww.length() > 0){
                 int ph = ww.getJSONObject(ww.length()-1).getInt("ph");
-                int kalzium = ww.getJSONObject(ww.length()-1).getInt("kalzium");
                 long n1 = ww.getJSONObject(ww.length()-1).getLong("n1");
-                long nx = ww.getJSONObject(ww.length()-1).getLong("nx");
-                int anzTage = ww.getJSONObject(ww.length()-1).getInt("anzTage");
+                long nX = ww.getJSONObject(ww.length()-1).getLong("nX");
+                int anzTage = ww.getJSONObject(ww.length()-1).getInt("X");
 
-                duengerTv.setText(Float.toString(calcDailyUse(n1,nx,anzTage)));
+                duengerTv.setText(Float.toString(calcDailyUse(n1,nX,anzTage)));
                 phTv.setText(Integer.toString(ph));
-                kalziumTv.setText(Integer.toString(kalzium));
             }
         }
         catch (JSONException e){
@@ -69,8 +67,7 @@ public class MainActivity extends AppCompatActivity {
         /**Berechnung des täglichen Nährstoffverbrauches
          Formel: (Menge Nährstoff am Tag 1 - Menge Nährstoff an Tag X)/Anzahl der Tage
          **/
-        return 7.00f;
-                //(n1-nX)/(X-1);
+        return (float)((n1-nX))/(float)(X-1);
 
     }
 }

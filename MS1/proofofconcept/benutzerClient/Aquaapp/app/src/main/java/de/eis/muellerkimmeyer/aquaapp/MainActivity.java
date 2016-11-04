@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
          *  Prüfen ob bereits Wasserwerte für den Benutzer in der Datenbank stehen
          *  Wenn nicht: phTv und kalziumTv nicht verändern
          *  Wenn ja: phTv und kalziumTv gleich den geladenen Wasserwerten setzen
-         */
+         *
+         * */
 
         token = FirebaseInstanceId.getInstance().getToken();
         request = new ServerRequest();
@@ -49,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
             JSONArray ww = wasserwerte.getJSONArray("wasserwerte");
             if(ww.length() > 0){
                 int ph = ww.getJSONObject(ww.length()-1).getInt("ph");
-                long n1 = ww.getJSONObject(ww.length()-1).getLong("n1");
-                long nX = ww.getJSONObject(ww.length()-1).getLong("nX");
-                int anzTage = ww.getJSONObject(ww.length()-1).getInt("X");
+                long nutrientsDay1 = ww.getJSONObject(ww.length()-1).getLong("nutrientsDay1");
+                long nutrientsDayX = ww.getJSONObject(ww.length()-1).getLong("nutrientsDayX");
+                int anzTage = ww.getJSONObject(ww.length()-1).getInt("anzTage");
 
-                duengerTv.setText(Float.toString(calcDailyUse(n1,nX,anzTage)));
+                duengerTv.setText(Long.toString(calcDailyUse(nutrientsDay1,nutrientsDayX,anzTage)));
                 phTv.setText(Integer.toString(ph));
             }
         }
@@ -63,11 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
         FirebaseMessaging.getInstance().subscribeToTopic("test");
     }
-    protected float calcDailyUse(long n1, long nX, int X){
+    protected long calcDailyUse(long n1, long nX, int X){
         /**Berechnung des täglichen Nährstoffverbrauches
          Formel: (Menge Nährstoff am Tag 1 - Menge Nährstoff an Tag X)/Anzahl der Tage
          **/
-        return (float)((n1-nX))/(float)(X-1);
+        return (n1-nX)/(long)(X-1);
 
     }
 }

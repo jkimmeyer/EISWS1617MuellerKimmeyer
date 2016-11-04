@@ -23,6 +23,7 @@ public class AppFrame extends JFrame {
     private JLabel  phWertLabel, khWertLabel, nutrient1WertLabel, dayXLabel, nutrientXWertLabel, tokenLabel;
     private JTextField phWertTf, khWertTf, dayXTf, nutrient1WertTf, nutrientXWertTf, tokenTf;
     private ServerRequest server;
+    private JLabel dailyUseLabel;
 
     
     public AppFrame(){
@@ -98,7 +99,7 @@ public class AppFrame extends JFrame {
         this.getContentPane().add(this.dayXTf);
         this.getContentPane().add(this.tokenTf);
         this.getContentPane().add(this.absendenBtn);
-    
+
     }
     
     private float calcDailyUse(float n1, float nX, float X){
@@ -109,7 +110,7 @@ public class AppFrame extends JFrame {
         
         this.absendenBtn.addActionListener(new ActionListener(){
             
-            private JLabel dailyUseLabel;
+            
 
 			@Override
             public void actionPerformed(java.awt.event.ActionEvent e) {
@@ -123,10 +124,7 @@ public class AppFrame extends JFrame {
                 String urlParameters = "{\"tokens\": \""+ token +"\", \"message\": {\"dailyUse\": \""+ dailyUse +"\",\"kh\": \""+ khWert +"\",\"ph\": \""+ phWert +"\"}}";
                 server = new ServerRequest();
                 server.sendPost(urlString, urlParameters);
-                
-                this.dailyUseLabel = new JLabel();
-                this.dailyUseLabel.setText("täglicher Verbrauch: " + dailyUse);
-                this.dailyUseLabel.setBounds(10, 300, 150, 30);
+               
                 
                 JOptionPane.showMessageDialog(null, server.json);
             }

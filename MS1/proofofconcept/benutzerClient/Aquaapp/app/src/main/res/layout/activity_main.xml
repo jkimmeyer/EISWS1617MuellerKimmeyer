@@ -54,4 +54,21 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/kalziumTv" />
 
+    <TextView
+        android:text="tägl. Verbrauch:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/duengerLabel"
+        android:layout_below="@+id/kalziumLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kalziumTv"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/duengerTv" />
+
 </RelativeLayout>

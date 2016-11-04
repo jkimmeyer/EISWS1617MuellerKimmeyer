@@ -20,7 +20,7 @@ import org.json.JSONObject;
  *
  *  Proof of Concept - Android App (Benutzer Client)
  *
- *  Autor: Moritz Müller
+ *  Autor: Moritz Müller, Johannes Kimmeyer
  */
 
 public class ServerRequest {

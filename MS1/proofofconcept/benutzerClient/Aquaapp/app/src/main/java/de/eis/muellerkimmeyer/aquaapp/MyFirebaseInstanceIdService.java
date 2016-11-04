@@ -13,7 +13,7 @@ import static com.google.android.gms.internal.zzs.TAG;
  *
  *  Proof of Concept - Android App (Benutzer Client)
  *
- *  Autor: Moritz Müller
+ *  Autor: Moritz Müller, Johannes Kimmeyer
  *
  *  FCM Doku: https://firebase.google.com/docs/cloud-messaging/android/client
  */

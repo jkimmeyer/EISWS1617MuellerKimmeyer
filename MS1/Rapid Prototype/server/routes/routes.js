@@ -1,9 +1,9 @@
 /*
  *  EISWS1617
  * 
- *  Proof of Concept - Server
+ *  Rapid Prototype - Server
  *
- *  Autor: Moritz Müller
+ *  Autor: Moritz Müller, Johannes Kimmeyer
  */
 
 module.exports = {

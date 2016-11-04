@@ -3,7 +3,7 @@ package de.eis.muellerkimmeyer;
 /*
  *  EISWS1617
  *
- *  Proof of Concept - Desktop Anwendung (Fachhandlung Client)
+ *  Rapid Prototype - Desktop Anwendung (Fachhandlung Client)
  *
  *  Autor: Moritz Müller, Johannes Kimmeyer
  */

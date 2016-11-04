@@ -23,7 +23,6 @@ public class AppFrame extends JFrame {
     private JLabel  phWertLabel, khWertLabel, nutrient1WertLabel, dayXLabel, nutrientXWertLabel, tokenLabel;
     private JTextField phWertTf, khWertTf, dayXTf, nutrient1WertTf, nutrientXWertTf, tokenTf;
     private ServerRequest server;
-    private JLabel dailyUseLabel;
 
     
     public AppFrame(){
@@ -35,7 +34,8 @@ public class AppFrame extends JFrame {
     }
     
     public void initComponents(){
-        setTitle("Aquaapp");
+        // Aufsetzen der Oberfläche
+    	setTitle("Aquaapp");
         setBounds(0,0,800,800);
         
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -101,7 +101,7 @@ public class AppFrame extends JFrame {
         this.getContentPane().add(this.absendenBtn);
 
     }
-    
+    // Berechnung des täglichen Nährstoffverbrauches anhand der Anzahl der Tage und 2 Messungen
     private float calcDailyUse(float n1, float nX, float X){
     	return (float)(n1-nX)/(float)(X-1);
     }
@@ -109,18 +109,16 @@ public class AppFrame extends JFrame {
     private void initListeners(){
         
         this.absendenBtn.addActionListener(new ActionListener(){
-            
-            
-
 			@Override
             public void actionPerformed(java.awt.event.ActionEvent e) {
                 String urlString = "http://eis1617.lupus.uberspace.de/nodejs/wasserwerte";
-                
+              //Umwandlung der Werte in Strings  
                 String phWert = phWertTf.getText();
+                //doppelter Typecast, weil die Funktion Floats empfängt - kann man in nächster Version besser machen, fürs RP reicht es 
                 String dailyUse = Float.toString(calcDailyUse(Float.parseFloat(nutrient1WertTf.getText()),Float.parseFloat(nutrientXWertTf.getText()), Float.parseFloat(dayXTf.getText())));
                 String khWert = khWertTf.getText();
                 String token = tokenTf.getText();
-                
+                //Senden der Daten an den Server und den dazugehörigen Client
                 String urlParameters = "{\"tokens\": \""+ token +"\", \"message\": {\"dailyUse\": \""+ dailyUse +"\",\"kh\": \""+ khWert +"\",\"ph\": \""+ phWert +"\"}}";
                 server = new ServerRequest();
                 server.sendPost(urlString, urlParameters);

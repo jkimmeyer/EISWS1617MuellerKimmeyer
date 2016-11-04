@@ -1,23 +1,25 @@
-package aquaap;
+package de.eis.muellerkimmeyer;
 
-import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import java.awt.event.ActionListener;
 
 /*
  *  EISWS1617
  *
  *  Proof of Concept - Desktop Anwendung (Fachhandlung Client)
  *
- *  Autor: Moritz MÃ¼ller
+ *  Autor: Moritz Müller
  */
 
 public class AppFrame extends JFrame {
-    
-    private JButton absendenBtn;
+
+	private static final long serialVersionUID = 1L;
+	
+	private JButton absendenBtn;
     private JLabel phWertLabel, kalziumWertLabel, tokenLabel;
     private JTextField phWertTf, kalziumWertTf, tokenTf;
     private ServerRequest server;
@@ -46,7 +48,7 @@ public class AppFrame extends JFrame {
         this.kalziumWertLabel.setBounds(10, 50, 100, 30);
         
         this.tokenLabel = new JLabel();
-        this.tokenLabel.setText("EmpfÃ¤nger:");
+        this.tokenLabel.setText("Empfänger:");
         this.tokenLabel.setBounds(10, 90, 100, 30);
         
         this.phWertTf = new JTextField();
@@ -92,5 +94,5 @@ public class AppFrame extends JFrame {
             
         });
     }
-    
+	
 }

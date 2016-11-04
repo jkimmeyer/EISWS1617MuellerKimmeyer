@@ -1,4 +1,4 @@
-package aquaap;
+package de.eis.muellerkimmeyer;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -14,7 +14,7 @@ import java.net.URL;
  *
  *  Proof of Concept - Desktop Anwendung (Fachhandlung Client)
  *
- *  Autor: Moritz MÃ¼ller
+ *  Autor: Moritz Müller
  */
 
 public class ServerRequest {
@@ -27,9 +27,9 @@ public class ServerRequest {
     
     /*
     * QUELLENANGABE
-    * sendGet und sendPost Ã¼bernommen aus https://www.mkyong.com/java/how-to-send-http-request-getpost-in-java/
+    * sendGet und sendPost übernommen aus https://www.mkyong.com/java/how-to-send-http-request-getpost-in-java/
     * Autor: "mkyong", Abruf am: 01.11.2016
-    * Ã„nderungen: Fehlerbehandlung umstrukturiert, bei sendPost "Content-Type" zum Header hinzugefÃ¼gt
+    * Änderungen: Fehlerbehandlung umstrukturiert, bei sendPost "Content-Type" zum Header hinzugefügt
     */
     
     // HTTP GET request

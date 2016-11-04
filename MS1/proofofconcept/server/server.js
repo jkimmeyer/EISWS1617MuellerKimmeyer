@@ -3,7 +3,7 @@
  * 
  *  Proof of Concept - Server
  *
- *  (c) 2016 by Moritz Müller, Johannes Kimmeyer
+ *  Autor: Moritz Müller
  */
 
 // Node Module einbinden

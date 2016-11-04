@@ -1,7 +1,25 @@
+/*
+ *  EISWS1617
+ * 
+ *  Proof of Concept - Server
+ *
+ *  Autor: Moritz Müller
+ */
+
 module.exports = {
     init: function (app) {
 
         app.route('/')
+
+            /* * * * * * * * * * * * *
+             *  Willkommensnachricht *
+             * * * * * * * * * * * * */
+
+            .get(function (req, res) {
+                res.status(200).send("Server laeuft!");
+            });
+
+        app.route('/users')
 
             /* * * * * * * * * * *
              *  Liste aller User *
@@ -45,14 +63,41 @@ module.exports = {
                         }
                     });
                 }
-            }
+            });
 
-        );
+        app.route('/wasserwerte')
 
-        app.route('/send')
+            /* * * * * * * * * * * * * *
+             *  Wasserwerte ausgeben   *
+             * * * * * * * * * * * * * */
+
+            .get(function (req, res) {
+
+                if (req.query.token == null) {
+                    // Alle ausgeben
+                    mongoose.model('wasserwerte').find(function (err, wasserwerte) {
+                        var json = { "wasserwerte": wasserwerte };
+                        res.json(json);
+                    });
+                }
+                else {
+                    var token = req.query.token;
+                    mongoose.model('wasserwerte').find({ "token": token }, function (err, wasserwerte) {
+                        if (wasserwerte.length > 0) {
+                            // Wasserwerte gefunden
+                            var json = { "wasserwerte": wasserwerte };
+                            res.json(json);
+                        }
+                        else {
+                            // Kein Eintrag
+                            res.json({ "wasserwerte": [] });
+                        }
+                    });
+                }
+            })
 
             /* * * * * * * * * * * * * * *
-             *  Nachrichten verschicken  *
+             *  Wasserwerte verschicken  *
              * * * * * * * * * * * * * * */
 
             .post(function (req, res) {
@@ -67,7 +112,7 @@ module.exports = {
 
                     // Wasserwerte in DB eintragen:
 
-                    var insert = [{"token": tokens, "ph": message.ph, "kalzium": message.kalzium}];
+                    var insert = [{ "token": tokens, "ph": message.ph, "kalzium": message.kalzium }];
 
                     mongoose.model('wasserwerte').insertMany(insert, function (error, docs) {
 
@@ -104,42 +149,7 @@ module.exports = {
 
                 }
 
-            }
-
-        );
-
-        app.route('/wasserwerte')
-
-            /* * * * * * * * * * * * * *
-             *  Wasserwerte ausgeben   *
-             * * * * * * * * * * * * * */
-
-            .get(function (req, res) {
-
-                if (req.query.token == null) {
-                    // Alle ausgeben
-                    mongoose.model('wasserwerte').find(function (err, wasserwerte) {
-                        var json = { "wasserwerte": wasserwerte };
-                        res.json(json);
-                    });
-                }
-                else {
-                    var token = req.query.token;
-                    mongoose.model('wasserwerte').find({ "token": token }, function (err, wasserwerte) {
-                        if (wasserwerte.length > 0) {
-                            // Wasserwerte gefunden
-                            var json = { "wasserwerte": wasserwerte };
-                            res.json(json);
-                        }
-                        else {
-                            // Kein Eintrag
-                            res.json({ "wasserwerte": [] });
-                        }
-                    });
-                }
-            }
-        );
+            });
         
-
     }
 }

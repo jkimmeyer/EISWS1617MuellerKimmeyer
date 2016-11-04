@@ -46,40 +46,6 @@
         android:layout_alignStart="@+id/phTv" />
 
     <TextView
-        android:text="Aquariumgröße:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/phLabel"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/aquaSizeLabel" />
-
-    <EditText
-        android:layout_height="wrap_content"
-        android:text="100"
-        android:ems="10"
-        android:id="@+id/aqSizeTf"
-        android:inputType="number"
-        tools:text="-"
-        android:layout_width="wrap_content"
-        android:contentDescription="1"
-        android:layout_below="@+id/phTv"
-        android:layout_toRightOf="@+id/wwLabel"
-        android:layout_toEndOf="@+id/wwLabel"
-        android:layout_alignBottom="@+id/aquaSizeLabel" />
-
-    <Button
-        android:text="Calculate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:id="@+id/calcButton"
-        android:visibility="visible"
-        android:layout_below="@+id/co2Label"
-        android:layout_alignLeft="@+id/aqSizeTf"
-        android:layout_alignStart="@+id/aqSizeTf" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="65dp"
@@ -99,15 +65,6 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="CO2-Gehalt:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/co2Label"
-        android:layout_below="@+id/aquaSizeLabel"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
         android:text="-"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,11 +73,72 @@
         android:id="@+id/khTv" />
 
     <TextView
+        android:text="CO2-Gehalt:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/co2Label"
+        android:layout_below="@+id/phLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
         android:text="-"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/co2Tv"
+        android:layout_below="@+id/phTv"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calcButton"
+        android:visibility="visible"
         android:layout_below="@+id/aqSizeTf"
         android:layout_centerHorizontal="true"
-        android:id="@+id/co2Tv" />
+        android:layout_marginTop="73dp" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fertTv"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Düngerdosierung:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fertLabel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:ems="10"
+        android:id="@+id/aqSizeTf"
+        android:inputType="number"
+        tools:text="-"
+        android:contentDescription="1"
+        android:selectAllOnFocus="false"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/fertLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:text="Aq-Größe:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aquaSizeLabel"
+        android:layout_alignBaseline="@+id/aqSizeTf"
+        android:layout_alignBottom="@+id/aqSizeTf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

@@ -34,7 +34,7 @@ public class AppFrame extends JFrame {
         setVisible(true);
     }
     
-    private void initComponents(){
+    public void initComponents(){
         setTitle("Aquaapp");
         setBounds(0,0,800,800);
         
@@ -103,7 +103,7 @@ public class AppFrame extends JFrame {
     }
     
     private float calcDailyUse(float n1, float nX, float X){
-    	return (n1-nX)/(float)(X-1);
+    	return (float)(n1-nX)/(float)(X-1);
     }
     
     private void initListeners(){

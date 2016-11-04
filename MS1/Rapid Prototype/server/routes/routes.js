@@ -140,7 +140,7 @@ module.exports = {
 
                     fcm.send(message, function (err, response) {
                         if (err) {
-                            res.status(200).json(error);
+                            res.status(200).json(err);
                         }
                         else {
                             res.status(200).json(response);

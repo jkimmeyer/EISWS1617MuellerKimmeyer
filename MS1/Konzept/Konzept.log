@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.10)  4 NOV 2016 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.10)  6 NOV 2016 22:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -115,6 +115,9 @@ LaTeX Info: Redefining \textsubscript on input line 4769.
 \c@table=\count88
 Class scrreprt Info: Redefining `\numberline' on input line 5764.
 \bibindent=\dimen102
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/filecontents/filecontents.sty
+Package: filecontents 2011/10/08 v1.3 Create an external file from within a LaT
+eX document
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/ucs/ucs.sty
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 
@@ -243,19 +246,19 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (./Konzept.aux)
 \openout1 = `Konzept.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Try loading font information for T1+pplx on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 18.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pplx.fd
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/ucs/ucsencs.def
@@ -354,35 +357,35 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 25.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 26.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 25.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 26.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 25.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 26.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 25.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 26.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 25.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 26.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 25.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 26.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -410,24 +413,41 @@ chapter 2.
 ]) (./Nutzungskontext.tex [5]
 chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--11
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 15.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 11.
 
-LaTeX Font Info:    No file OMSpplx.fd. on input line 15.
+LaTeX Warning: Citation `http://web31722.greatnet-hosting.de/4aq-technik/Aquari
+um-Tabellen/wasserwerte.php' on page 6 undefined on input line 11.
+
+
+LaTeX Warning: Citation `http://www.aqua-rebell.de/wasserpflanzen.html' on page
+ 6 undefined on input line 13.
+
+[6
+
+]
+
+LaTeX Warning: Citation `http://www.andy-blackjack.de/fibel/3wasserchemie.html'
+ on page 7 undefined on input line 16.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
+[7]) (./Anforderungen.tex [8]
+chapter 4.
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 5.
+LaTeX Font Info:    No file OMSpplx.fd. on input line 5.
 
 LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 15.
+(Font)              for symbol `textbullet' on input line 5.
 
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 15.
-[6
-
-]) (./Anforderungen.tex [7] [8]
-chapter 4.
 [9
 
 ]) (./relatedworks.tex [10]
@@ -504,12 +524,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--15
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 5282 strings out of 493014
- 87454 string characters out of 6133350
- 260854 words of memory out of 5000000
- 8690 multiletter control sequences out of 15000+600000
+ 5297 strings out of 493014
+ 88048 string characters out of 6133350
+ 257977 words of memory out of 5000000
+ 8702 multiletter control sequences out of 15000+600000
  42196 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,14n,66p,8513b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -523,7 +546,7 @@ e/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on Konzept.pdf (22 pages, 299423 bytes).
+Output written on Konzept.pdf (22 pages, 302335 bytes).
 PDF statistics:
  110 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream

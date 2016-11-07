@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.10)  7 NOV 2016 10:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.10)  7 NOV 2016 21:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -395,40 +395,40 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Konz
-ept.toc)
+ept.toc
+[2
+
+])
 \tf@toc=\write3
 \openout3 = `Konzept.toc'.
 
-
-[2
-
-]
+ [3]
 chapter 1.
-(./Ausgangssituation_Ziele.tex [3
+(./Ausgangssituation_Ziele.tex [4
 
 ]
 chapter 2.
-[4
+[5
 
-]) (./Nutzungskontext.tex [5]
+]) (./Nutzungskontext.tex [6]
 chapter 3.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 10.
 
 LaTeX Warning: Citation `http://web31722.greatnet-hosting.de/4aq-technik/Aquari
-um-Tabellen/wasserwerte.php' on page 6 undefined on input line 10.
+um-Tabellen/wasserwerte.php' on page 7 undefined on input line 10.
 
 
 LaTeX Warning: Citation `http://www.aqua-rebell.de/wasserpflanzen.html' on page
- 6 undefined on input line 12.
+ 7 undefined on input line 12.
 
 
 LaTeX Warning: Citation `http://www.andy-blackjack.de/fibel/3wasserchemie.html'
- on page 6 undefined on input line 14.
+ on page 7 undefined on input line 14.
 
-[6
+[7
 
-] [7]) (./Anforderungen.tex [8]
+] [8]) (./Anforderungen.tex [9]
 chapter 4.
 LaTeX Font Info:    Try loading font information for OMS+pplx on input line 5.
 LaTeX Font Info:    No file OMSpplx.fd. on input line 5.
@@ -437,9 +437,9 @@ LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 5.
 
-[9
+[10
 
-]) (./relatedworks.tex [10]
+]) (./relatedworks.tex [11]
 chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
@@ -451,7 +451,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-[11
+[12
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 36--38
@@ -463,61 +463,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
-[12]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
 
-) [13] (./Vorgehen.tex [14]
+) [14] (./Vorgehen.tex [15]
 chapter 6.
-) (./Architektur.tex [15
+) [16
 
-]
+] (./Kommunikationsmodell.tex [17]
 chapter 7.
-<../workinprogress/Architektur.jpg, id=58, 240.9pt x 240.9pt>
+
+Overfull \hbox (12.39584pt too wide) in paragraph at lines 2--3
+\T1/pplx/m/n/12 prä-skrip-ti-ven Mo-dell un-ter-schei-den. Die-se zei-gen den I
+st-Zustand und den Soll-Zustand
+ []
+
+
+<../workinprogress/Kommunikationsdiagramm_deskriptiv.jpg, id=64, 1003.75pt x 70
+2.625pt>
+File: ../workinprogress/Kommunikationsdiagramm_deskriptiv.jpg Graphic file (typ
+e jpg)
+ <use ../workinprogress/Kommunikationsdiagramm_deskriptiv.jpg>
+Package pdftex.def Info: ../workinprogress/Kommunikationsdiagramm_deskriptiv.jp
+g used on input line 7.
+(pdftex.def)             Requested size: 451.68333pt x 316.17833pt.
+
+<../workinprogress/Kommunikationsdiagramm_praeskriptiv.jpg, id=65, 1003.75pt x 
+803.0pt>
+File: ../workinprogress/Kommunikationsdiagramm_praeskriptiv.jpg Graphic file (t
+ype jpg)
+ <use ../workinprogress/Kommunikationsdiagramm_praeskriptiv.jpg>
+Package pdftex.def Info: ../workinprogress/Kommunikationsdiagramm_praeskriptiv.
+jpg used on input line 16.
+(pdftex.def)             Requested size: 451.68333pt x 361.34666pt.
+
+[18
+
+ <../workinprogress/Kommunikationsdiagramm_deskriptiv.jpg>])
+(./Architektur.tex [19 <../workinprogress/Kommunikationsdiagramm_praeskriptiv.j
+pg>]
+chapter 8.
+<../workinprogress/Architektur.jpg, id=73, 240.9pt x 192.72pt>
 File: ../workinprogress/Architektur.jpg Graphic file (type jpg)
 
 <use ../workinprogress/Architektur.jpg>
 Package pdftex.def Info: ../workinprogress/Architektur.jpg used on input line 1
 5.
-(pdftex.def)             Requested size: 481.7988pt x 481.7988pt.
+(pdftex.def)             Requested size: 481.7988pt x 385.43903pt.
 
 Overfull \hbox (26.55469pt too wide) in paragraph at lines 15--16
  [][] 
  []
 
-[16
+[20
 
-]) [17 <../workinprogress/Architektur.jpg>] (./POC.tex [18]
-chapter 8.
+]) (./POC.tex [21 <../workinprogress/Architektur.jpg>]
+chapter 9.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--15
 
  []
 
-[19
+[22
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 19--34
+Underfull \hbox (badness 10000) in paragraph at lines 54--66
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 53--45
-
- []
-
-[20] [21] (./Konzept.lot)
+[23] [24] [25]) [26] (./Konzept.lot)
 \tf@lot=\write4
 \openout4 = `Konzept.lot'.
 
- [22
+ [27
 
 ] (./Konzept.lof)
 \tf@lof=\write5
 \openout5 = `Konzept.lof'.
 
- [23
+ [28
 
 ] (./Konzept.aux)
 
@@ -526,12 +552,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 5297 strings out of 493014
- 88048 string characters out of 6133350
- 257977 words of memory out of 5000000
- 8702 multiletter control sequences out of 15000+600000
+ 5315 strings out of 493014
+ 88783 string characters out of 6133350
+ 260963 words of memory out of 5000000
+ 8715 multiletter control sequences out of 15000+600000
  42196 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,14n,66p,8513b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -545,10 +574,10 @@ e/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on Konzept.pdf (23 pages, 306426 bytes).
+Output written on Konzept.pdf (28 pages, 618918 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 131 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

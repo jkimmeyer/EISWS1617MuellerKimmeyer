@@ -1,4 +1,4 @@
-package de.eis.muellerkimmeyer;
+package fachhandlungClient;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -14,7 +14,7 @@ import java.net.URL;
  *
  *  Proof of Concept - Desktop Anwendung (Fachhandlung Client)
  *
- *  Autor: Moritz Müller
+ *  Autor: Moritz Mï¿½ller
  */
 
 public class ServerRequest {
@@ -27,9 +27,9 @@ public class ServerRequest {
     
     /*
     * QUELLENANGABE
-    * sendGet und sendPost übernommen aus https://www.mkyong.com/java/how-to-send-http-request-getpost-in-java/
+    * sendGet und sendPost ï¿½bernommen aus https://www.mkyong.com/java/how-to-send-http-request-getpost-in-java/
     * Autor: "mkyong", Abruf am: 01.11.2016
-    * Änderungen: Fehlerbehandlung umstrukturiert, bei sendPost "Content-Type" zum Header hinzugefügt
+    * ï¿½nderungen: Fehlerbehandlung umstrukturiert, bei sendPost "Content-Type" zum Header hinzugefï¿½gt
     */
     
     // HTTP GET request

@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Testwerte für den Prototyp
         fGoal= 1.5f;
-        amountF= 200.0f;
+        amountF= 341.0f;
         amountAq= 1.1f;
 
         duengerTv = (TextView) findViewById(R.id.duengerTv);

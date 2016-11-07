@@ -39,7 +39,8 @@ mongoose.model('users', userSchema);
 var wwSchema = mongoose.Schema({
     token: String,
     ph: Number,
-    kalzium: Number
+    KH: Number,
+    dailyUse: Number
 });
 wwSchema.set('collection', 'wasserwerte');
 mongoose.model('wasserwerte', wwSchema);

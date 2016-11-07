@@ -1,6 +1,17 @@
 \documentclass[12pt,a4paper]{scrreprt}
 \setlength{\parindent}{0em} 
  
+ \usepackage[colorlinks,
+pdfpagelabels,
+pdfstartview = FitH,
+bookmarksopen = true,
+bookmarksnumbered = true,
+linkcolor = black,
+plainpages = false,
+hypertexnames = false,
+citecolor = black] {hyperref}
+ 
+ 
  \usepackage{filecontents}
 \usepackage{ucs}
 \usepackage[latin1]{inputenc}
@@ -45,8 +56,8 @@ Bei diesem Dokument handelt es sich um die Aufgabe zum ersten Meilenstein des Mo
 
 \input{POC}
 
-\listoftables
-\listoffigures
+
+\listoftables \listoffigures
 \appendix
 \end{document}
 

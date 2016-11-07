@@ -2,220 +2,238 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/libs/okhttp-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_93b007adadb96517e870f32be929597395249ab1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_af3565dc958469dd5973d8128c6cc193d8ce11b3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_5c56a342a2d72f3da4e3722d4019ca786e57e850.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.8.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-9.8.0_9618b32abb415f33957c576752f8d00902e9d6e3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_8d052e8629b39b9ce4eb88d584174e3ce6024638.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_269f34c16579d6a677a008791f79dd3ba2a6dbf9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/libs/okio-1.11.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/okio-1.11.0_37d9dc7ac342ff90c9127c48b91f89fa79619925.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_2d3120aa195d796597cb5958ea3f4aafa064cc68.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_80ca1446f0128629d1bfc4b05f026123d0602ed3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.8.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9ff04cc3470178a44512624036751a803418c2ca">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.8.0_d549b3f9b8ceb2111dc076d072ad80829cc4b3fe.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_32927b6f55399bfadee40768e56ca6f7dca88a4f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_d7ec7a286571e213581110f123d963dbf62a051f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.8.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="190a642ba16d1421296a4d794606279b80039c59">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.8.0_31ae4351d73e1aa95421611c051f392e8f9b8b69.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_7411da343b6a74b22537794de41b9462af2a688d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_eef5d34125bd1ca4a4333ce75a9f3910549277d2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_d73ed557f303cd7a4c5beaed11b672ad4f306173.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.8.0_9620285c119b6d4456a31c304f833afd9d38bef5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.8.0_c9dc7d2dc7707e073a54617d80fa11a4121b75be.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_3e560d2701232ec2fdb47bf9dce85ad351e4b48b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.8.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.8.0_04f911fa459d0fea3f4a98b0ea6dcbe8a30c9a9c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.8.0_55d26349bafbf59978ff5651b16954dcf2ccc828.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_23f03873ebbdd672b11daffa57d227778cc6af17.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_6cb14f365b97b28b94962aab3df62f7b39b3beef.jar" />
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_b10208866ae992123e377976337d039e8f3982b7/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_f1057cb241f84405309c313dcb2a69cb723e62bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_44a19dcc14277498476aec98fb225d0f1d0d0a9a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_3470bdd23da521faa3656e24acecb48f55d384ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_9431c35867a1a5bb79d72e8e1b249bd208847d6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1d35af8847e3419deb008cbda1b1d773ff30f367">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5d2da9c03e3e2cf7ee9dab4460ea988c5a4ab6ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_2d3120aa195d796597cb5958ea3f4aafa064cc68/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_7ebad5fe72c98f2a3edf494352a808684b93ed28/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_fdfbc4d6e495a814efd8fd9815a7fa74b93669b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_f68118d6344a416adbd8eb5c106640b41a2efbf2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_1f07a07f7fb79c959f4221c7e9002ff33e89b770/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/Users/johannes/EIS16_17/MS1/proofofconcept/benutzerClient/Aquaapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_d05ad9fa1884fb81307d8c86e12977c8e0a67b04.jar" />
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_6da4664d12dc883d242ed35706d883f16fc8347c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.8.0_9e72f0399acd1da0ab10b7805bca4fe298d1d141/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_c190bedf3d9ba4c37aaf6b5e43ffc0ce9eb71f11/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_fbff62091530210eaed797db840e6fcf33afcdc7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_255cf9666f8ec28cafd8ec5b4d41b1981cdd92c1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.8.0_fde552cbe8e77d303be016baabccda9d405d8e02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_a27f9cecc24e2b1c6a454efd52d3b913d99773c6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7edf4761f1830297aede5e1b259e5789e1553dc3">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7f90a582c1721b3f88c48794309a6b89761bd71d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_93e66dc1a90a962f81035efaebbd84aa9018e83f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_d75c5f60a134555e395900e8df5d5ecdf7836a87/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/libs/okio-1.11.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/2/okio-1.11.0_16b67ff9a6fb64429f1227d3f2035dd32454a2c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.8.0_b81e7ae653009002cf027d1831cf53d1e8e583a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_da55dcbc6c33ba09a41ac20226778d7c74353a20/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.8.0_15babb9791ade70f796bfab0e743f20b5a5e318a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/libs/okhttp-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/2/okhttp-3.4.1_5aa2f74c11ddf70e2e7d3661ec72a544a77234d2/classes.dex" />
     </item>
 
 </items>

@@ -1,4 +1,4 @@
-package de.eis.muellerkimmeyer;
+package fachhandlungClient;
 
 class Calculator {
 	

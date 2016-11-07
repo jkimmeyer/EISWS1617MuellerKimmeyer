@@ -112,7 +112,7 @@ module.exports = {
 
                     // Wasserwerte in DB eintragen:
 
-                    var insert = [{ "token": tokens, "ph": message.ph, "kalzium": message.kalzium }];
+                    var insert = [{ "token": tokens, "ph": message.ph, "KH": message.kh, "dailyUse": message.dailyUse}];
 
                     mongoose.model('wasserwerte').insertMany(insert, function (error, docs) {
 

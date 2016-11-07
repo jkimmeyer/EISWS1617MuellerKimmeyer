@@ -66,19 +66,109 @@ gelingt, werden wir uns externe Hilfe hinzuziehen.\\
 
 \section{Durchführung der Proof of Concepts}
 
-\subsection{Durchführung zu Firebase Cloud Messaging}Die Kommunikation von der Fachhandlung zum Kunden mit Hilfe des Firebase Cloud Messaging war eines unserer Proof of Concepts, da wir beide vorher noch keine Erfahrung damit gemacht hatten. Deshalb haben wir diese Kommunikation bereits in unserem Prototyp umgesetzt. Im Folgenden dokumentieren wir die Vorgehensweise und das Ergebnis.\\[0.5cm]Das Ziel ist es, dass die Fachhandlung (Desktop Anwendung) Wasserwerte überden Server (Node.js) an den Kunden (Android App) schicken kann und dassdieser dann eine Push-Benachrichtigung bekommt. Also haben wir erstmal mitder Implementierung des Servers angefangen. Diesen haben wir mit Node.jsund Express.js umgesetzt. Dort haben wir zwei Routen programmiert. Eine fürBenutzer und eine für Wasserwerte. Ruft man diese Routen mit GET auf,werden alle Benutzer bzw. alle Wasserwerte ausgegeben. Wenn man einenPOST Request dahin schickt, wird ein Benutzer angelegt bzw. neueWasserwerte in der Datenbank gespeichert.\\[0.5cm]Als nächstes haben wir dann mit der Android App weitergemacht. Dort habenwir zuerst versucht, eine Verbindung via POST und GET mit dem Serveraufzubauen. Als das geklappt hat, haben wir mit der Implementierung desFirebase Cloud Messaging begonnen. Die Integration in die App war sehreinfach und konnte direkt über Android Studio vollzogen werden. Es wurdenzwei Klassen dafür angelegt. Die eine Klasse sorgt dafür, dass bei der erstenNutzung ein Token generiert wird. Dieser musste nun an den Server geschicktwerden. Dafür haben wir dann unsere zuvor programmierte ServerRequestKlasse verwendet, mit der der Token nun via POST Request an die BenutzerRoute des Servers geschickt werden konnte. Die zweite Klasse sorgt für dasEmpfangen der Nachrichten, dazu später mehr.\\[0.5cm]Jetzt kam erstmal die Desktop Anwendung für die Fachhandlung. Da haben wirzuerst eine graphische Oberfläche mit drei Textfeldern und einem Buttonerstellt. Dem Button haben wir einen ActionListener hinzugefügt, in dem wireinen POST Request mit den Werten aus den Textfeldern an die WasserwerteRoute des Servers geschickt haben. Neben den Wasserwerten war ein Textfeldfür den Empfänger vorhanden. Dort musste der Token des Empfängersangegeben werden, den man der Datenbank bzw. der Benutzer Routeentnehmen konnte. Für die Durchführung des PoC reichte uns das erstmal,später wollen wir die Adressierung des Empfängers anders angehen, damitnicht immer der lange Token eingegeben werden muss. Die ServerRequestKlasse konnten wir zum größten Teil von der App übernehmen.\\[0.5cm]Nachdem die Kommunikation der beiden Clients mit dem Server umgesetztwar, haben wir der Wasserwerte Route des Servers noch den entscheidendenCode hinzugefügt, der dafür sorgt, dass die Nachricht, die von derFachhandlung kommt, nicht nur in der Datenbank gespeichert wird, sondernauch an den adressierten App Benutzer geschickt wird. Dieser kann dieNachricht dann mit der zuvor programmierten FCM Klasse empfangen underhält nun direkt eine Push-Benachrichtigung, sobald Wasserwerte von derFachhandlung verschickt wurden. Wenn er auf die Benachrichtigung draufklickt, aktualisiert sich die App und die Wasserwerte werden aus der Datenbankgeladen.Die Durchführung des PoC war also erfolgreich.
+\subsection{Durchführung zu Firebase Cloud Messaging}
+Die Kommunikation von der Fachhandlung zum Kunden mit Hilfe des Firebase Cloud Messaging war eines unserer Proof of Concepts, da wir beide vorher noch keine Erfahrung damit gemacht hatten. Deshalb haben wir diese Kommunikation bereits in unserem Prototyp umgesetzt. Im Folgenden dokumentieren wir die Vorgehensweise und das Ergebnis.\\[0.5cm]
+Das Ziel ist es, dass die Fachhandlung (Desktop Anwendung) Wasserwerte über
+den Server (Node.js) an den Kunden (Android App) schicken kann und dass
+dieser dann eine Push-Benachrichtigung bekommt. Also haben wir erstmal mit
+der Implementierung des Servers angefangen. Diesen haben wir mit Node.js
+und Express.js umgesetzt. Dort haben wir zwei Routen programmiert. Eine für
+Benutzer und eine für Wasserwerte. Ruft man diese Routen mit GET auf,
+werden alle Benutzer bzw. alle Wasserwerte ausgegeben. Wenn man einen
+POST Request dahin schickt, wird ein Benutzer angelegt bzw. neue
+Wasserwerte in der Datenbank gespeichert.\\[0.5cm]
+Als nächstes haben wir dann mit der Android App weitergemacht. Dort haben
+wir zuerst versucht, eine Verbindung via POST und GET mit dem Server
+aufzubauen. Als das geklappt hat, haben wir mit der Implementierung des
+Firebase Cloud Messaging begonnen. Die Integration in die App war sehr
+einfach und konnte direkt über Android Studio vollzogen werden. Es wurden
+zwei Klassen dafür angelegt. Die eine Klasse sorgt dafür, dass bei der ersten
+Nutzung ein Token generiert wird. Dieser musste nun an den Server geschickt
+werden. Dafür haben wir dann unsere zuvor programmierte ServerRequest
+Klasse verwendet, mit der der Token nun via POST Request an die Benutzer
+Route des Servers geschickt werden konnte. Die zweite Klasse sorgt für das
+Empfangen der Nachrichten, dazu später mehr.\\[0.5cm]
+Jetzt kam erstmal die Desktop Anwendung für die Fachhandlung. Da haben wir
+zuerst eine graphische Oberfläche mit drei Textfeldern und einem Button
+erstellt. Dem Button haben wir einen ActionListener hinzugefügt, in dem wir
+einen POST Request mit den Werten aus den Textfeldern an die Wasserwerte
+Route des Servers geschickt haben. Neben den Wasserwerten war ein Textfeld
+für den Empfänger vorhanden. Dort musste der Token des Empfängers
+angegeben werden, den man der Datenbank bzw. der Benutzer Route
+entnehmen konnte. Für die Durchführung des PoC reichte uns das erstmal,
+später wollen wir die Adressierung des Empfängers anders angehen, damit
+nicht immer der lange Token eingegeben werden muss. Die ServerRequest
+Klasse konnten wir zum größten Teil von der App übernehmen.\\[0.5cm]
+Nachdem die Kommunikation der beiden Clients mit dem Server umgesetzt
+war, haben wir der Wasserwerte Route des Servers noch den entscheidenden
+Code hinzugefügt, der dafür sorgt, dass die Nachricht, die von der
+Fachhandlung kommt, nicht nur in der Datenbank gespeichert wird, sondern
+auch an den adressierten App Benutzer geschickt wird. Dieser kann die
+Nachricht dann mit der zuvor programmierten FCM Klasse empfangen und
+erhält nun direkt eine Push-Benachrichtigung, sobald Wasserwerte von der
+Fachhandlung verschickt wurden. Wenn er auf die Benachrichtigung drauf
+klickt, aktualisiert sich die App und die Wasserwerte werden aus der Datenbank
+geladen.
+Die Durchführung des PoC war also erfolgreich.
 
-\subsection{Durchführung zu Beschaffung der Formeln für einzelne Berechnungen}Dabei war uns besonders eine Formel, welche basierend auf den Inhalten imAquarium nach einmaliger Analyse den täglichen Nährstoffverbrauch ungefährberechnen kann, von großer Bedeutung. Nach einer langen Recherche imInternet und Fachliteratur sind wir leider auf kein vernünftiges Ergebnis gekommen,bei den anderen Berechnungen waren wir aber erfolgreicher.\\[0.5cm]Vor allem in Internetforen waren Hinweise auf die vielen chemischen Formelnund Einflüsse auf ein Aquarium und die unzähligen Berechnungen zu finden.Für einige weitere Berechnungen reichte einfaches logisches Denken.\\[0.5cm]
+\subsection{Durchführung zu Beschaffung der Formeln für einzelne Berechnungen}
+Dabei war uns besonders eine Formel, welche basierend auf den Inhalten im
+Aquarium nach einmaliger Analyse den täglichen Nährstoffverbrauch ungefähr
+berechnen kann, von großer Bedeutung. Nach einer langen Recherche im
+Internet und Fachliteratur sind wir leider auf kein vernünftiges Ergebnis gekommen,
+bei den anderen Berechnungen waren wir aber erfolgreicher.\\[0.5cm]
+Vor allem in Internetforen waren Hinweise auf die vielen chemischen Formeln
+und Einflüsse auf ein Aquarium und die unzähligen Berechnungen zu finden.
+Für einige weitere Berechnungen reichte einfaches logisches Denken.\\[0.5cm]
 Resultierend sind für uns folgende Berechnungen von Bedeutung:
 \begin{itemize}
-\item Täglicher Nährstoffverbrauch (logisches Denken)\item Düngerdosierung beim Erreichen eines bestimmten Zielwertes (logischesDenken)\item Berechnung der Gesamthärte1\item Berechnung des CO2- Gehalts anhand von pH-Wert und Karbonathärte2\item Verhältnis bei einem Wasserwechsel, um eine bestimmte Gesamthärteoder Karbonathärte zu erreichen3\item Berechnung der täglichen Nährstoffänderung mit Hilfe der Pflanzen,Fische, dem Licht, den anderen Einflüssen im Aquarium und einereinmaligen Wasseranalyse
-\end{itemize}Für die letzte Berechnung haben wir leider keine Berechnung gefunden, es gibtbei der Nährstoffänderung viel zu viele Einflüsse, so dass es einfach nurzusätzlicher Aufwand sein würde. Damit gilt dieses Proof of Concept alsgescheitert und wir müssen auf unser Fallback zugreifen.Im nächsten Schritt werden wir nun also eine Umfrage bei Aquarienbesitzern inmehreren Facebookgruppen und Aquaristikforen durchführen, um eineAnnäherung an eine Formel zu bekommen. Da diese Umfrage und ihreErgebnisse sehr umfassend sein werden, werden wir uns auf folgende Einflüssereduzieren:
-\begin{itemize}\item Täglicher Nährstoffverbrauch\item Lichteinfluss (Lichtstunden und Lichtstärke)\item Beckengröße\item Anzahl an Pflanzen\item Anzahl an Fischen\item Art des Filters
-\end{itemize}Mit Hilfe des Ergebnisses werden wir eine sehr grob angenäherte Berechnungfür die tägliche Nährstoffänderung erreichen. Ebenso werden wir unsereAnforderungen iterieren und weitere Aspekte für die Anwendungslogik finden.
+\item Täglicher Nährstoffverbrauch (logisches Denken)
+\item Düngerdosierung beim Erreichen eines bestimmten Zielwertes (logisches
+Denken)
+\item Berechnung der Gesamthärte\footnote{http://www.trinkwasserspezi.de/Berechnungen.pdf (letzte Sichtung, 04.11.16)}
+\item Berechnung des CO2- Gehalts anhand von pH-Wert und Karbonathärte\footnote{http://www.flowgrow.de/db/calculator/ph (letzte Sichtung, 04.11.16)}
+\item Verhältnis bei einem Wasserwechsel, um eine bestimmte Gesamthärte oder Karbonathärte zu erreichen\footnote{http://bit.ly/2fyIkYB (letzte Sichtung, 07.11.16)}
+\item Berechnung der täglichen Nährstoffänderung mit Hilfe der Pflanzen,
+Fische, dem Licht, den anderen Einflüssen im Aquarium und einer
+einmaligen Wasseranalyse
+\end{itemize}
+Für die letzte Berechnung haben wir leider keine Berechnung gefunden, es gibt
+bei der Nährstoffänderung viel zu viele Einflüsse, so dass es einfach nur
+zusätzlicher Aufwand sein würde. Damit gilt dieses Proof of Concept als
+gescheitert und wir müssen auf unser Fallback zugreifen.
+Im nächsten Schritt werden wir nun also eine Umfrage bei Aquarienbesitzern in
+mehreren Facebookgruppen und Aquaristikforen durchführen, um eine
+Annäherung an eine Formel zu bekommen. Da diese Umfrage und ihre
 
-\subsection{Durchführung der Umsetzung der Formeln}Wir haben die ersten Berechnungen in unserem Prototyp bereitsimplementiert, dazu gehören:
+Ergebnisse sehr umfassend sein werden, werden wir uns auf folgende Einflüsse
+reduzieren:
 \begin{itemize}
-\item Berechnung des täglichen Nährstoffverbrauchs (beim Fachhändler)\item Düngerdosierung beim Erreichen eines bestimmten Zielwertes\item Berechnung des CO2- Gehalts anhand von dem pH-Wert und der Karbonathärte
-\end{itemize}Neben der eher einfachen Programmierung der Berechnungen an sich, wurdeein besonderes Augenmerk auf die Verarbeitung der einzelnen Werte und dasMitteilen über das Firebase Cloud Messaging gelegt. In der weiterenEntwicklung werden wir besonders auf die einzelnen Maßeinheiten Acht gebenmüssen, da es hier des Öfteren schon in der Umsetzung zu Problemengekommen ist. Die Kommunikation zwischen dem Client des Fachhandels, demServer und dem Kunden hat dabei sehr gut funktioniert. Dieses PoC wurdeerfolgreich abgeschlossen.
+\item Täglicher Nährstoffverbrauch
+\item Lichteinfluss (Lichtstunden und Lichtstärke)
+\item Beckengröße
+\item Anzahl an Pflanzen
+\item Anzahl an Fischen
+\item Art des Filters
+\end{itemize}
+Mit Hilfe des Ergebnisses werden wir eine sehr grob angenäherte Berechnung
+für die tägliche Nährstoffänderung erreichen. Ebenso werden wir unsere
+Anforderungen iterieren und weitere Aspekte für die Anwendungslogik finden.
+
+\subsection{Durchführung der Umsetzung der Formeln}
+Wir haben die ersten Berechnungen in unserem Prototyp bereits
+implementiert, dazu gehören:
+\begin{itemize}
+\item Berechnung des täglichen Nährstoffverbrauchs (beim Fachhändler)
+\item Düngerdosierung beim Erreichen eines bestimmten Zielwertes
+\item Berechnung des CO2- Gehalts anhand von dem pH-Wert und der Karbonathärte
+\end{itemize}
+Neben der eher einfachen Programmierung der Berechnungen an sich, wurde
+ein besonderes Augenmerk auf die Verarbeitung der einzelnen Werte und das
+Mitteilen über das Firebase Cloud Messaging gelegt. In der weiteren
+Entwicklung werden wir besonders auf die einzelnen Maßeinheiten Acht geben
+müssen, da es hier des Öfteren schon in der Umsetzung zu Problemen
+gekommen ist. Die Kommunikation zwischen dem Client des Fachhandels, dem
+Server und dem Kunden hat dabei sehr gut funktioniert. Dieses PoC wurde
+erfolgreich abgeschlossen.
 
 

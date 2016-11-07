@@ -1,45 +1,44 @@
 \select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Einleitung}{4}
-\contentsline {chapter}{\numberline {2}Ausgangssituation und Ziele}{5}
-\contentsline {section}{\numberline {2.1}Problemstellung}{5}
-\contentsline {section}{\numberline {2.2}Entwicklungsziele}{5}
-\contentsline {chapter}{\numberline {3}Requirements}{7}
-\contentsline {section}{\numberline {3.1}Dom\"anenrecherche}{7}
-\contentsline {section}{\numberline {3.2}Nutzungskontext}{8}
-\contentsline {section}{\numberline {3.3}Stakeholder}{9}
-\contentsline {chapter}{\numberline {4}Anforderungen}{10}
-\contentsline {section}{\numberline {4.1}Funktionale Anforderungen}{10}
-\contentsline {section}{\numberline {4.2}Nicht-Funktionale Anforderungen}{11}
-\contentsline {chapter}{\numberline {5}Related Works}{12}
-\contentsline {section}{\numberline {5.1}Marktrecherche}{12}
-\contentsline {subsection}{\numberline {5.1.1}Aquarium Manager}{12}
-\contentsline {subsection}{\numberline {5.1.2}Aquareka}{13}
-\contentsline {subsection}{\numberline {5.1.3}AqDiary}{13}
-\contentsline {subsection}{\numberline {5.1.4}Aquarium Note}{13}
-\contentsline {subsection}{\numberline {5.1.5}Flowgrow}{14}
-\contentsline {section}{\numberline {5.2}Alleinstellungsmerkmal}{15}
-\contentsline {chapter}{\numberline {6}Methodischer Rahmen - MCI}{16}
-\contentsline {section}{\numberline {6.1}Abw\"agung der Vorgehensmodelle}{16}
-\contentsline {subsection}{\numberline {6.1.1}Usability Engineering Lifecycle}{16}
-\contentsline {subsection}{\numberline {6.1.2}Szenariobasiertes Vorgehensmodell}{16}
-\contentsline {subsection}{\numberline {6.1.3}Discount-Usability Engineering}{16}
-\contentsline {subsection}{\numberline {6.1.4}Prozess zur Gestaltung gebrauchstauglicher interaktiver Systeme - DIN EN ISO 9241, Teil 210}{17}
-\contentsline {chapter}{\numberline {7}Kommunikationsmodell}{18}
-\contentsline {section}{\numberline {7.1}Deskriptives Kommunikationsdiagramm}{18}
-\contentsline {section}{\numberline {7.2}Pr\"askriptives Kommunikationsdiagramm}{19}
-\contentsline {chapter}{\numberline {8}Architektur}{20}
-\contentsline {section}{\numberline {8.1}Erkl\"arung}{20}
-\contentsline {subsection}{\numberline {8.1.1}Server}{20}
-\contentsline {subsection}{\numberline {8.1.2}Datenaustausch und Datenbank}{20}
-\contentsline {subsection}{\numberline {8.1.3}Benutzer Client}{21}
-\contentsline {subsection}{\numberline {8.1.4}Fachhandlung Client}{21}
-\contentsline {chapter}{\numberline {9}Proof of Concepts}{22}
-\contentsline {section}{\numberline {9.1}Risiken}{22}
-\contentsline {section}{\numberline {9.2}Proof of Concept}{23}
-\contentsline {subsection}{\numberline {9.2.1}Umgang mit Firebase Cloud Messaging}{23}
-\contentsline {subsection}{\numberline {9.2.2}Beschaffung der Formeln f\"ur einzelne Berechnungen}{23}
-\contentsline {subsection}{\numberline {9.2.3}Umsetzung der Formeln (Programmierung)}{24}
-\contentsline {section}{\numberline {9.3}Durchf\"uhrung der Proof of Concepts}{24}
-\contentsline {subsection}{\numberline {9.3.1}Durchf\"uhrung zu Firebase Cloud Messaging}{24}
-\contentsline {subsection}{\numberline {9.3.2}Durchf\"uhrung zu Beschaffung der Formeln f\"ur einzelne Berechnungen}{25}
-\contentsline {subsection}{\numberline {9.3.3}Durchf\"uhrung der Umsetzung der Formeln}{26}
+\contentsline {chapter}{\numberline {1}Einleitung}{4}{chapter.2}
+\contentsline {chapter}{\numberline {2}Ausgangssituation und Ziele}{5}{chapter.3}
+\contentsline {section}{\numberline {2.1}Problemstellung}{5}{section.4}
+\contentsline {section}{\numberline {2.2}Entwicklungsziele}{5}{section.5}
+\contentsline {chapter}{\numberline {3}Requirements}{7}{chapter.31}
+\contentsline {section}{\numberline {3.1}Dom\"anenrecherche}{7}{section.32}
+\contentsline {section}{\numberline {3.2}Nutzungskontext}{8}{section.36}
+\contentsline {section}{\numberline {3.3}Stakeholder}{9}{section.37}
+\contentsline {chapter}{\numberline {4}Anforderungen}{10}{chapter.39}
+\contentsline {section}{\numberline {4.1}Funktionale Anforderungen}{10}{section.40}
+\contentsline {section}{\numberline {4.2}Nicht-Funktionale Anforderungen}{11}{section.41}
+\contentsline {chapter}{\numberline {5}Related Works}{12}{chapter.42}
+\contentsline {section}{\numberline {5.1}Marktrecherche}{12}{section.43}
+\contentsline {subsection}{\numberline {5.1.1}Aquarium Manager}{12}{subsection.44}
+\contentsline {subsection}{\numberline {5.1.2}Aquareka}{13}{subsection.46}
+\contentsline {subsection}{\numberline {5.1.3}AqDiary}{13}{subsection.48}
+\contentsline {subsection}{\numberline {5.1.4}Aquarium Note}{13}{subsection.50}
+\contentsline {subsection}{\numberline {5.1.5}Flowgrow}{14}{subsection.52}
+\contentsline {section}{\numberline {5.2}Alleinstellungsmerkmal}{15}{section.54}
+\contentsline {chapter}{\numberline {6}Abw\"agung der Vorgehensmodelle}{16}{chapter.55}
+\contentsline {section}{\numberline {6.1}Usability Engineering Lifecycle}{16}{section.56}
+\contentsline {section}{\numberline {6.2}Szenariobasiertes Vorgehensmodell}{16}{section.58}
+\contentsline {section}{\numberline {6.3}Discount-Usability Engineering}{16}{section.60}
+\contentsline {section}{\numberline {6.4}Prozess zur Gestaltung gebrauchstauglicher interaktiver Systeme - DIN EN ISO 9241, Teil 210}{17}{section.62}
+\contentsline {chapter}{\numberline {7}Kommunikationsmodell}{18}{chapter.64}
+\contentsline {section}{\numberline {7.1}Deskriptives Kommunikationsdiagramm}{18}{section.65}
+\contentsline {section}{\numberline {7.2}Pr\"askriptives Kommunikationsdiagramm}{18}{section.67}
+\contentsline {chapter}{\numberline {8}Architektur}{20}{chapter.69}
+\contentsline {section}{\numberline {8.1}Erkl\"arung}{20}{section.71}
+\contentsline {subsection}{\numberline {8.1.1}Server}{20}{subsection.72}
+\contentsline {subsection}{\numberline {8.1.2}Datenaustausch und Datenbank}{20}{subsection.73}
+\contentsline {subsection}{\numberline {8.1.3}Benutzer Client}{21}{subsection.74}
+\contentsline {subsection}{\numberline {8.1.4}Fachhandlung Client}{21}{subsection.75}
+\contentsline {chapter}{\numberline {9}Proof of Concepts}{22}{chapter.76}
+\contentsline {section}{\numberline {9.1}Risiken}{22}{section.77}
+\contentsline {section}{\numberline {9.2}Proof of Concept}{23}{section.78}
+\contentsline {subsection}{\numberline {9.2.1}Umgang mit Firebase Cloud Messaging}{23}{subsection.79}
+\contentsline {subsection}{\numberline {9.2.2}Beschaffung der Formeln f\"ur einzelne Berechnungen}{23}{subsection.80}
+\contentsline {subsection}{\numberline {9.2.3}Umsetzung der Formeln (Programmierung)}{24}{subsection.81}
+\contentsline {section}{\numberline {9.3}Durchf\"uhrung der Proof of Concepts}{24}{section.82}
+\contentsline {subsection}{\numberline {9.3.1}Durchf\"uhrung zu Firebase Cloud Messaging}{24}{subsection.83}
+\contentsline {subsection}{\numberline {9.3.2}Durchf\"uhrung zu Beschaffung der Formeln f\"ur einzelne Berechnungen}{25}{subsection.84}
+\contentsline {subsection}{\numberline {9.3.3}Durchf\"uhrung der Umsetzung der Formeln}{26}{subsection.88}

@@ -1,7 +1,0 @@
-#Mon Nov 07 10:59:49 CET 2016
-base.0=/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5d2da9c03e3e2cf7ee9dab4460ea988c5a4ab6ec
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7f90a582c1721b3f88c48794309a6b89761bd71d/classes.dex
-base.1=/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7f90a582c1721b3f88c48794309a6b89761bd71d
-file.0=/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/Aquaapp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5d2da9c03e3e2cf7ee9dab4460ea988c5a4ab6ec/classes.dex

@@ -1,0 +1,77 @@
+\documentclass[a4paper,ngerman]{scrreprt}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[babel, german=quotes]{csquotes}
+\usepackage{biblatex}
+\bibliography{literatur}
+
+\begin{document}
+
+\section{Plattform Capabilities und Constraints}
+
+Damit UI-Designer wissen können, welche Design-Möglichkeiten vorhanden sind und welche nicht, müssen die Plattform spezifischen Möglichkeiten und Einschränkungen aufgelistet werden. Die Umsetzung unseres Systems erfolgt als Android App für normale Benutzer und als Desktop Anwendung für Fachhandlungen. In den folgenden Tabellen werden wir jeweils für die Anwendungen die Möglichkeiten und Einschränkungen darstellen.
+
+\begin{table}[htb]
+\centering
+\caption{Plattform: Android App}
+\begingroup
+\renewcommand{\arraystretch}{1.4} % Vertical Padding ändern
+\begin{tabularx}{\linewidth}{%
+|>{\raggedright\arraybackslash}X%
+|>{\raggedright\arraybackslash}X%
+|>{\raggedright\arraybackslash}X%
+|>{\raggedright\arraybackslash}X%
+|%
+}
+\hline
+\textbf{Eigenschaft}   	& \textbf{Möglich}                        			& \textbf{Möglich mit zus. Aufwand} 	& \textbf{Nicht möglich}     		\\ \hline
+Betriebssystem Version 	& 4.0.3 und höher                         			&                                   			& Darunterliegende Versionen 	\\ \hline
+Display Größe          	& 4 Zoll und größer                        			&                                   			& Kleinere Größen            		\\ \hline
+Eingabe-Geräte         	& Virtuelle Tastatur, Touchscreen         		& Physische Bluetooth Tastatur      	&                            			\\ \hline
+Internetverbindung     	& Verbindung über WLAN, mobile Verbindung 	&                                   			&                            			\\ \hline
+Farben                 	& Alle beliebigen Farben                  			&                                   			&                            			\\ \hline
+Spezial-Effekte        	& 3D, Video, Audio                        			&                                   			&                            			\\ \hline
+GUI Werkzeuge          	& Siehe Android Komponenten \autocite{Android:Komponenten}               		&                                   			&                           			\\ \hline
+Energieversorgung      	& Begrenzte Akkulaufzeit, Netzbetrieb     		&                                   			&                            			\\ \hline
+Multitasking           	& x                                       				&                                   			&                            			\\ \hline
+Bit-Mapped-Display     	& x                                       				&                                   			&                            			\\ \hline
+Windowing              	&                                         				&                                   			& x                          			\\ \hline
+\end{tabularx}
+\endgroup
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{Plattform: Windows Desktop Anwendung}
+\begingroup
+\renewcommand{\arraystretch}{1.4} % Vertical Padding ändern
+\begin{tabularx}{\linewidth}{%
+|>{\raggedright\arraybackslash}X%
+|>{\raggedright\arraybackslash}X%
+|>{\raggedright\arraybackslash}X%
+|>{\raggedright\arraybackslash}X%
+|%
+}
+\hline
+\textbf{Eigenschaft}   	& \textbf{Möglich}                        			& \textbf{Möglich mit zus. Aufwand} 	& \textbf{Nicht möglich}     		\\ \hline
+Betriebssystem Version 	& 10                         						& 7, 8                                  		& Darunterliegende Versionen 	\\ \hline
+Display Größe          	& 12 Zoll und größer                        			&                                   			& Kleinere Größen            		\\ \hline
+Eingabe-Geräte         	& Physische Tastatur, Bildschirmtastatur, Maus	&       							&                            			\\ \hline
+Internetverbindung     	& Verbindung über LAN oder WLAN 			&                                   			&                            			\\ \hline
+Farben                 	& Alle beliebigen Farben                  			&                                   			&                            			\\ \hline
+Spezial-Effekte        	& 3D, Video, Audio                        			&                                   			&                            			\\ \hline
+GUI Werkzeuge          	& Siehe Java GUI Komponenten \autocite{Java:Komponenten}               		&                                   			&                           			\\ \hline
+Energieversorgung      	& Netzbetrieb, begrenzte Akkulaufzeit (Laptops)	&                                   			&                            			\\ \hline
+Multitasking           	& x                                       				&                                   			&                            			\\ \hline
+Bit-Mapped-Display     	& x                                       				&                                   			&                            			\\ \hline
+Windowing              	& x                                       				&                                   			&                          			\\ \hline
+\end{tabularx}
+\endgroup
+\end{table}
+
+\printbibliography
+
+\end{document}

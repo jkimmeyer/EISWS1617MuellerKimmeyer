@@ -24,6 +24,8 @@ left=2.5cm, right=2.5cm,
 top=2.5cm, bottom=2.5cm]{geometry}
 \usepackage{array}
 \usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{ltxtable, filecontents}
 \usepackage[babel, german=quotes]{csquotes}
 \usepackage{biblatex}
 \bibliography{literatur}
@@ -38,8 +40,9 @@ top=2.5cm, bottom=2.5cm]{geometry}
 %date
 \maketitle
 \tableofcontents
-\input{Plattform}
 
+\input{Plattform}
+\input{UserProfiles}
 
 
 \listoftables \listoffigures

@@ -1,7 +1,7 @@
-\documentclass[12pt,a4paper]{scrreprt}
+\documentclass[12pt,a4paper,ngerman]{scrreprt}
 \setlength{\parindent}{0em} 
  
- \usepackage[colorlinks,
+\usepackage[colorlinks,
 pdfpagelabels,
 pdfstartview = FitH,
 bookmarksopen = true,
@@ -10,20 +10,23 @@ linkcolor = black,
 plainpages = false,
 hypertexnames = false,
 citecolor = black] {hyperref}
- 
- 
- \usepackage{filecontents}
-\usepackage{ucs}
-\usepackage[latin1]{inputenc}
+
+\usepackage{filecontents}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
- \usepackage[sc]{mathpazo}
- \usepackage{graphicx}
- \usepackage{multirow} 
- \usepackage{booktabs}
- \usepackage[a4paper, 
+\usepackage{babel}
+\usepackage[sc]{mathpazo}
+\usepackage{graphicx}
+\usepackage{multirow} 
+\usepackage{booktabs}
+\usepackage[a4paper, 
 left=2.5cm, right=2.5cm, 
-top=2.5cm, bottom=2.5cm]{geometry} 
+top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[babel, german=quotes]{csquotes}
+\usepackage{biblatex}
+\bibliography{literatur}
 
 
 \begin{document}
@@ -31,15 +34,20 @@ top=2.5cm, bottom=2.5cm]{geometry}
  \title{Entwicklung interaktiver Systeme\\
   -\\
  Aquaparadise}
-\author{Moritz Müller, Johannes Kimmeyer}
+\author{Moritz MÃ¼ller, Johannes Kimmeyer}
 %date
 \maketitle
 
 \tableofcontents
 
+\input{Plattform}
+
 
 
 \listoftables \listoffigures
 \appendix
+
+\printbibliography
+
 \end{document}
 

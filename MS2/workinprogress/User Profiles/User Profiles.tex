@@ -1,0 +1,44 @@
+\documentclass[a4paper,ngerman]{scrreprt}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[babel, german=quotes]{csquotes}
+\usepackage{biblatex}
+\bibliography{literatur}
+
+\begin{document}
+
+\section{User Profiles}
+
+\begin{table}[htb]
+\centering
+\caption{Plattform: Android App}
+\begingroup
+\renewcommand{\arraystretch}{1.4} % Vertical Padding ändern
+\begin{tabularx}{\linewidth}{%
+|>{\raggedright\arraybackslash}X%
+|>{\raggedright\arraybackslash}X%
+|%
+}
+\hline
+\textbf{Merkmal}   	& \textbf{Merkmalsausprägung}                        			    		\\ \hline
+Betriebssystem Version 	& 4.0.3 und höher                         					\\ \hline
+Display Größe          	& 4 Zoll und größer                        			            	\\ \hline
+Eingabe-Geräte         	& Virtuelle Tastatur, Touchscreen         				\\ \hline
+Internetverbindung     	& Verbindung über WLAN, mobile Verbindung 			\\ \hline
+Farben                 	& Alle beliebigen Farben                  					\\ \hline
+Spezial-Effekte        	& 3D, Video, Audio                        					\\ \hline
+GUI Werkzeuge          	& Siehe Android Komponenten \autocite{Android:Komponenten}  \\ \hline
+Energieversorgung      	& Begrenzte Akkulaufzeit, Netzbetrieb     				\\ \hline
+Multitasking           	& x                                       						\\ \hline
+Bit-Mapped-Display     	& x                                       						\\ \hline
+Windowing              	&                                         						\\ \hline
+\end{tabularx}
+\endgroup
+\end{table}
+
+\printbibliography
+
+\end{document}

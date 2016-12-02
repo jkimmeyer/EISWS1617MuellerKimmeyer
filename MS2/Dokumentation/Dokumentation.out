@@ -8,4 +8,24 @@
 \BOOKMARK [1][]{section.27}{1.7 Benutzer \205 Rentner - Aquarium Experte}{chapter.2}% 8
 \BOOKMARK [1][]{section.31}{1.8 Benutzer \205 Fachh\344ndler}{chapter.2}% 9
 \BOOKMARK [0][]{chapter.35}{2 Kontextbezogene Aufgaben-Analyse}{}% 10
-\BOOKMARK [0][]{chapter.38}{3 Plattform Capabilities und Constraints}{}% 11
+\BOOKMARK [1][]{section.37}{2.1 Task-Szenarios}{chapter.35}% 11
+\BOOKMARK [2][]{subsection.38}{2.1.1 Task: Dokumentation der Wasserwerte}{section.37}% 12
+\BOOKMARK [2][]{subsection.44}{2.1.2 Task: Problembehandlung}{section.37}% 13
+\BOOKMARK [2][]{subsection.54}{2.1.3 Task: Wasserwechsel durchf\374hren}{section.37}% 14
+\BOOKMARK [2][]{subsection.60}{2.1.4 Task: Empfehlen von Fischen und Pflanzen}{section.37}% 15
+\BOOKMARK [1][]{section.69}{2.2 List of User Tasks for Aquariumusers}{chapter.35}% 16
+\BOOKMARK [1][]{section.70}{2.3 List of User Tasks for Fachhandel-Mitarbeiter}{chapter.35}% 17
+\BOOKMARK [0][]{chapter.71}{3 Plattform Capabilities und Constraints}{}% 18
+\BOOKMARK [0][]{chapter.74}{4 Work Re-Engineering}{}% 19
+\BOOKMARK [0][]{chapter.75}{5 Gestaltungsprinzipien}{}% 20
+\BOOKMARK [1][]{section.76}{5.1 Android - Mobile Anwendung}{chapter.75}% 21
+\BOOKMARK [2][]{subsection.77}{5.1.1 Delight me in surprising ways}{section.76}% 22
+\BOOKMARK [2][]{subsection.78}{5.1.2 Real objects are more fun than buttons and menus}{section.76}% 23
+\BOOKMARK [2][]{subsection.79}{5.1.3 Only show what I need when I need it}{section.76}% 24
+\BOOKMARK [2][]{subsection.80}{5.1.4 Do the heavy lifting for me}{section.76}% 25
+\BOOKMARK [1][]{section.81}{5.2 Windows - Desktopanwendung}{chapter.75}% 26
+\BOOKMARK [2][]{subsection.82}{5.2.1 Consistency and standards}{section.81}% 27
+\BOOKMARK [2][]{subsection.83}{5.2.2 Error prevention}{section.81}% 28
+\BOOKMARK [2][]{subsection.84}{5.2.3 Flexibility and efficiency of use}{section.81}% 29
+\BOOKMARK [2][]{subsection.85}{5.2.4 Aesthetic and minimalist design}{section.81}% 30
+\BOOKMARK [0][]{chapter.86}{6 Usability Goals}{}% 31

@@ -1,15 +1,15 @@
 [0] Config.pm:354> INFO - This is Biber 2.6
 [0] Config.pm:357> INFO - Logfile is 'Dokumentation.blg'
-[67] biber-MSWIN32:302> INFO - === 
-[111] Biber.pm:359> INFO - Reading 'Dokumentation.bcf'
-[261] Biber.pm:823> INFO - Found 3 citekeys in bib section 0
-[283] Biber.pm:3658> INFO - Processing section 0
-[312] Biber.pm:3828> INFO - Looking for bibtex format file 'literatur.bib' for section 0
-[315] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
-[316] bibtex.pm:1282> INFO - Found BibTeX data source 'literatur.bib'
-[388] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[388] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[388] Biber.pm:3487> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[389] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
-[393] bbl.pm:597> INFO - Writing 'Dokumentation.bbl' with encoding 'UTF-8'
-[394] bbl.pm:701> INFO - Output to Dokumentation.bbl
+[58] biber-MSWIN32:302> INFO - === 
+[99] Biber.pm:359> INFO - Reading 'Dokumentation.bcf'
+[267] Biber.pm:823> INFO - Found 3 citekeys in bib section 0
+[294] Biber.pm:3658> INFO - Processing section 0
+[325] Biber.pm:3828> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[328] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[329] bibtex.pm:1282> INFO - Found BibTeX data source 'literatur.bib'
+[398] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[398] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[398] Biber.pm:3487> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[399] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
+[404] bbl.pm:597> INFO - Writing 'Dokumentation.bbl' with encoding 'UTF-8'
+[405] bbl.pm:701> INFO - Output to Dokumentation.bbl

@@ -1,48 +1,15 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: Dokumentation.aux
-I found no \citation commands---while reading file Dokumentation.aux
-I found no \bibdata command---while reading file Dokumentation.aux
-I found no \bibstyle command---while reading file Dokumentation.aux
-You've used 0 entries,
-            0 wiz_defined-function locations,
-            83 strings with 500 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
-int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
-quote$ -- 0
-skip$ -- 0
-stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 3 error messages)
+[0] Config.pm:354> INFO - This is Biber 2.6
+[0] Config.pm:357> INFO - Logfile is 'Dokumentation.blg'
+[67] biber-MSWIN32:302> INFO - === 
+[111] Biber.pm:359> INFO - Reading 'Dokumentation.bcf'
+[261] Biber.pm:823> INFO - Found 3 citekeys in bib section 0
+[283] Biber.pm:3658> INFO - Processing section 0
+[312] Biber.pm:3828> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[315] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[316] bibtex.pm:1282> INFO - Found BibTeX data source 'literatur.bib'
+[388] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[388] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[388] Biber.pm:3487> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[389] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
+[393] bbl.pm:597> INFO - Writing 'Dokumentation.bbl' with encoding 'UTF-8'
+[394] bbl.pm:701> INFO - Output to Dokumentation.bbl

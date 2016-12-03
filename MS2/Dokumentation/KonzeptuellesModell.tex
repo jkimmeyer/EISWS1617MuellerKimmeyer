@@ -1,0 +1,25 @@
+\chapter{Konzeptuelles Modell}
+
+Der Design-Prozess des Usability Engineering Lifecycles von Mayhew besteht aus drei aufeinanderfolgenden Teilprozessen: Conceptual Model Design, Screen Design Standards und Detailed UI Design. Im Folgenden werden wir zuerst den Prozess des Conceptual Model Designs dokumentieren.
+
+\section{Produkt- oder prozessorientiert}
+
+Zuerst muss abgewogen werden, ob das konzeptuelle Modell produkt- oder prozessorientiert sein wird. Das produktorientierte Modell passt zu Anwendungen, bei denen der Benutzer individuelle Produkte erstellt, benennt und speichert. Beispiele hierfür sind Microsoft Word, Excel und PowerPoint. In diesen Anwendungen werden verschiedene Dokumente (Textdateien, Tabellen, Präsentationen), also Produkte, vom Benutzer erstellt und bearbeitet. Das prozessorientierte Modell ist für Anwendungen, in denen keine klar identifizierbaren Produkte entstehen. In diesen Anwendungen liegt der Hauptteil darin, einen Prozess zu unterstützen. Es können zwar auch persönliche Daten gespeichert und empfangen werden, aber meistens ist es so, dass alle Benutzer Zugriff auf die gleichen Informationen haben. Es werden also keine individuellen Produkte wie zum Beispiel Textdokumente erstellt. Ein Beispiel für eine prozessorientierte Anwendung wäre ein Aufgaben-Verwaltungssystem. Die Zuordnung unserer Anwendung zu einem dieser Modelle ist also recht deutlich. Es werden zwar individuelle Aquarien-Daten vom Benutzer eingegeben, allerdings entsteht dadurch kein Produkt. Viel mehr dient es dazu, einen Prozess zu unterstützen. Und zwar den Prozess, sein Aquarium zu verwalten und die Qualität zu optimieren. Von daher benötigen wir für unsere Anwendung ein prozessorientiertes Modell. 
+
+\section{Identifizierung der Prozesse}
+
+Im nächsten Schritt würde eine genaue Identifizierung der Produkte bzw. Prozesse anstehen. Da wir aber das prozessorientierte Modell benutzen und somit Prozesse identifizieren müssen, können wir uns diesen Schritt sparen, da die Prozesse bereits beim Work Reengineering identifiziert wurden. Die Aufgaben-Hierarchie bzw. das Reengineered Task Organization Model können wir also als Grundlage für unser Modell nehmen.
+
+\section{Design Regeln}
+
+Als nächstes müssen Design-Regeln für diese Prozesse erstellt werden.  Es muss also definiert werden, wie jede Ebene aus dem Reengineered Task Organization Model visuell repräsentiert wird. Da wir zwei Anwendungen für verschiedene Plattformen entwickeln, muss hier unterschieden werden. Bei der Desktop Anwendung können wir uns stark an Mayhew halten. Hierzu betrachten wir die Hierarchie des Reengineered Task Organization Models. Die Elemente der obersten Ebene, also die Kundenberatung und Bearbeitung der Kundendaten, werden als Tabs dargestellt. Die zweite Ebene wird dann in einem Teilbereich der Anwendung als Untermenü dargestellt. Die Elemente sind dann, sofern sie noch weitere Unterpunkte haben, also Drop-Down Listen dargestellt und die darunterliegenden Elemente sind dann dementsprechend Items dieser Listen. Das Ergebnis als Modell kann in Abbildung 6.1 betrachtet werden.
+
+
+
+\section{Ausarbeitung der Modelle}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{KModell1}
+\caption{Konzeptuelles Modell: Desktop Anwendung}
+\end{figure}

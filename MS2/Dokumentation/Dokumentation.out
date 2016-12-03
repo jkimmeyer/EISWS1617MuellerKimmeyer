@@ -1,34 +1,42 @@
-\BOOKMARK [0][]{chapter.2}{1 User Profiles}{}% 1
-\BOOKMARK [1][]{section.3}{1.1 Erwachsener - Aquarium Anf\344nger}{chapter.2}% 2
-\BOOKMARK [1][]{section.7}{1.2 Fachh\344ndler}{chapter.2}% 3
-\BOOKMARK [0][]{chapter.11}{2 Kontextbezogene Aufgaben-Analyse}{}% 4
-\BOOKMARK [1][]{section.13}{2.1 Task-Szenarios}{chapter.11}% 5
-\BOOKMARK [2][]{subsection.14}{2.1.1 Task: Dokumentation der Wasserwerte}{section.13}% 6
-\BOOKMARK [2][]{subsection.20}{2.1.2 Task: Problembehandlung}{section.13}% 7
-\BOOKMARK [2][]{subsection.30}{2.1.3 Task: Wasserwechsel durchf\374hren}{section.13}% 8
-\BOOKMARK [2][]{subsection.36}{2.1.4 Task: Empfehlen von Fischen und Pflanzen}{section.13}% 9
-\BOOKMARK [1][]{section.45}{2.2 List of User Tasks for Aquariumusers}{chapter.11}% 10
-\BOOKMARK [1][]{section.46}{2.3 List of User Tasks for Fachhandel-Mitarbeiter}{chapter.11}% 11
-\BOOKMARK [0][]{chapter.47}{3 Plattform Capabilities und Constraints}{}% 12
-\BOOKMARK [0][]{chapter.50}{4 Work Re-Engineering}{}% 13
-\BOOKMARK [0][]{chapter.51}{5 Gestaltungsprinzipien}{}% 14
-\BOOKMARK [1][]{section.52}{5.1 Android - Mobile Anwendung}{chapter.51}% 15
-\BOOKMARK [2][]{subsection.53}{5.1.1 Delight me in surprising ways}{section.52}% 16
-\BOOKMARK [2][]{subsection.54}{5.1.2 Real objects are more fun than buttons and menus}{section.52}% 17
-\BOOKMARK [2][]{subsection.55}{5.1.3 Only show what I need when I need it}{section.52}% 18
-\BOOKMARK [2][]{subsection.56}{5.1.4 Do the heavy lifting for me}{section.52}% 19
-\BOOKMARK [1][]{section.57}{5.2 Windows - Desktopanwendung}{chapter.51}% 20
-\BOOKMARK [2][]{subsection.58}{5.2.1 Consistency and standards}{section.57}% 21
-\BOOKMARK [2][]{subsection.59}{5.2.2 Error prevention}{section.57}% 22
-\BOOKMARK [2][]{subsection.60}{5.2.3 Flexibility and efficiency of use}{section.57}% 23
-\BOOKMARK [2][]{subsection.61}{5.2.4 Aesthetic and minimalist design}{section.57}% 24
-\BOOKMARK [0][]{chapter.62}{6 Usability Goals}{}% 25
-\BOOKMARK [0][]{appendix.66}{A User Profiles}{}% 26
-\BOOKMARK [1][]{section.67}{A.1 Kind/Jugendlicher}{appendix.66}% 27
-\BOOKMARK [1][]{section.71}{A.2 Erwachsener - Aquarium Neuling}{appendix.66}% 28
-\BOOKMARK [1][]{section.75}{A.3 Erwachsener - Aquarium Fortgeschritten}{appendix.66}% 29
-\BOOKMARK [1][]{section.79}{A.4 Erwachsener - Aquarium Experte}{appendix.66}% 30
-\BOOKMARK [1][]{section.83}{A.5 Rentner - Aquarium Neuling}{appendix.66}% 31
-\BOOKMARK [1][]{section.87}{A.6 Rentner - Aquarium Fortgeschritten}{appendix.66}% 32
-\BOOKMARK [1][]{section.91}{A.7 Rentner - Aquarium Experte}{appendix.66}% 33
-\BOOKMARK [1][]{section.95}{A.8 Fachh\344ndler}{appendix.66}% 34
+\BOOKMARK [0][]{chapter.2}{1 Anforderungen}{}% 1
+\BOOKMARK [1][]{section.3}{1.1 Funktionale Anforderungen}{chapter.2}% 2
+\BOOKMARK [1][]{section.4}{1.2 Qualitative Anforderungen}{chapter.2}% 3
+\BOOKMARK [1][]{section.5}{1.3 Organisationale Anforderungen}{chapter.2}% 4
+\BOOKMARK [0][]{chapter.6}{2 User Profiles}{}% 5
+\BOOKMARK [1][]{section.7}{2.1 Erwachsener - Aquarium Anf\344nger}{chapter.6}% 6
+\BOOKMARK [1][]{section.11}{2.2 Fachh\344ndler}{chapter.6}% 7
+\BOOKMARK [0][]{chapter.15}{3 Kontextbezogene Aufgaben-Analyse}{}% 8
+\BOOKMARK [1][]{section.17}{3.1 Task-Szenarios}{chapter.15}% 9
+\BOOKMARK [2][]{subsection.18}{3.1.1 Task: Dokumentation der Wasserwerte}{section.17}% 10
+\BOOKMARK [2][]{subsection.24}{3.1.2 Task: Problembehandlung}{section.17}% 11
+\BOOKMARK [2][]{subsection.34}{3.1.3 Task: Wasserwechsel durchf\374hren}{section.17}% 12
+\BOOKMARK [2][]{subsection.40}{3.1.4 Task: Empfehlen von Fischen und Pflanzen}{section.17}% 13
+\BOOKMARK [1][]{section.49}{3.2 List of User Tasks for Aquariumusers}{chapter.15}% 14
+\BOOKMARK [1][]{section.50}{3.3 List of User Tasks for Fachhandel-Mitarbeiter}{chapter.15}% 15
+\BOOKMARK [0][]{chapter.51}{4 Plattform Capabilities und Constraints}{}% 16
+\BOOKMARK [0][]{chapter.54}{5 Work Re-Engineering}{}% 17
+\BOOKMARK [0][]{chapter.55}{6 Konzeptuelles Modell}{}% 18
+\BOOKMARK [1][]{section.56}{6.1 Produkt- oder prozessorientiert}{chapter.55}% 19
+\BOOKMARK [1][]{section.57}{6.2 Identifizierung der Prozesse}{chapter.55}% 20
+\BOOKMARK [1][]{section.58}{6.3 Design Regeln}{chapter.55}% 21
+\BOOKMARK [0][]{chapter.60}{7 Gestaltungsprinzipien}{}% 22
+\BOOKMARK [1][]{section.61}{7.1 Android - Mobile Anwendung}{chapter.60}% 23
+\BOOKMARK [2][]{subsection.62}{7.1.1 Delight me in surprising ways}{section.61}% 24
+\BOOKMARK [2][]{subsection.63}{7.1.2 Real objects are more fun than buttons and menus}{section.61}% 25
+\BOOKMARK [2][]{subsection.64}{7.1.3 Only show what I need when I need it}{section.61}% 26
+\BOOKMARK [2][]{subsection.65}{7.1.4 Do the heavy lifting for me}{section.61}% 27
+\BOOKMARK [1][]{section.66}{7.2 Windows - Desktopanwendung}{chapter.60}% 28
+\BOOKMARK [2][]{subsection.67}{7.2.1 Consistency and standards}{section.66}% 29
+\BOOKMARK [2][]{subsection.68}{7.2.2 Error prevention}{section.66}% 30
+\BOOKMARK [2][]{subsection.69}{7.2.3 Flexibility and efficiency of use}{section.66}% 31
+\BOOKMARK [2][]{subsection.70}{7.2.4 Aesthetic and minimalist design}{section.66}% 32
+\BOOKMARK [0][]{chapter.71}{8 Usability Goals}{}% 33
+\BOOKMARK [0][]{appendix.74}{A User Profiles}{}% 34
+\BOOKMARK [1][]{section.75}{A.1 Kind/Jugendlicher}{appendix.74}% 35
+\BOOKMARK [1][]{section.79}{A.2 Erwachsener - Aquarium Neuling}{appendix.74}% 36
+\BOOKMARK [1][]{section.83}{A.3 Erwachsener - Aquarium Fortgeschritten}{appendix.74}% 37
+\BOOKMARK [1][]{section.87}{A.4 Erwachsener - Aquarium Experte}{appendix.74}% 38
+\BOOKMARK [1][]{section.91}{A.5 Rentner - Aquarium Neuling}{appendix.74}% 39
+\BOOKMARK [1][]{section.95}{A.6 Rentner - Aquarium Fortgeschritten}{appendix.74}% 40
+\BOOKMARK [1][]{section.99}{A.7 Rentner - Aquarium Experte}{appendix.74}% 41
+\BOOKMARK [1][]{section.103}{A.8 Fachh\344ndler}{appendix.74}% 42

@@ -34,56 +34,64 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Plattform Capabilities und Constraints}{16}{chapter.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Work Re-Engineering}{18}{chapter.54}
+\contentsline {chapter}{\numberline {5}Gestaltungsprinzipien}{18}{chapter.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Konzeptuelles Modell}{19}{chapter.55}
+\contentsline {section}{\numberline {5.1}Android - Mobile Anwendung}{18}{section.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Produkt- oder prozessorientiert}{19}{section.56}
+\contentsline {subsection}{\numberline {5.1.1}Delight me in surprising ways}{18}{subsection.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Identifizierung der Prozesse}{19}{section.57}
+\contentsline {subsection}{\numberline {5.1.2}Real objects are more fun than buttons and menus}{18}{subsection.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Design Regeln}{19}{section.58}
+\contentsline {subsection}{\numberline {5.1.3}Only show what I need when I need it}{18}{subsection.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Ausarbeitung der Modelle}{20}{section.59}
+\contentsline {subsection}{\numberline {5.1.4}Do the heavy lifting for me}{19}{subsection.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Gestaltungsprinzipien}{24}{chapter.65}
+\contentsline {section}{\numberline {5.2}Windows - Desktopanwendung}{19}{section.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Android - Mobile Anwendung}{24}{section.66}
+\contentsline {subsection}{\numberline {5.2.1}Consistency and standards}{19}{subsection.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}Delight me in surprising ways}{24}{subsection.67}
+\contentsline {subsection}{\numberline {5.2.2}Error prevention}{19}{subsection.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Real objects are more fun than buttons and menus}{24}{subsection.68}
+\contentsline {subsection}{\numberline {5.2.3}Flexibility and efficiency of use}{19}{subsection.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.3}Only show what I need when I need it}{24}{subsection.69}
+\contentsline {subsection}{\numberline {5.2.4}Aesthetic and minimalist design}{20}{subsection.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.4}Do the heavy lifting for me}{25}{subsection.70}
+\contentsline {chapter}{\numberline {6}Usability Goals}{21}{chapter.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Windows - Desktopanwendung}{25}{section.71}
+\contentsline {section}{\numberline {6.1}Auswertung der User Profiles und Task Analyse}{21}{section.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Consistency and standards}{25}{subsection.72}
+\contentsline {section}{\numberline {6.2}Qualitative Usability Goals}{21}{section.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}Error prevention}{25}{subsection.73}
+\contentsline {subsection}{\numberline {6.2.1}Formulierung der Ziele}{21}{subsection.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.3}Flexibility and efficiency of use}{25}{subsection.74}
+\contentsline {section}{\numberline {6.3}Quantitative Usability Goals}{24}{section.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.4}Aesthetic and minimalist design}{26}{subsection.75}
+\contentsline {chapter}{\numberline {7}Work Re-Engineering}{25}{chapter.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Usability Goals}{27}{chapter.76}
+\contentsline {chapter}{\numberline {8}Konzeptuelles Modell}{26}{chapter.71}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}User Profiles}{30}{appendix.79}
+\contentsline {section}{\numberline {8.1}Produkt- oder prozessorientiert}{26}{section.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Kind/Jugendlicher}{30}{section.80}
+\contentsline {section}{\numberline {8.2}Identifizierung der Prozesse}{26}{section.73}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Erwachsener - Aquarium Neuling}{31}{section.84}
+\contentsline {section}{\numberline {8.3}Design Regeln}{26}{section.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Erwachsener - Aquarium Fortgeschritten}{32}{section.88}
+\contentsline {section}{\numberline {8.4}Ausarbeitung der Modelle}{27}{section.75}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Erwachsener - Aquarium Experte}{34}{section.92}
+\contentsline {chapter}{\numberline {A}User Profiles}{33}{appendix.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Rentner - Aquarium Neuling}{35}{section.96}
+\contentsline {section}{\numberline {A.1}Kind/Jugendlicher}{33}{section.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.6}Rentner - Aquarium Fortgeschritten}{36}{section.100}
+\contentsline {section}{\numberline {A.2}Erwachsener - Aquarium Neuling}{34}{section.88}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.7}Rentner - Aquarium Experte}{38}{section.104}
+\contentsline {section}{\numberline {A.3}Erwachsener - Aquarium Fortgeschritten}{35}{section.92}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.8}Fachh\IeC {\"a}ndler}{39}{section.108}
+\contentsline {section}{\numberline {A.4}Erwachsener - Aquarium Experte}{37}{section.96}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Rentner - Aquarium Neuling}{38}{section.100}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.6}Rentner - Aquarium Fortgeschritten}{39}{section.104}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.7}Rentner - Aquarium Experte}{41}{section.108}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.8}Fachh\IeC {\"a}ndler}{42}{section.112}

@@ -13,8 +13,10 @@ Im nächsten Schritt würde eine genaue Identifizierung der Produkte bzw. Prozes
 \section{Design Regeln}
 
 Als nächstes müssen Design-Regeln für diese Prozesse erstellt werden.  Es muss also definiert werden, wie jede Ebene aus dem Reengineered Task Organization Model visuell repräsentiert wird. Da wir zwei Anwendungen für verschiedene Plattformen entwickeln, muss hier unterschieden werden. Bei der Desktop Anwendung können wir uns stark an Mayhew halten. Hierzu betrachten wir die Hierarchie des Reengineered Task Organization Models. Die Elemente der obersten Ebene, also die Kundenberatung und Bearbeitung der Kundendaten, werden als Tabs dargestellt. Die zweite Ebene wird dann in einem Teilbereich der Anwendung als Untermenü dargestellt. Die Elemente sind dann, sofern sie noch weitere Unterpunkte haben, also Drop-Down Listen dargestellt und die darunterliegenden Elemente sind dann dementsprechend Items dieser Listen. Das Ergebnis als Modell kann in Abbildung 6.1 betrachtet werden.
-
-
+\\ \\
+Bei der Modellierung der Android App gab es für uns zwei Möglichkeiten, die wir beide modelliert haben. Die erste Möglichkeit wäre eine App mit einem Seitenmenü. Dieses Seitenmenü kann über einen Button in der Navigationsleiste ausgefahren werden. Im Seitenmenü werden dann die Elemente der ersten Ebene als Überschriften dargestellt. Unter den jeweiligen Überschriften stehen dann die dazugehörenden Links zu den Elementen der zweiten Ebene. Wenn man dann auf so einen Link gegangen ist, bekommt man entweder den Inhalt der Seite angezeigt oder falls es noch weitere Unterpunkte gibt eine Liste mit weiteren Links. In Abbildung 6.2 kann man das Modell mit dem Seitenmenü sehen und in Abbildung 6.3 wird dann noch die App mit eingefahrenem Seitenmenü und einer weiteren Liste mit Links zu den verschiedenen Berechnungen gezeigt.
+\\ \\
+Die zweite Möglichkeit wäre eine App mit Tabs im unteren Bereich des Bildschirms. Dort könnten die drei Elemente der obersten Ebene mit passenden Icons platziert werden. Wenn man dann auf ein Tab geht kommt eine Liste mit den Unterseiten, also den Elementen der zweiten Ebene. Wenn man darüber dann zu einer Seite navigiert wird entweder der Inhalt angezeigt oder erneut eine Liste mit weiteren Unterseiten. In Abbildung 6.4 sieht man die Tabs am unteren Bildschirmrand sowie die Liste mit weiteren Links der Dokumentation. In Abbildung 6.5 sieht man, dass zu der Seite ``Berechnungen'' navigiert wurde. Dort werden jetzt wiederum Links zu Unterseiten angezeigt. Außerdem ist in der Navigationsleiste ein Zurück-Button erschienen, um zur vorherigen Seite zurückkehren zu können. Die Tabs bleiben auf jeder Seite am unteren Bildschirmrand, sodass zu jeder Zeit mit einem Klick zwischen den Tabs gewechselt werden kann.
 
 \section{Ausarbeitung der Modelle}
 
@@ -22,4 +24,28 @@ Als nächstes müssen Design-Regeln für diese Prozesse erstellt werden.  Es mus
 \centering
 \includegraphics[width=\linewidth]{KModell1}
 \caption{Konzeptuelles Modell: Desktop Anwendung}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.4\linewidth]{KModell2_1}
+\caption{Konzeptuelles Modell: Android App - Seitenmenü 1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.4\linewidth]{KModell2_2}
+\caption{Konzeptuelles Modell: Android App - Seitenmenü 2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.4\linewidth]{KModell3_1}
+\caption{Konzeptuelles Modell: Android App - Tabs 1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.4\linewidth]{KModell3_2}
+\caption{Konzeptuelles Modell: Android App - Tabs 2}
 \end{figure}

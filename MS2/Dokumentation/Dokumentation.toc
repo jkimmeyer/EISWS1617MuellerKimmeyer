@@ -2,86 +2,88 @@
 \defcounter {refsection}{0}\relax 
 \select@language {ngerman}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Anforderungen}{3}{chapter.2}
+\contentsline {chapter}{\numberline {1}Anforderungen}{4}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Funktionale Anforderungen}{3}{section.3}
+\contentsline {section}{\numberline {1.1}Funktionale Anforderungen}{4}{section.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Qualitative Anforderungen}{4}{section.4}
+\contentsline {section}{\numberline {1.2}Qualitative Anforderungen}{5}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Organisationale Anforderungen}{4}{section.5}
+\contentsline {section}{\numberline {1.3}Organisationale Anforderungen}{5}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}User Profiles}{5}{chapter.6}
+\contentsline {chapter}{\numberline {2}User Profiles}{6}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Erwachsener - Aquarium Anf\IeC {\"a}nger}{5}{section.7}
+\contentsline {section}{\numberline {2.1}Erwachsener - Aquarium Anf\IeC {\"a}nger}{6}{section.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Fachh\IeC {\"a}ndler}{7}{section.11}
+\contentsline {section}{\numberline {2.2}Fachh\IeC {\"a}ndler}{8}{section.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Kontextbezogene Aufgaben-Analyse}{9}{chapter.15}
+\contentsline {chapter}{\numberline {3}Kontextbezogene Aufgaben-Analyse}{10}{chapter.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Task-Szenarios}{10}{section.17}
+\contentsline {section}{\numberline {3.1}Task-Szenarios}{11}{section.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Task: Dokumentation der Wasserwerte}{10}{subsection.18}
+\contentsline {subsection}{\numberline {3.1.1}Task: Dokumentation der Wasserwerte}{11}{subsection.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Task: Problembehandlung}{10}{subsection.24}
+\contentsline {subsection}{\numberline {3.1.2}Task: Problembehandlung}{11}{subsection.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Task: Wasserwechsel durchf\IeC {\"u}hren}{12}{subsection.34}
+\contentsline {subsection}{\numberline {3.1.3}Task: Wasserwechsel durchf\IeC {\"u}hren}{13}{subsection.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Task: Empfehlen von Fischen und Pflanzen}{12}{subsection.40}
+\contentsline {subsection}{\numberline {3.1.4}Task: Empfehlen von Fischen und Pflanzen}{13}{subsection.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}List of User Tasks for Aquariumusers}{13}{section.49}
+\contentsline {section}{\numberline {3.2}List of User Tasks for Aquariumusers}{14}{section.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}List of User Tasks for Fachhandel-Mitarbeiter}{14}{section.50}
+\contentsline {section}{\numberline {3.3}List of User Tasks for Fachhandel-Mitarbeiter}{15}{section.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Plattform Capabilities und Constraints}{15}{chapter.51}
+\contentsline {chapter}{\numberline {4}Plattform Capabilities und Constraints}{16}{chapter.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Work Re-Engineering}{17}{chapter.54}
+\contentsline {chapter}{\numberline {5}Work Re-Engineering}{18}{chapter.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Konzeptuelles Modell}{18}{chapter.55}
+\contentsline {chapter}{\numberline {6}Konzeptuelles Modell}{19}{chapter.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Produkt- oder prozessorientiert}{18}{section.56}
+\contentsline {section}{\numberline {6.1}Produkt- oder prozessorientiert}{19}{section.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Identifizierung der Prozesse}{18}{section.57}
+\contentsline {section}{\numberline {6.2}Identifizierung der Prozesse}{19}{section.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Design Regeln}{18}{section.58}
+\contentsline {section}{\numberline {6.3}Design Regeln}{19}{section.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Gestaltungsprinzipien}{20}{chapter.60}
+\contentsline {section}{\numberline {6.4}Ausarbeitung der Modelle}{20}{section.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Android - Mobile Anwendung}{20}{section.61}
+\contentsline {chapter}{\numberline {7}Gestaltungsprinzipien}{24}{chapter.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}Delight me in surprising ways}{20}{subsection.62}
+\contentsline {section}{\numberline {7.1}Android - Mobile Anwendung}{24}{section.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Real objects are more fun than buttons and menus}{20}{subsection.63}
+\contentsline {subsection}{\numberline {7.1.1}Delight me in surprising ways}{24}{subsection.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.3}Only show what I need when I need it}{20}{subsection.64}
+\contentsline {subsection}{\numberline {7.1.2}Real objects are more fun than buttons and menus}{24}{subsection.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.4}Do the heavy lifting for me}{21}{subsection.65}
+\contentsline {subsection}{\numberline {7.1.3}Only show what I need when I need it}{24}{subsection.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Windows - Desktopanwendung}{21}{section.66}
+\contentsline {subsection}{\numberline {7.1.4}Do the heavy lifting for me}{25}{subsection.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Consistency and standards}{21}{subsection.67}
+\contentsline {section}{\numberline {7.2}Windows - Desktopanwendung}{25}{section.71}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}Error prevention}{21}{subsection.68}
+\contentsline {subsection}{\numberline {7.2.1}Consistency and standards}{25}{subsection.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.3}Flexibility and efficiency of use}{21}{subsection.69}
+\contentsline {subsection}{\numberline {7.2.2}Error prevention}{25}{subsection.73}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.4}Aesthetic and minimalist design}{22}{subsection.70}
+\contentsline {subsection}{\numberline {7.2.3}Flexibility and efficiency of use}{25}{subsection.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Usability Goals}{23}{chapter.71}
+\contentsline {subsection}{\numberline {7.2.4}Aesthetic and minimalist design}{26}{subsection.75}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}User Profiles}{26}{appendix.74}
+\contentsline {chapter}{\numberline {8}Usability Goals}{27}{chapter.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Kind/Jugendlicher}{26}{section.75}
+\contentsline {chapter}{\numberline {A}User Profiles}{30}{appendix.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Erwachsener - Aquarium Neuling}{27}{section.79}
+\contentsline {section}{\numberline {A.1}Kind/Jugendlicher}{30}{section.80}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Erwachsener - Aquarium Fortgeschritten}{28}{section.83}
+\contentsline {section}{\numberline {A.2}Erwachsener - Aquarium Neuling}{31}{section.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Erwachsener - Aquarium Experte}{30}{section.87}
+\contentsline {section}{\numberline {A.3}Erwachsener - Aquarium Fortgeschritten}{32}{section.88}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Rentner - Aquarium Neuling}{31}{section.91}
+\contentsline {section}{\numberline {A.4}Erwachsener - Aquarium Experte}{34}{section.92}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.6}Rentner - Aquarium Fortgeschritten}{32}{section.95}
+\contentsline {section}{\numberline {A.5}Rentner - Aquarium Neuling}{35}{section.96}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.7}Rentner - Aquarium Experte}{34}{section.99}
+\contentsline {section}{\numberline {A.6}Rentner - Aquarium Fortgeschritten}{36}{section.100}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.8}Fachh\IeC {\"a}ndler}{35}{section.103}
+\contentsline {section}{\numberline {A.7}Rentner - Aquarium Experte}{38}{section.104}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.8}Fachh\IeC {\"a}ndler}{39}{section.108}

@@ -28,7 +28,6 @@ top=2.5cm, bottom=2.5cm]{geometry}
 \usepackage{ltxtable, filecontents}
 \usepackage[babel, german=quotes]{csquotes}
 \usepackage[backend=biber]{biblatex}
-\addbibresource{literatur.bib}
 \bibliography{literatur}
 \usepackage{rotating}
 
@@ -43,7 +42,7 @@ top=2.5cm, bottom=2.5cm]{geometry}
 \maketitle
 \tableofcontents
 
-
+\input{Anforderungen}
 \input{UserProfiles}
 \input{Task_Analysis}
 \input{Plattform}
@@ -56,7 +55,6 @@ top=2.5cm, bottom=2.5cm]{geometry}
 \listoftables \listoffigures
 \printbibliography
 \appendix
-
 \input{UserProfilesAnhang}
 
 

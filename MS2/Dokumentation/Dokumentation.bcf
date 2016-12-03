@@ -2096,8 +2096,9 @@
     <bcf:datasource type="file" datatype="bibtex">literatur.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="3">Android:Komponenten</bcf:citekey>
-    <bcf:citekey order="6">Java:Komponenten</bcf:citekey>
+    <bcf:citekey order="1">Mayhew:UEL</bcf:citekey>
+    <bcf:citekey order="4">Android:Komponenten</bcf:citekey>
+    <bcf:citekey order="7">Java:Komponenten</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

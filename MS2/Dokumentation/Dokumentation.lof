@@ -17,8 +17,6 @@
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-<<<<<<< HEAD
-=======
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {8.1}{\ignorespaces Konzeptuelles Modell: Desktop Anwendung}}{28}{figure.76}
 \defcounter {refsection}{0}\relax 
@@ -31,4 +29,9 @@
 \contentsline {figure}{\numberline {8.5}{\ignorespaces Konzeptuelles Modell: Android App - Tabs 2}}{30}{figure.80}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
->>>>>>> 95cf59901d3b6a6f013873a5153014df6738a660
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Deskriptives Kommunikationsmodell}}{31}{figure.84}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Pr\IeC {\"a}skriptives Kommunikationsmodell}}{32}{figure.86}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

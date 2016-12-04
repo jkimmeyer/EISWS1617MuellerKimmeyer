@@ -6,27 +6,29 @@ Im Konzept haben wir bereits ein deskriptives und ein präskripives Kommunikatio
 
 \subsection{Deskriptives Modell}
 
-Ein wichtiger Punkt bei der Verbesserung des Kommunikationsmodells war der zeitliche Ablauf. Dieser wurde in der ersten Version des Modells nicht beachtet. Deshalb war der erste Schritt, diesen Ablauf mit einer Numerierung der übermittelten Daten bzw. Aktionen deutlich zu machen. Der zweite wichtige Punkt war, dass alle Interaktionen als Aktionen formuliert waren und kein Fokus auf die übermittelten Daten gelegt wurde. Deshalb haben wir die einzelnen Interaktionen so umformuliert, dass möglichst nur noch die übermittelten Daten angegeben sind. Da wir aber nicht komplett auf Aktionen verzichten wollten, haben wir diese kursiv im Modell dargestellt, damit die Daten sich von diesen abheben können. Das neue Modell wird in Abbildung 9.1 dargestellt.
+Ein wichtiger Punkt bei der Verbesserung des Kommunikationsmodells war der zeitliche Ablauf. Dieser wurde in der ersten Version des Modells nicht beachtet. Deshalb war der erste Schritt, diesen Ablauf mit einer Numerierung der übermittelten Daten bzw. Aktionen deutlich zu machen. Der zweite wichtige Punkt war, dass alle Interaktionen als Aktionen formuliert waren und kein Fokus auf die übermittelten Daten gelegt wurde. Deshalb haben wir die einzelnen Interaktionen so umformuliert, dass möglichst nur noch die übermittelten Daten angegeben sind. Da wir aber nicht komplett auf Aktionen verzichten wollten, haben wir diese kursiv im Modell dargestellt, damit die Daten sich von diesen abheben können. Das neue Modell wird in Abbildung ~\ref{komm1} dargestellt.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.85\linewidth]{Kommunikationsdiagramm1}
 \caption{Deskriptives Kommunikationsmodell}
+\label{komm1}
 \end{figure}
 
 \subsection{Präskriptives Modell}
 
-Beim präskriptiven Modell haben wir dementsprechend die gleichen Änderungen vorgenommen. Zusätzlich wurde noch die Benutzer-ID eingeführt, mit der der Fachhändler gezielt über das System auf die Daten des Kunden zugreifen kann. Diese Benutzer-ID wird nach dem ersten Benutzen des Systems an den Benutzer gegeben und dieser muss sie dann an den Fachhändler weiter geben. Das neue präskriptive Modell kann in Abbildung 9.2 angesehen werden.
+Beim präskriptiven Modell haben wir dementsprechend die gleichen Änderungen vorgenommen. Zusätzlich wurde noch die Benutzer-ID eingeführt, mit der der Fachhändler gezielt über das System auf die Daten des Kunden zugreifen kann. Diese Benutzer-ID wird nach dem ersten Benutzen des Systems an den Benutzer gegeben und dieser muss sie dann an den Fachhändler weiter geben. Das neue präskriptive Modell kann in Abbildung ~\ref{komm2} angesehen werden.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.85\linewidth]{Kommunikationsdiagramm2}
 \caption{Präskriptives Kommunikationsmodell}
+\label{komm2}
 \end{figure}
 
 \section{Iteration des Architekturmodells}
 
-Auch das Architekturmodell haben wir nochmal leicht verändert. Da es sich um eine Client-Server Architektur handelt und klar werden sollte, von welcher Seite eine Anfrage kommt und wohin die Antwort geschickt wird, haben wir die Doppelpfeile zwischen den Clients und dem Server aufgeteilt und mit Request bzw. Response beschriftet. Diese Änderung kann in Abbildung 9.3 gesehen werden.
+Auch das Architekturmodell haben wir nochmal leicht verändert. Da es sich um eine Client-Server Architektur handelt und klar werden sollte, von welcher Seite eine Anfrage kommt und wohin die Antwort geschickt wird, haben wir die Doppelpfeile zwischen den Clients und dem Server aufgeteilt und mit Request bzw. Response beschriftet. Diese Änderung kann in Abbildung ~\ref{architektur} gesehen werden.
 \\ \\
 Da bei uns im Konzept noch die Herleitung bzw. der Bezug zum präskriptiven Kommunikationsmodell gefehlt hat, werden wir das an dieser Stelle nachholen. Wie man im Kommunikationsmodell sehen kann, gibt es abgesehen von den Wissenschaftlern zwei Akteure, die miteinander kommunizieren. Diese beiden Akteure, also normaler Benutzer und die Fachhandlung, lassen sich auch im Architekturmodell wiederfinden. Genau wie im Kommunikationsmodell gibt es bis auf die Übermittlung der Wasserprobe und der Beratung bzgl. Verbesserungen und Neuanschaffungen keine direkte Kommunikation zwischen den Akteuren, sondern nur über das System bzw. den Server. Und zwar läuft das genau so ab, dass ein Akteur eine Anfrage an den Server schickt und daraufhin eine Antwort bekommt. Wenn der Fachhändler etwas an den Kunden schicken möchte, geht das an den Server und mit Hilfe des Firebase Cloud Messaging wird das dann weiter an den Kunden geschickt und daraufhin bekommt der Fachhändler eine Antwort, ob die Aktion erfolgreich war.
 
@@ -34,6 +36,46 @@ Da bei uns im Konzept noch die Herleitung bzw. der Bezug zum präskriptiven Komm
 \centering
 \includegraphics[width=\linewidth]{Architektur}
 \caption{Architekturmodell}
+\label{architektur}
 \end{figure}
 
+\section{Anwendungslogik}
 
+Im Folgenden möchten wir nun näher auf die Anwendungslogik der jeweiligen Clients eingehen. 
+
+\subsection{Benutzer Client}
+
+Die Anwendungslogik des Benutzer Clients besteht aus den verschiedenen Berechnungen, die der Nutzer anhand seiner Aquarium Daten und seiner Wasserwerte durchführen kann. Diese werden wir zuerst in einer Übersicht auflisten und danach genauer beschreiben.
+
+\begin{itemize}
+\item Düngerdosierung
+\item Zielgerichteten Wasserwechsel
+\item Täglicher Nährstoffverbrauch
+\item Gesamthärte
+\item CO\textsubscript{2}-Gehalt
+\item Tägliche Nährstoffveränderungen
+\end{itemize}
+
+\subsubsection{Düngerdosierung}
+
+Um die Qualität seiner Pflanzen zu verbessern und gleichzeitig die Verbreitung von Algen zu vermindern, ist eine optimale Düngerdosierung erforderlich. Diese hängt von folgenden Faktoren ab: Beckenvolumen, CO\textsubscript{2}-Versorgung, Beleuchtung und Pflanzenmasse. Bei dieser Berechnung muss der Benutzer also in der Regel keine zusätzlichen Angaben mehr machen, da das Beckenvolumen durch die Größe seines Aquariums berechnet werden kann, welche er bereits beim Eintragen seines virtuellen Aquariums angegeben haben sollte. Außerdem sollte er bereits seine Pflanzen sowie ein mögliches CO\textsubscript{2}-Versorgungsgerät und die Beleuchtung zum virtuellen Aquarium hinzugefügt haben. Auf diese Werte kann das System also für die Berechnung zugreifen.
+
+\subsubsection{Zielgerichteter Wasserwechsel}
+
+\subsubsection{Täglicher Nährstoffverbrauch}
+
+\subsubsection{Gesamthärte}
+
+\subsubsection{CO\textsubscript{2}-Gehalt}
+
+Kohlendioxid (CO\textsubscript{2}) wird von den Pflanzen aufgenommen und ist deren wichtigster Aufbaustoff. Der CO\textsubscript{2} Bedarf hängt von verschiedenen Faktoren ab. Somit hat jedes Aquarium seinen individuellen CO\textsubscript{2} Bedarf. Ein Aquarium mit vielen Pflanzen hat zum Beispiel einen hohen Bedarf an CO\textsubscript{2}. Eine hohe Anzahl von Fischen senkt hingegen den Bedarf. Somit ist es wichtig, den aktuellen CO\textsubscript{2}-Gehalt mit ausreichender Genauigkeit zu berechnen, um ggf. Anpassungen vornehmen zu können. Zur Berechnung benötigt man den pH-Wert und die Karbonathärte (KH). Diese kann man in der Regel schon mit einem einfachen Tröpfchentest ermitteln. Alternativ kann der Benutzer diese auch von seiner Fachhandlung bestimmen lassen. Mit folgender Formel lässt sich der CO\textsubscript{2}-Gehalt abschätzen \autocite{Formel:CO2}:
+
+\begin{equation}
+CO\textsubscript{2} = (KH/2,8)\cdot10^{(7,90-pH)}
+\end{equation}
+
+\subsubsection{Tägliche Nährstoffveränderungen}
+
+\subsection{Fachhandlung Client}
+
+\section{Architekturmerkmale}

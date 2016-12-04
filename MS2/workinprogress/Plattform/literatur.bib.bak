@@ -9,6 +9,7 @@
 @Misc{Java:Komponenten,
   title     = {Java GUI Komponenten},
   timestamp = {2016-12-01},
+  url       = {https://docs.oracle.com/javase/tutorial/uiswing/components/componentlist.html},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

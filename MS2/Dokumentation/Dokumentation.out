@@ -54,12 +54,16 @@
 \BOOKMARK [2][]{subsection.98}{10.1.1 Deskriptives Modell}{section.97}% 54
 \BOOKMARK [2][]{subsection.100}{10.1.2 Pr\344skriptives Modell}{section.97}% 55
 \BOOKMARK [1][]{section.102}{10.2 Iteration des Architekturmodells}{chapter.96}% 56
-\BOOKMARK [0][]{appendix.106}{A User Profiles}{}% 57
-\BOOKMARK [1][]{section.107}{A.1 Kind/Jugendlicher}{appendix.106}% 58
-\BOOKMARK [1][]{section.111}{A.2 Erwachsener - Aquarium Neuling}{appendix.106}% 59
-\BOOKMARK [1][]{section.115}{A.3 Erwachsener - Aquarium Fortgeschritten}{appendix.106}% 60
-\BOOKMARK [1][]{section.119}{A.4 Erwachsener - Aquarium Experte}{appendix.106}% 61
-\BOOKMARK [1][]{section.123}{A.5 Rentner - Aquarium Neuling}{appendix.106}% 62
-\BOOKMARK [1][]{section.127}{A.6 Rentner - Aquarium Fortgeschritten}{appendix.106}% 63
-\BOOKMARK [1][]{section.131}{A.7 Rentner - Aquarium Experte}{appendix.106}% 64
-\BOOKMARK [1][]{section.135}{A.8 Fachh\344ndler}{appendix.106}% 65
+\BOOKMARK [1][]{section.104}{10.3 Anwendungslogik}{chapter.96}% 57
+\BOOKMARK [2][]{subsection.105}{10.3.1 Benutzer Client}{section.104}% 58
+\BOOKMARK [2][]{subsection.113}{10.3.2 Fachhandlung Client}{section.104}% 59
+\BOOKMARK [1][]{section.114}{10.4 Architekturmerkmale}{chapter.96}% 60
+\BOOKMARK [0][]{appendix.118}{A User Profiles}{}% 61
+\BOOKMARK [1][]{section.119}{A.1 Kind/Jugendlicher}{appendix.118}% 62
+\BOOKMARK [1][]{section.123}{A.2 Erwachsener - Aquarium Neuling}{appendix.118}% 63
+\BOOKMARK [1][]{section.127}{A.3 Erwachsener - Aquarium Fortgeschritten}{appendix.118}% 64
+\BOOKMARK [1][]{section.131}{A.4 Erwachsener - Aquarium Experte}{appendix.118}% 65
+\BOOKMARK [1][]{section.135}{A.5 Rentner - Aquarium Neuling}{appendix.118}% 66
+\BOOKMARK [1][]{section.139}{A.6 Rentner - Aquarium Fortgeschritten}{appendix.118}% 67
+\BOOKMARK [1][]{section.143}{A.7 Rentner - Aquarium Experte}{appendix.118}% 68
+\BOOKMARK [1][]{section.147}{A.8 Fachh\344ndler}{appendix.118}% 69

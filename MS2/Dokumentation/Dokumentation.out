@@ -36,17 +36,30 @@
 \BOOKMARK [1][]{section.73}{8.2 Identifizierung der Prozesse}{chapter.71}% 36
 \BOOKMARK [1][]{section.74}{8.3 Design Regeln}{chapter.71}% 37
 \BOOKMARK [1][]{section.75}{8.4 Ausarbeitung der Modelle}{chapter.71}% 38
-\BOOKMARK [0][]{chapter.81}{9 Systemdokumentation}{}% 39
-\BOOKMARK [1][]{section.82}{9.1 Iteration der Kommunikationsmodelle}{chapter.81}% 40
-\BOOKMARK [2][]{subsection.83}{9.1.1 Deskriptives Modell}{section.82}% 41
-\BOOKMARK [2][]{subsection.85}{9.1.2 Pr\344skriptives Modell}{section.82}% 42
-\BOOKMARK [1][]{section.87}{9.2 Iteration des Architekturmodells}{chapter.81}% 43
-\BOOKMARK [0][]{appendix.91}{A User Profiles}{}% 44
-\BOOKMARK [1][]{section.92}{A.1 Kind/Jugendlicher}{appendix.91}% 45
-\BOOKMARK [1][]{section.96}{A.2 Erwachsener - Aquarium Neuling}{appendix.91}% 46
-\BOOKMARK [1][]{section.100}{A.3 Erwachsener - Aquarium Fortgeschritten}{appendix.91}% 47
-\BOOKMARK [1][]{section.104}{A.4 Erwachsener - Aquarium Experte}{appendix.91}% 48
-\BOOKMARK [1][]{section.108}{A.5 Rentner - Aquarium Neuling}{appendix.91}% 49
-\BOOKMARK [1][]{section.112}{A.6 Rentner - Aquarium Fortgeschritten}{appendix.91}% 50
-\BOOKMARK [1][]{section.116}{A.7 Rentner - Aquarium Experte}{appendix.91}% 51
-\BOOKMARK [1][]{section.120}{A.8 Fachh\344ndler}{appendix.91}% 52
+\BOOKMARK [0][]{chapter.81}{9 Screen Design Standards}{}% 39
+\BOOKMARK [1][]{section.82}{9.1 SDS - Mobile Anwendung}{chapter.81}% 40
+\BOOKMARK [2][]{subsection.83}{9.1.1 Control Standards}{section.82}% 41
+\BOOKMARK [2][]{subsection.85}{9.1.2 Allgemeine Standards}{section.82}% 42
+\BOOKMARK [2][]{subsection.86}{9.1.3 Message box content standards}{section.82}% 43
+\BOOKMARK [2][]{subsection.87}{9.1.4 Input device interaction standards}{section.82}% 44
+\BOOKMARK [2][]{subsection.88}{9.1.5 Feedback standards}{section.82}% 45
+\BOOKMARK [1][]{section.89}{9.2 SDS - Desktopanwendung}{chapter.81}% 46
+\BOOKMARK [2][]{subsection.90}{9.2.1 Control Standards}{section.89}% 47
+\BOOKMARK [2][]{subsection.92}{9.2.2 Dialog box contents standards}{section.89}% 48
+\BOOKMARK [2][]{subsection.93}{9.2.3 Message box content standards}{section.89}% 49
+\BOOKMARK [2][]{subsection.94}{9.2.4 Input device interaction standards}{section.89}% 50
+\BOOKMARK [2][]{subsection.95}{9.2.5 Feedback standards}{section.89}% 51
+\BOOKMARK [0][]{chapter.96}{10 Systemdokumentation}{}% 52
+\BOOKMARK [1][]{section.97}{10.1 Iteration der Kommunikationsmodelle}{chapter.96}% 53
+\BOOKMARK [2][]{subsection.98}{10.1.1 Deskriptives Modell}{section.97}% 54
+\BOOKMARK [2][]{subsection.100}{10.1.2 Pr\344skriptives Modell}{section.97}% 55
+\BOOKMARK [1][]{section.102}{10.2 Iteration des Architekturmodells}{chapter.96}% 56
+\BOOKMARK [0][]{appendix.106}{A User Profiles}{}% 57
+\BOOKMARK [1][]{section.107}{A.1 Kind/Jugendlicher}{appendix.106}% 58
+\BOOKMARK [1][]{section.111}{A.2 Erwachsener - Aquarium Neuling}{appendix.106}% 59
+\BOOKMARK [1][]{section.115}{A.3 Erwachsener - Aquarium Fortgeschritten}{appendix.106}% 60
+\BOOKMARK [1][]{section.119}{A.4 Erwachsener - Aquarium Experte}{appendix.106}% 61
+\BOOKMARK [1][]{section.123}{A.5 Rentner - Aquarium Neuling}{appendix.106}% 62
+\BOOKMARK [1][]{section.127}{A.6 Rentner - Aquarium Fortgeschritten}{appendix.106}% 63
+\BOOKMARK [1][]{section.131}{A.7 Rentner - Aquarium Experte}{appendix.106}% 64
+\BOOKMARK [1][]{section.135}{A.8 Fachh\344ndler}{appendix.106}% 65

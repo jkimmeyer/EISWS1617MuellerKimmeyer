@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.29)  4 DEC 2016 15:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.29)  4 DEC 2016 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1529,18 +1529,21 @@ File: Kommunikationsdiagramm2.jpg Graphic file (type jpg)
 Package pdftex.def Info: Kommunikationsdiagramm2.jpg used on input line 23.
 (pdftex.def)             Requested size: 386.96027pt x 309.56642pt.
 
-<Architektur.jpg, id=451, 240.9pt x 192.72pt>
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
+
+ []
+
+[32 <./Kommunikationsdiagramm2.jpg>]
+<Architektur.jpg, id=456, 240.9pt x 192.72pt>
 File: Architektur.jpg Graphic file (type jpg)
  <use Architektur.jpg>
-Package pdftex.def Info: Architektur.jpg used on input line 33.
+Package pdftex.def Info: Architektur.jpg used on input line 35.
 (pdftex.def)             Requested size: 455.24411pt x 364.23093pt.
-) [32 <./Kommunikationsdiagramm2.jpg>] [33 <./Architektur.jpg>] (./Dokumentatio
-n.lot)
+) [33 <./Architektur.jpg>] (./Dokumentation.lot)
 \tf@lot=\write7
 \openout7 = `Dokumentation.lot'.
 
-
-[34
+ [34
 
 ] (./Dokumentation.lof)
 \tf@lof=\write8
@@ -1681,7 +1684,7 @@ mme/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><f:/Progra
 mme/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb><f:/Progra
 mme/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><f:/Programme/t
 exlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on Dokumentation.pdf (46 pages, 1895590 bytes).
+Output written on Dokumentation.pdf (46 pages, 1896385 bytes).
 PDF statistics:
  621 PDF objects out of 1000 (max. 8388607)
  552 compressed objects within 6 object streams

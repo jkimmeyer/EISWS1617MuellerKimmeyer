@@ -26,7 +26,9 @@ Beim präskriptiven Modell haben wir dementsprechend die gleichen Änderungen vo
 
 \section{Iteration des Architekturmodells}
 
-Auch das Architekturmodell haben wir nochmal leicht verändert. Da es sich um eine Client-Server Architektur handelt und klar werden sollte, von welcher Seite eine Anfrage kommt und wohin die Antwort geschickt wird, haben wir die Doppelpfeile zwischen den Clients und dem Server aufgeteilt und mit Request bzw. Response beschriftet.
+Auch das Architekturmodell haben wir nochmal leicht verändert. Da es sich um eine Client-Server Architektur handelt und klar werden sollte, von welcher Seite eine Anfrage kommt und wohin die Antwort geschickt wird, haben wir die Doppelpfeile zwischen den Clients und dem Server aufgeteilt und mit Request bzw. Response beschriftet. Diese Änderung kann in Abbildung 9.3 gesehen werden.
+\\ \\
+Da bei uns im Konzept noch die Herleitung bzw. der Bezug zum präskriptiven Kommunikationsmodell gefehlt hat, werden wir das an dieser Stelle nachholen. Wie man im Kommunikationsmodell sehen kann, gibt es abgesehen von den Wissenschaftlern zwei Akteure, die miteinander kommunizieren. Diese beiden Akteure, also normaler Benutzer und die Fachhandlung, lassen sich auch im Architekturmodell wiederfinden. Genau wie im Kommunikationsmodell gibt es bis auf die Übermittlung der Wasserprobe und der Beratung bzgl. Verbesserungen und Neuanschaffungen keine direkte Kommunikation zwischen den Akteuren, sondern nur über das System bzw. den Server. Und zwar läuft das genau so ab, dass ein Akteur eine Anfrage an den Server schickt und daraufhin eine Antwort bekommt. Wenn der Fachhändler etwas an den Kunden schicken möchte, geht das an den Server und mit Hilfe des Firebase Cloud Messaging wird das dann weiter an den Kunden geschickt und daraufhin bekommt der Fachhändler eine Antwort, ob die Aktion erfolgreich war.
 
 \begin{figure}[htbp]
 \centering
@@ -34,6 +36,4 @@ Auch das Architekturmodell haben wir nochmal leicht verändert. Da es sich um ei
 \caption{Architekturmodell}
 \end{figure}
 
-\\
 
-Da bei uns im Konzept noch die Herleitung bzw. der Bezug zum präskriptiven Kommunikationsdiagramm gefehlt hat, werden wir das an dieser Stelle nachholen. Wie man im Kommunikationsdiagramm sehen kann, gibt es abgesehen von den Wissenschaftlern zwei...

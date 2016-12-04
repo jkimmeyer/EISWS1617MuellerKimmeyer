@@ -1,0 +1,112 @@
+\chapter{Screen Design Standards}
+Mit den Screen Design Standards werden die Standards für das individuelle Design festgelegt. Mayhew unterteilt zwischen
+\begin{itemize}
+\item Control standards
+\item Process window standards
+\item Dialog box contents standards
+\item Message box contents standards
+\item Input device interactions standards 
+\item Feedback standards
+\end{itemize}
+
+Hier haben wir eine Unterscheidung für die Desktopanwendung und die mobile Anwendung getroffen. Die Standards für die mobile Anwendung lassen sich größtenteils auf das "Android Material Design" zurückführen. Für die Desktopanwendung lagen keine Vorlagen bereit, weswegen wir hier die wichtigsten Screen Design Standards nochmal festgelegt haben. Die "process window standards" wurden auf den nächsten Schritt verschoben, weil????
+
+\section{SDS - Mobile Anwendung}
+Die mobile Anwendung orientiert sich hauptsächlich am "Android Material Design" und hat daher schon viele Vorgaben. Trotzdem referenzieren wir auf diese und legen uns auf ein paar einzelne Produktfeatures, wie zum Beispiel die Farben fest. Ein eingehen auf die Dialogboxen macht unserer Meinung nach hier keinen Sinn, da das ganze nicht fensterbasiert ist. Stattdessen haben wir einige Standards für die einzelnen Screens aufgestellt.
+
+\subsection{Control Standards}
+Die Control Standards beschreiben die zu verwendenden Objekte, um eine einheitliche Konsistenz in den Auswahlmöglichkeiten zu haben und der Benutzer somit die bereits gegebenen Möglichkeiten schon kennt.
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Menu Contents}                   & \textbf{Control}                               \\ \hline
+Navigation                               & Buttons                                        \\ \hline
+wenig Optionen - Auswahl eines Objekts   & Radio Buttons                                  \\ \hline
+wenig Optionen - Auswahl mehrere Objekte & Check Boxes                                    \\ \hline
+Ja/Nein oder An/Aus und ähnliches        & Toggle Buttons                                 \\ \hline
+Objekt aus einer Auswahl                 & Spinners                                       \\ \hline
+Auswahl Datum oder Zeit                  & Pickers                                        \\ \hline
+Variable Eingabe                         & Textfield                                      \\ \hline
+Große Liste mit einer Auswahl            & Textfield mit automatischen Eingabevorschlägen \\ \hline
+Input des Benutzers                      & Textfelder, Buttons, Kamera                    \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\subsection{Allgemeine Standards}
+Platzhalter
+
+\begin{itemize}
+\item Als Hintergrund der Screens soll immer eine helle Farbe(weiß oder blau mit geringer Deckkraft) aufgrund von besserer Lesbarkeit verwendet werden.
+\item Die Appbar und die Bottombar sollen einheitlich in der primären Farbe gestaltet werden. Schrift und Icons sollen als weißer Negativtext bzw. Icons dargestellt werden. Der Text in der Appbar ist immer zentriert. Und die Navigationselemente, falls vorhanden auf der linken oberen Seite.
+\item Wenn Buttons oder ein Element der Navigation eingedrückt wird, soll dies durch eine Animation und einen Farbwechsel auf ein dunkleres Blau deutlich gemacht werden. Nicht mehr ausgewählte Elemente in der Navigation nehmen anschließend wieder den primären Blauton an. Buttons werden immer unter dem durchzuführenden Prozess angeordnet und werden immer zentriert.
+\item Zusammengehörige Objekte werden vertikal in Gruppen angeordnet, solange man sich nicht im Landscapeformat befindet. Die Trennung der Gruppierungen soll durch ausreichend Weißraum deutlich gemacht werden. Elemente, welche über den Bildschirm herausgehen, sollen sich immer am unteren Bildschirmrand befinden und die oberste Zeile soll sich unter der Appbar fixieren, wenn die Liste weiter erforscht wird.
+\item Eingabefelder haben immer einen weißen Hintergrund. Optionale Werte werden nicht angezeigt, da das System von mehr Informationen profitiert und sich generell schon auf die wichtigsten Informationen reduziert wurde. Dafür erhält der Nutzer aber die Möglichkeit, Felder auszublenden, wenn diese ihn nicht interessieren. Solange essentielle Felder fehlen, wird dies durch eine ausgegrauten Confirmbutton deutlich gemacht, der dementsprechend auch nicht funktioniert.
+\item Die zu den Eingabefelder sollten immer konsistente und bereits bekannte Label besitzen, für den Fall, dass die Fachwörter unbekannt sind, wird eine Beschreibung gegeben. DIe zum Eingabefeld gehörenden Maßeinheiten müssen zwingend mit angegeben werden und sollen sich für die präsentierten Daten im ganzen System nicht verändern. 
+\end{itemize}
+
+\subsection{Message box content standards}
+Als Nachrichten sind bei der mobilen Anwendung Notifications als Form einer Benachrichtigung der App, Toasts in Form einer kurzen Bestätigung des Status einer Interaktion, welche eine Interaktion bieten kann und Alerts, als Unterbrechung des Prozesses für eine relevantere Eingabe vorhanden. Genauso sollen diese auch verwendet werden. 
+Toasts werden immer am unteren Bildschirmrand angezeigt und verschieben Interaktionsobjekte für kurze Zeit nach oben, diese sollten hauptsächlich verwendet werden, Alerts allerdings nur, wenn eine Aktion des Benutzers zwingend erforderlich ist.
+
+\subsection{Input device interaction standards}
+Die Eingaben des Benutzers werden auf dem Smartphone hauptsächlich durch den Touchscreen erfasst. Speziellere Möglichkeiten bieten hier die Gestures und Bildschirmtastatur. Die Kamera ist ein weiteres relevantes Eingabegerät, welche sowohl für Fotos als auch für Videoübertragungen verwendet werden soll.
+
+\subsection{Feedback standards} 
+Viele Möglichkeiten des Feedbacks wurden bereits von Google vordefiniert. Hier werden wir uns dran orientieren und diese auch verwenden. 
+
+
+\section{SDS - Desktopanwendung}
+Die Desktopanwendung wird für das Windows Betriebssystem in der Programmiersprache Java programmiert, hier wird die Java Swing Bibliothek zur Seite stehen. Da diese allerdings schon etwas veraltet ist und keine rege Anwendung mehr findet, ist ein anspruchsvolles Design hier leider nicht umzusetzen. Das spielt allerdings eine untergeordnete Rolle, da die Präsentation und Eingabe von Daten uns wichtiger erscheint.
+
+\subsection{Control Standards}
+Die Control Standards beschreiben die zu verwendenden Objekte, um eine einheitliche Konsistenz in den Auswahlmöglichkeiten zu haben und damit der Benutzer somit die bereits gegebenen Möglichkeiten schon kennt.
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Menu Contents}                   & \textbf{Control}     \\ \hline
+Navigation                               & JButton, JTabbedPane \\ \hline
+wenig Optionen - Auswahl eines Objekts   & JRadioButton         \\ \hline
+wenig Optionen - Auswahl mehrere Objekte & JCheckBox            \\ \hline
+Objekt aus einer Auswahl                 & JComboBox            \\ \hline
+Auswahl Datum oder Zeit                  & Jspinner             \\ \hline
+Variable Eingabe                         & Textfield            \\ \hline
+Große Liste mit einer Auswahl            & Jlist                \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\subsection{Dialog box contents standards}
+Bei der Desktopanwendung macht die Erstellung von Standards im Bereich der Dialogboxen Sinn, da das ganze fensterbasiert ist. Dialogboxen sind temporäre Fenster, welche zum Beispiel die Wahl neuer Optionen ermöglichen oder auch die aktuellen Werte für einen Vorgang festlegen.
+
+\begin{itemize}
+\item Ein mittleres Grau soll für die Dialogboxen als Hintergrund gewählt werden. Innerhalb der Dialogboxen, gibt es die Möglichkeit Tabs anzulegen, welche bei Aktivität eine weiße Hintergrundfarbe vorweisen. 
+\item Der Name des Aufrufes im Menü steht in der oberen linken Ecke in der Titelleiste.
+\item Zusammengehörige Felder sollen vertikal in Gruppen angeordnet werden.
+\item Die Gruppenüberschriften sollen oben links gesetzt werden. Unterhalb und leicht eingerückt befinden sich linksbündig die Beschreibungen der Textfelder, der Weißraum zwischen Textfeld und Label soll minimiert werden, aber einheitlich zu den anderen Gruppen(orientiert sich an dem längsten Textfeld). Die Labels sollen dabei immer eindeutig identifizierende Benennungen tragen.
+\item Der Weißraum soll genutzt werden, um die einzelnen Gruppen, neben der Trennung durch Trennlinie, visuell von einander abzuschirmen.
+\item Zahlen sollen im Feld immer zentriert werden und die Einheiten, falls nötig, rechts neben dem Feld angegeben werden.
+\item Buttons die über die Vollendung der Durchführung entscheiden, sollen in der unteren rechten Ecke angeordnet werden. Falls weitere Buttons benötigt werden, sollen diese in sichtbarem Abstand von links anfangend hinzufügt werden.
+\item Keine Scrollbars benutzen.
+\item Die Hintergrundfarbe für Eingabefelder soll immer weiß sein, außer diese sind optional, dann sollen sie einen mittleren Grauton als Hintergrund besitzen.  
+\end{itemize}
+
+\subsection{Message box content standards}
+Die Titelleiste der Messagebox soll mit der Primärfarbe des Designs übereinstimmen. Die Meldung an sich soll ein Ereignissymbol enthalten und neben dem Icon soll sich die Nachricht befinden. Die Buttons befinden sich unterhalb der Meldung zentriert. Es soll des weiteren darauf geachtet werden, dass bei Buttons nicht die Wahl von "Ja" oder "Nein" besteht, sondern immer die explizite Aktion erwähnt wird. 
+
+\subsection{Input device interaction standards}
+Als Inputquellen für den Computer werden die üblichen Peripheriegeräte wie Maus und Tastatur benötigt. 
+
+\subsection{Feedback standards} 
+Um Feedback bei Tabs zu geben, wird das aktuelle Objekt in einer helleren Farbe dargestellt. Buttons hingegen werden durch ein Aufblinken in einer dunkleren Farbe als betätigt repräsentiert. Zunächst wurde auch überlegt, ob Ton als Instrument zum Feedback geben, hinzugezogen werden soll. Da die Fachhändler aber oft ein lautes und abwechslungsreiches Arbeitsfeld haben, wurde dieser Gedanke wieder verworfen. 
+

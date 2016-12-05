@@ -1,5 +1,5 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [1] Config.pm:346> INFO - Logfile is 'literatur.blg'
-[74] biber-darwin:290> INFO - === Mon Dec  5, 2016, 09:52:06
-[267] Utils.pm:165> ERROR - Cannot find control file 'literatur.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
-[268] Biber.pm:112> INFO - ERRORS: 1
+[91] biber-darwin:290> INFO - === Mon Dec  5, 2016, 10:35:47
+[287] Utils.pm:165> ERROR - Cannot find control file 'literatur.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[287] Biber.pm:112> INFO - ERRORS: 1

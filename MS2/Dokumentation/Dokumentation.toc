@@ -1,0 +1,155 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Wahl des Vorgehensmodells}{4}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Anforderungen}{6}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Funktionale Anforderungen}{6}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Qualitative Anforderungen}{7}{section.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Organisationale Anforderungen}{7}{section.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}User Profiles}{8}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Erwachsener - Aquarium Anf\IeC {\"a}nger}{8}{section.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Fachh\IeC {\"a}ndler}{10}{section.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Kontextbezogene Aufgaben-Analyse}{12}{chapter.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Task-Szenarios}{13}{section.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Task: Dokumentation der Wasserwerte}{13}{subsection.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Task: Problembehandlung}{13}{subsection.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}Task: Wasserwechsel durchf\IeC {\"u}hren}{16}{subsection.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.4}Task: Empfehlen von Fischen und Pflanzen}{16}{subsection.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}List of User Tasks for Aquariumusers}{17}{section.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}List of User Tasks for Fachhandel-Mitarbeiter}{18}{section.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Plattform Capabilities und Constraints}{19}{chapter.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Gestaltungsprinzipien}{21}{chapter.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Android - Mobile Anwendung}{21}{section.57}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}Delight me in surprising ways}{21}{subsection.58}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.2}Real objects are more fun than buttons and menus}{21}{subsection.59}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.3}Only show what I need when I need it}{21}{subsection.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.4}Do the heavy lifting for me}{22}{subsection.61}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Windows - Desktopanwendung}{22}{section.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Consistency and standards}{22}{subsection.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}Error prevention}{22}{subsection.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.3}Flexibility and efficiency of use}{22}{subsection.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.4}Aesthetic and minimalist design}{23}{subsection.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Usability Goals}{24}{chapter.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Auswertung der User Profiles und Task Analyse}{24}{section.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Qualitative Usability Goals}{24}{section.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.1}Formulierung der Ziele}{24}{subsection.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Quantitative Usability Goals}{27}{section.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Work Re-Engineering}{28}{chapter.72}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Konzeptuelles Modell}{29}{chapter.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}Produkt- oder prozessorientiert}{29}{section.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}Identifizierung der Prozesse}{29}{section.75}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.3}Design Regeln}{29}{section.76}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.4}Ausarbeitung der Modelle}{30}{section.77}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Screen Design Standards}{34}{chapter.83}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}SDS - Mobile Anwendung}{34}{section.84}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.1}Control Standards}{34}{subsection.85}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.2}Allgemeine Standards}{34}{subsection.87}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.3}Message box content standards}{35}{subsection.88}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.4}Input device interaction standards}{36}{subsection.89}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.5}Feedback standards}{36}{subsection.90}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}SDS - Desktopanwendung}{36}{section.91}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.1}Control Standards}{36}{subsection.92}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.2}Dialog box contents standards}{37}{subsection.94}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.3}Message box content standards}{37}{subsection.95}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.4}Input device interaction standards}{37}{subsection.96}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.5}Feedback standards}{38}{subsection.97}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}Systemdokumentation}{39}{chapter.98}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.1}Iteration der Kommunikationsmodelle}{39}{section.99}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1.1}Deskriptives Modell}{39}{subsection.100}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1.2}Pr\IeC {\"a}skriptives Modell}{40}{subsection.102}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.2}Iteration des Architekturmodells}{40}{section.104}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.3}Anwendungslogik}{41}{section.106}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3.1}Benutzer Client}{41}{subsection.107}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline D\IeC {\"u}ngerdosierung}{42}{section*.108}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Zielgerichteter Wasserwechsel}{42}{section*.109}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline T\IeC {\"a}glicher N\IeC {\"a}hrstoffverbrauch}{42}{section*.110}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Gesamth\IeC {\"a}rte}{42}{section*.111}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline CO\textsubscript {2}-Gehalt}{42}{section*.112}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline T\IeC {\"a}gliche N\IeC {\"a}hrstoffver\IeC {\"a}nderungen}{42}{section*.114}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3.2}Fachhandlung Client}{42}{subsection.115}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.4}Architekturmerkmale}{42}{section.116}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}User Profiles}{45}{appendix.119}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Kind/Jugendlicher}{45}{section.120}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Erwachsener - Aquarium Neuling}{46}{section.124}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Erwachsener - Aquarium Fortgeschritten}{47}{section.128}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Erwachsener - Aquarium Experte}{49}{section.132}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Rentner - Aquarium Neuling}{50}{section.136}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.6}Rentner - Aquarium Fortgeschritten}{51}{section.140}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.7}Rentner - Aquarium Experte}{53}{section.144}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.8}Fachh\IeC {\"a}ndler}{54}{section.148}

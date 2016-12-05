@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper]{scrreprt}
+\setlength{\parindent}{0em} 
+ 
+ \usepackage[colorlinks,
+pdfpagelabels,
+pdfstartview = FitH,
+bookmarksopen = true,
+bookmarksnumbered = true,
+linkcolor = black,
+plainpages = false,
+hypertexnames = false,
+citecolor = black] {hyperref}
+ 
+ 
+ \usepackage{filecontents}
+\usepackage{ucs}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+ \usepackage[sc]{mathpazo}
+ \usepackage{graphicx}
+ \usepackage{multirow} 
+ \usepackage{booktabs}
+ \usepackage[a4paper, 
+left=2.5cm, right=2.5cm, 
+top=2.5cm, bottom=2.5cm]{geometry} 
+
+
+\begin{document}
+
+ \title{Entwicklung interaktiver Systeme\\
+  -\\
+  Konzept Aquaparadise}
+\author{Moritz Müller, Johannes Kimmeyer}
+%date
+\maketitle
+
+\tableofcontents
+
+\chapter{Einleitung}
+Bei diesem Dokument handelt es sich um die Aufgabe zum ersten Meilenstein des Modules "`Entwicklung interaktiver Systeme"' an der Technischen Hochschule Köln im Studiengang Medieninformatik. Das Projekt wird von Professor Dr. Gerhard Hartmann und Professor Dr. Kristian Fischer betreut. Zielsetzung des Lehrauftrags ist die Konzeption und Entwicklung eines interaktiven Systems. Von besonderer Bedeutung ist das Alleinstellungsmerkmal, die verteilte Anwendungslogik und die spezielle Domäne für das System.
+
+\input{Ausgangssituation_Ziele}
+
+\input{Nutzungskontext}
+
+\input{Anforderungen}
+
+\input{relatedworks}
+
+\input{Vorgehen}
+
+\input{Kommunikationsmodell}
+
+\input{Architektur}
+
+\input{POC}
+
+
+\listoftables \listoffigures
+\appendix
+\end{document}
+

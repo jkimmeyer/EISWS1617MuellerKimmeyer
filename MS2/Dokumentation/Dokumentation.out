@@ -1,71 +1,80 @@
 \BOOKMARK [0][]{chapter.2}{1 Wahl des Vorgehensmodells}{}% 1
-\BOOKMARK [0][]{chapter.4}{2 Anforderungen}{}% 2
-\BOOKMARK [1][]{section.5}{2.1 Funktionale Anforderungen}{chapter.4}% 3
-\BOOKMARK [1][]{section.6}{2.2 Qualitative Anforderungen}{chapter.4}% 4
-\BOOKMARK [1][]{section.7}{2.3 Organisationale Anforderungen}{chapter.4}% 5
-\BOOKMARK [0][]{chapter.8}{3 User Profiles}{}% 6
-\BOOKMARK [1][]{section.9}{3.1 Erwachsener - Aquarium Anf\344nger}{chapter.8}% 7
-\BOOKMARK [1][]{section.13}{3.2 Fachh\344ndler}{chapter.8}% 8
-\BOOKMARK [0][]{chapter.17}{4 Kontextbezogene Aufgaben-Analyse}{}% 9
-\BOOKMARK [1][]{section.19}{4.1 Task-Szenarios}{chapter.17}% 10
-\BOOKMARK [2][]{subsection.20}{4.1.1 Task: Problembehandlung}{section.19}% 11
-\BOOKMARK [2][]{subsection.30}{4.1.2 Task: Empfehlen von Fischen und Pflanzen}{section.19}% 12
-\BOOKMARK [1][]{section.39}{4.2 List of User Tasks for Aquarium-Besitzer}{chapter.17}% 13
-\BOOKMARK [1][]{section.40}{4.3 List of User Tasks for Fachhandel-Mitarbeiter}{chapter.17}% 14
-\BOOKMARK [1][]{section.41}{4.4 User Task Organization Models}{chapter.17}% 15
-\BOOKMARK [0][]{chapter.44}{5 Plattform Capabilities und Constraints}{}% 16
-\BOOKMARK [0][]{chapter.47}{6 Gestaltungsprinzipien}{}% 17
-\BOOKMARK [1][]{section.48}{6.1 Android - Mobile Anwendung}{chapter.47}% 18
-\BOOKMARK [2][]{subsection.49}{6.1.1 Delight me in surprising ways}{section.48}% 19
-\BOOKMARK [2][]{subsection.50}{6.1.2 Real objects are more fun than buttons and menus}{section.48}% 20
-\BOOKMARK [2][]{subsection.51}{6.1.3 Only show what I need when I need it}{section.48}% 21
-\BOOKMARK [2][]{subsection.52}{6.1.4 Do the heavy lifting for me}{section.48}% 22
-\BOOKMARK [0][]{chapter.53}{7 Usability Goals}{}% 23
-\BOOKMARK [1][]{section.54}{7.1 Auswertung der User Profiles und Task Analyse}{chapter.53}% 24
-\BOOKMARK [1][]{section.55}{7.2 Qualitative Usability Goals}{chapter.53}% 25
-\BOOKMARK [2][]{subsection.56}{7.2.1 Formulierung der Ziele}{section.55}% 26
-\BOOKMARK [1][]{section.57}{7.3 Quantitative Usability Goals}{chapter.53}% 27
-\BOOKMARK [0][]{chapter.58}{8 Work Re-Engineering}{}% 28
-\BOOKMARK [1][]{section.59}{8.1 Use-Cases}{chapter.58}% 29
-\BOOKMARK [2][]{subsection.60}{8.1.1 Aquariumverwaltung}{section.59}% 30
-\BOOKMARK [2][]{subsection.66}{8.1.2 Kundenverwaltung}{section.59}% 31
-\BOOKMARK [1][]{section.71}{8.2 User Task Diagramm}{chapter.58}% 32
-\BOOKMARK [2][]{subsection.72}{8.2.1 Aquariumverwaltung}{section.71}% 33
-\BOOKMARK [2][]{subsection.74}{8.2.2 Kundenverwaltung}{section.71}% 34
-\BOOKMARK [0][]{chapter.76}{9 Konzeptuelles Modell}{}% 35
-\BOOKMARK [1][]{section.77}{9.1 Produkt- oder prozessorientiert}{chapter.76}% 36
-\BOOKMARK [1][]{section.78}{9.2 Identifizierung der Prozesse}{chapter.76}% 37
-\BOOKMARK [1][]{section.79}{9.3 Design Regeln}{chapter.76}% 38
-\BOOKMARK [1][]{section.80}{9.4 Ausarbeitung der Modelle}{chapter.76}% 39
-\BOOKMARK [0][]{chapter.86}{10 Screen Design Standards}{}% 40
-\BOOKMARK [1][]{section.87}{10.1 SDS - Mobile Anwendung}{chapter.86}% 41
-\BOOKMARK [2][]{subsection.88}{10.1.1 Control Standards}{section.87}% 42
-\BOOKMARK [2][]{subsection.90}{10.1.2 Allgemeine Standards}{section.87}% 43
-\BOOKMARK [2][]{subsection.91}{10.1.3 Message box content standards}{section.87}% 44
-\BOOKMARK [2][]{subsection.92}{10.1.4 Input device interaction standards}{section.87}% 45
-\BOOKMARK [2][]{subsection.93}{10.1.5 Feedback standards}{section.87}% 46
-\BOOKMARK [1][]{section.94}{10.2 SDS - Desktopanwendung}{chapter.86}% 47
-\BOOKMARK [2][]{subsection.95}{10.2.1 Control Standards}{section.94}% 48
-\BOOKMARK [2][]{subsection.97}{10.2.2 Dialog box contents standards}{section.94}% 49
-\BOOKMARK [2][]{subsection.98}{10.2.3 Message box content standards}{section.94}% 50
-\BOOKMARK [2][]{subsection.99}{10.2.4 Input device interaction standards}{section.94}% 51
-\BOOKMARK [2][]{subsection.100}{10.2.5 Feedback standards}{section.94}% 52
-\BOOKMARK [0][]{chapter.101}{11 Systemdokumentation}{}% 53
-\BOOKMARK [1][]{section.102}{11.1 Iteration der Kommunikationsmodelle}{chapter.101}% 54
-\BOOKMARK [2][]{subsection.103}{11.1.1 Deskriptives Modell}{section.102}% 55
-\BOOKMARK [2][]{subsection.105}{11.1.2 Pr\344skriptives Modell}{section.102}% 56
-\BOOKMARK [1][]{section.107}{11.2 Iteration des Architekturmodells}{chapter.101}% 57
-\BOOKMARK [1][]{section.109}{11.3 Anwendungslogik}{chapter.101}% 58
-\BOOKMARK [2][]{subsection.110}{11.3.1 Benutzer Client}{section.109}% 59
-\BOOKMARK [2][]{subsection.135}{11.3.2 Fachhandlung Client}{section.109}% 60
-\BOOKMARK [1][]{section.136}{11.4 Architekturmerkmale}{chapter.101}% 61
-\BOOKMARK [2][]{subsection.137}{11.4.1 Ressourcen}{section.136}% 62
-\BOOKMARK [0][]{appendix.199}{A User Profiles}{}% 63
-\BOOKMARK [1][]{section.200}{A.1 Kind/Jugendlicher}{appendix.199}% 64
-\BOOKMARK [1][]{section.204}{A.2 Erwachsener - Aquarium Neuling}{appendix.199}% 65
-\BOOKMARK [1][]{section.208}{A.3 Erwachsener - Aquarium Fortgeschritten}{appendix.199}% 66
-\BOOKMARK [1][]{section.212}{A.4 Erwachsener - Aquarium Experte}{appendix.199}% 67
-\BOOKMARK [1][]{section.216}{A.5 Rentner - Aquarium Neuling}{appendix.199}% 68
-\BOOKMARK [1][]{section.220}{A.6 Rentner - Aquarium Fortgeschritten}{appendix.199}% 69
-\BOOKMARK [1][]{section.224}{A.7 Rentner - Aquarium Experte}{appendix.199}% 70
-\BOOKMARK [1][]{section.228}{A.8 Fachh\344ndler}{appendix.199}% 71
+\BOOKMARK [0][]{chapter.4}{2 User Profiles}{}% 2
+\BOOKMARK [1][]{section.5}{2.1 Erwachsener - Aquarium Anf\344nger}{chapter.4}% 3
+\BOOKMARK [1][]{section.9}{2.2 Fachh\344ndler}{chapter.4}% 4
+\BOOKMARK [0][]{chapter.13}{3 Kontextbezogene Aufgaben-Analyse}{}% 5
+\BOOKMARK [1][]{section.16}{3.1 Task-Szenarios}{chapter.13}% 6
+\BOOKMARK [2][]{subsection.17}{3.1.1 Task: Problembehandlung}{section.16}% 7
+\BOOKMARK [2][]{subsection.27}{3.1.2 Task: Empfehlen von Fischen und Pflanzen}{section.16}% 8
+\BOOKMARK [1][]{section.36}{3.2 List of User Tasks for Aquarium-Besitzer}{chapter.13}% 9
+\BOOKMARK [1][]{section.37}{3.3 List of User Tasks for Fachhandel-Mitarbeiter}{chapter.13}% 10
+\BOOKMARK [1][]{section.38}{3.4 User Task Organization Models}{chapter.13}% 11
+\BOOKMARK [0][]{chapter.41}{4 Plattform Capabilities und Constraints}{}% 12
+\BOOKMARK [0][]{chapter.44}{5 Gestaltungsprinzipien}{}% 13
+\BOOKMARK [1][]{section.45}{5.1 Android - Mobile Anwendung}{chapter.44}% 14
+\BOOKMARK [2][]{subsection.46}{5.1.1 Delight me in surprising ways}{section.45}% 15
+\BOOKMARK [2][]{subsection.47}{5.1.2 Real objects are more fun than buttons and menus}{section.45}% 16
+\BOOKMARK [2][]{subsection.48}{5.1.3 Only show what I need when I need it}{section.45}% 17
+\BOOKMARK [2][]{subsection.49}{5.1.4 Do the heavy lifting for me}{section.45}% 18
+\BOOKMARK [0][]{chapter.50}{6 Usability Goals}{}% 19
+\BOOKMARK [1][]{section.51}{6.1 Auswertung der User Profiles und Task Analyse}{chapter.50}% 20
+\BOOKMARK [1][]{section.52}{6.2 Qualitative Usability Goals}{chapter.50}% 21
+\BOOKMARK [2][]{subsection.53}{6.2.1 Formulierung der Ziele}{section.52}% 22
+\BOOKMARK [1][]{section.54}{6.3 Quantitative Usability Goals}{chapter.50}% 23
+\BOOKMARK [0][]{chapter.55}{7 Work Re-Engineering}{}% 24
+\BOOKMARK [1][]{section.56}{7.1 Use-Cases}{chapter.55}% 25
+\BOOKMARK [2][]{subsection.57}{7.1.1 Aquariumverwaltung}{section.56}% 26
+\BOOKMARK [2][]{subsection.63}{7.1.2 Kundenverwaltung}{section.56}% 27
+\BOOKMARK [1][]{section.68}{7.2 User Task Diagramm}{chapter.55}% 28
+\BOOKMARK [2][]{subsection.69}{7.2.1 Aquariumverwaltung}{section.68}% 29
+\BOOKMARK [2][]{subsection.71}{7.2.2 Kundenverwaltung}{section.68}% 30
+\BOOKMARK [0][]{chapter.73}{8 Konzeptuelles Modell}{}% 31
+\BOOKMARK [1][]{section.74}{8.1 Produkt- oder prozessorientiert}{chapter.73}% 32
+\BOOKMARK [1][]{section.75}{8.2 Identifizierung der Prozesse}{chapter.73}% 33
+\BOOKMARK [1][]{section.76}{8.3 Design Regeln}{chapter.73}% 34
+\BOOKMARK [1][]{section.77}{8.4 Ausarbeitung der Modelle}{chapter.73}% 35
+\BOOKMARK [0][]{chapter.83}{9 Screen Design Standards}{}% 36
+\BOOKMARK [1][]{section.84}{9.1 SDS - Mobile Anwendung}{chapter.83}% 37
+\BOOKMARK [2][]{subsection.85}{9.1.1 Control Standards}{section.84}% 38
+\BOOKMARK [2][]{subsection.87}{9.1.2 Allgemeine Standards}{section.84}% 39
+\BOOKMARK [2][]{subsection.88}{9.1.3 Message box content standards}{section.84}% 40
+\BOOKMARK [2][]{subsection.89}{9.1.4 Input device interaction standards}{section.84}% 41
+\BOOKMARK [2][]{subsection.90}{9.1.5 Feedback standards}{section.84}% 42
+\BOOKMARK [1][]{section.91}{9.2 SDS - Desktopanwendung}{chapter.83}% 43
+\BOOKMARK [2][]{subsection.92}{9.2.1 Control Standards}{section.91}% 44
+\BOOKMARK [2][]{subsection.94}{9.2.2 Dialog box contents standards}{section.91}% 45
+\BOOKMARK [2][]{subsection.95}{9.2.3 Message box content standards}{section.91}% 46
+\BOOKMARK [2][]{subsection.96}{9.2.4 Input device interaction standards}{section.91}% 47
+\BOOKMARK [2][]{subsection.97}{9.2.5 Feedback standards}{section.91}% 48
+\BOOKMARK [0][]{chapter.98}{10 Detailed User Interface Design}{}% 49
+\BOOKMARK [1][]{section.99}{10.1 Android - Anwendung}{chapter.98}% 50
+\BOOKMARK [2][]{subsection.100}{10.1.1 Navigationspfade}{section.99}% 51
+\BOOKMARK [2][]{subsection.102}{10.1.2 Pflege}{section.99}% 52
+\BOOKMARK [2][]{subsection.104}{10.1.3 Dokumentation}{section.99}% 53
+\BOOKMARK [2][]{subsection.111}{10.1.4 Probleme}{section.99}% 54
+\BOOKMARK [0][]{chapter.113}{11 Systemdokumentation}{}% 55
+\BOOKMARK [1][]{section.114}{11.1 Iteration der Kommunikationsmodelle}{chapter.113}% 56
+\BOOKMARK [2][]{subsection.115}{11.1.1 Deskriptives Modell}{section.114}% 57
+\BOOKMARK [2][]{subsection.117}{11.1.2 Pr\344skriptives Modell}{section.114}% 58
+\BOOKMARK [1][]{section.119}{11.2 Iteration des Architekturmodells}{chapter.113}% 59
+\BOOKMARK [1][]{section.121}{11.3 Anwendungslogik}{chapter.113}% 60
+\BOOKMARK [2][]{subsection.122}{11.3.1 Benutzer Client}{section.121}% 61
+\BOOKMARK [2][]{subsection.147}{11.3.2 Fachhandlung Client}{section.121}% 62
+\BOOKMARK [1][]{section.148}{11.4 Architekturmerkmale}{chapter.113}% 63
+\BOOKMARK [2][]{subsection.149}{11.4.1 Ressourcen}{section.148}% 64
+\BOOKMARK [0][]{appendix.210}{A User Profiles}{}% 65
+\BOOKMARK [1][]{section.211}{A.1 Kind/Jugendlicher}{appendix.210}% 66
+\BOOKMARK [1][]{section.215}{A.2 Erwachsener - Aquarium Neuling}{appendix.210}% 67
+\BOOKMARK [1][]{section.219}{A.3 Erwachsener - Aquarium Fortgeschritten}{appendix.210}% 68
+\BOOKMARK [1][]{section.223}{A.4 Erwachsener - Aquarium Experte}{appendix.210}% 69
+\BOOKMARK [1][]{section.227}{A.5 Rentner - Aquarium Neuling}{appendix.210}% 70
+\BOOKMARK [1][]{section.231}{A.6 Rentner - Aquarium Fortgeschritten}{appendix.210}% 71
+\BOOKMARK [1][]{section.235}{A.7 Rentner - Aquarium Experte}{appendix.210}% 72
+\BOOKMARK [1][]{section.239}{A.8 Fachh\344ndler}{appendix.210}% 73
+\BOOKMARK [0][]{appendix.243}{B Anforderungen}{}% 74
+\BOOKMARK [1][]{section.244}{B.1 Funktionale Anforderungen}{appendix.243}% 75
+\BOOKMARK [1][]{section.245}{B.2 Qualitative Anforderungen}{appendix.243}% 76
+\BOOKMARK [1][]{section.246}{B.3 Organisationale Anforderungen}{appendix.243}% 77
+\BOOKMARK [0][]{appendix.247}{C Anhang: TaskSzenarios}{}% 78
+\BOOKMARK [1][]{section.248}{C.1 Task: Dokumentation der Wasserwerte}{appendix.247}% 79
+\BOOKMARK [1][]{section.254}{C.2 Task: Wasserwechsel durchf\374hren}{appendix.247}% 80

@@ -1,26 +1,26 @@
-\chapter{Screen Design Standards}
+\chapter{Screen Design Standards}\label{sds}
 Mit den Screen Design Standards werden die Standards für das individuelle Design festgelegt. Mayhew unterteilt zwischen
 \begin{itemize}
-\item Control standards
-\item Process window standards
-\item Dialog box contents standards
-\item Message box contents standards
-\item Input device interactions standards 
-\item Feedback standards
+\item Control standards,
+\item Process window standards,
+\item Dialog box contents standards,
+\item Message box contents standards,
+\item Input device interactions standards und
+\item Feedback standards.
 \end{itemize}
 
-Hier haben wir eine Unterscheidung für die Desktopanwendung und die mobile Anwendung getroffen. Die Standards für die mobile Anwendung lassen sich größtenteils auf das "Android Material Design" zurückführen. Für die Desktopanwendung lagen keine Vorlagen bereit, weswegen wir hier die wichtigsten Screen Design Standards nochmal festgelegt haben. Die "process window standards" wurden auf den nächsten Schritt verschoben, weil????
+Erneut wurde hier die Differenzierung von Desktopanwendung und der mobilen Anwendung gewählt. Die Standards für die mobile Anwendung lassen sich größtenteils auf das "Android Material Design" zurückführen. Für die Desktopanwendung lagen keine Vorlagen bereit, weswegen wir hier die wichtigsten Screen Design Standards nochmal festgelegt haben. 
 
 \section{SDS - Mobile Anwendung}
-Die mobile Anwendung orientiert sich hauptsächlich am "Android Material Design" und hat daher schon viele Vorgaben. Trotzdem referenzieren wir auf diese und legen uns auf ein paar einzelne Produktfeatures, wie zum Beispiel die Farben fest. Ein eingehen auf die Dialogboxen macht unserer Meinung nach hier keinen Sinn, da das ganze nicht fensterbasiert ist. Stattdessen haben wir einige Standards für die einzelnen Screens aufgestellt.
+Die mobile Anwendung orientiert sich hauptsächlich am "Android Material Design" und hat daher schon viele Vorgaben. Da das Android Material Design bereits eine gute Grundlage bietet, legen wir uns zusätzlich auf ein paar einzelne Produktfeatures, wie zum Beispiel die Farben fest. Ein eingehen auf die Dialogboxen macht unserer Meinung nach hier keinen Sinn, da das ganze nicht fensterbasiert ist. Stattdessen haben wir einige Standards für die einzelnen Screens aufgestellt.
 
 \subsection{Control Standards}
 Die Control Standards beschreiben die zu verwendenden Objekte, um eine einheitliche Konsistenz in den Auswahlmöglichkeiten zu haben und der Benutzer somit die bereits gegebenen Möglichkeiten schon kennt.
 
 \begin{table}[]
 \centering
-\caption{My caption}
-\label{my-label}
+\caption{Control Standards Android}
+\label{cs_android}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|l|}
 \hline
@@ -42,7 +42,7 @@ Input des Benutzers                      & Textfelder, Buttons, Kamera          
 Platzhalter
 
 \begin{itemize}
-\item Als Hintergrund der Screens soll immer eine helle Farbe(weiß oder blau mit geringer Deckkraft) aufgrund von besserer Lesbarkeit verwendet werden.
+\item Als Hintergrund der Screens soll für den Text immer eine der Farben aus dem Standardset(weiß, grau oder blau mit geringer Deckkraft) aufgrund von besserer Lesbarkeit der weißen/schwarzen Schrift verwendet werden.
 \item Die Appbar und die Bottombar sollen einheitlich in der primären Farbe gestaltet werden. Schrift und Icons sollen als weißer Negativtext bzw. Icons dargestellt werden. Der Text in der Appbar ist immer zentriert. Und die Navigationselemente, falls vorhanden auf der linken oberen Seite.
 \item Wenn Buttons oder ein Element der Navigation eingedrückt wird, soll dies durch eine Animation und einen Farbwechsel auf ein dunkleres Blau deutlich gemacht werden. Nicht mehr ausgewählte Elemente in der Navigation nehmen anschließend wieder den primären Blauton an. Buttons werden immer unter dem durchzuführenden Prozess angeordnet und werden immer zentriert.
 \item Zusammengehörige Objekte werden vertikal in Gruppen angeordnet, solange man sich nicht im Landscapeformat befindet. Die Trennung der Gruppierungen soll durch ausreichend Weißraum deutlich gemacht werden. Elemente, welche über den Bildschirm herausgehen, sollen sich immer am unteren Bildschirmrand befinden und die oberste Zeile soll sich unter der Appbar fixieren, wenn die Liste weiter erforscht wird.
@@ -60,7 +60,6 @@ Die Eingaben des Benutzers werden auf dem Smartphone hauptsächlich durch den To
 \subsection{Feedback standards} 
 Viele Möglichkeiten des Feedbacks wurden bereits von Google vordefiniert. Hier werden wir uns dran orientieren und diese auch verwenden. 
 
-
 \section{SDS - Desktopanwendung}
 Die Desktopanwendung wird für das Windows Betriebssystem in der Programmiersprache Java programmiert, hier wird die Java Swing Bibliothek zur Seite stehen. Da diese allerdings schon etwas veraltet ist und keine rege Anwendung mehr findet, ist ein anspruchsvolles Design hier leider nicht umzusetzen. Das spielt allerdings eine untergeordnete Rolle, da die Präsentation und Eingabe von Daten uns wichtiger erscheint.
 
@@ -69,8 +68,8 @@ Die Control Standards beschreiben die zu verwendenden Objekte, um eine einheitli
 
 \begin{table}[]
 \centering
-\caption{My caption}
-\label{my-label}
+\caption{Control Standards Desktopanwendung}
+\label{cs_desktop}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|l|}
 \hline

@@ -1,0 +1,120 @@
+\chapter{Detailed User Interface Design}
+Das Ziel aller vorangegangenen Prozesse ist das Detailed User Interface Design. Laut Mayhew führt die Berücksichtigung aller relevanten Arbeitsschritte in diesem finalen Prozess zu einem Ergebnis, welches in den Bereichen der User Performance und Zufriedenheit weit vorne steht. \cite[325]{Mayhew_UEL}
+
+Mayhew schlägt vor zunächst alle Navigationspfade zu realisieren, damit jedes Element aufgerufen werden kann. Anschließend werden alle Fenster, Dialogboxen und Nachrichtenboxen mit Hilfe der Standard Screen Designs vervollständigt. Zum Schluss wird noch auf alle möglichen Interaktion zwischen Eingabegeräten und dem System hingewiesen. 
+
+Entgegen der Empfehlung von Deborah Mayhew, beim Detailled User Interface Design alle Screens zu visualisieren, haben wir uns entschieden, redundante Screens, welche ähnliche Funktionen haben, aufgrund des Projektrahmens nicht extra zu modellieren.
+Aufgrund des Umfangs ist der komplette UI-Prototyp im Anhang \ref{app:uiprototyp} zu finden.
+
+\section{Android - Anwendung}
+Auch hier findet erneut die Unterteilung zwischen der mobilen Anwendung und der Desktopanwendung statt. Da sich die beiden Medien grundlegend unterscheiden, besteht hier auch gar keine andere Möglichkeit.
+\subsection{Navigationspfade}
+
+Zu Anfang hatten wir bei den Navigationspfaden noch die Wahl zwischen dem Modell \ref{kmodell21} mit einem Seitenmenü und dem Modell \ref{kmodell31}. Hier wurde relativ schnell klar, dass wir zur zweiten Alternative neigen, um das schon trockene Thema etwas spannender zu machen und den Design Prinzipien - wie in diesem Fall \ref {rule:2}"Real Objects are more fun than buttons and menus" und \ref{rule:2} "Delight me in surprising ways" . \\
+Die Aufteilung zwischen den drei Hauptpunkten bleibt weiterhin bestehen und der Bereich der Dokumentation wird in einer beziehungsweise zwei weiteren Ebene untergliedert. \\
+Es wurde diskutiert, ob die untergliederte Ebene Berechnung, siehe \ref{nav:doku}, lieber noch auf die erste Ebene für ein schnelleres Erreichen angeordnet werden soll. Die Vorteile sind klar in einer eindeutig besseren Performance zu sehen, allerdings würde die Übersichtlichkeit das ganze schwer zu spüren bekommen.
+\\Als weitere mögliche Alternative besteht die Möglichkeit, dem Benutzer die Möglichkeit zu geben, seine wichtigsten Berechnungen auf der ersten Ebene hinzuzufügen. Aber auch hier haben wir uns gegen entschieden, da jeder Punkt innerhalb von maximal drei Interaktionen erreicht werden kann und die Übersichtlichkeit auf einem hohen Level davon profitiert.\\
+
+Der Bereich Pflege besitzt ebenfalls ein Menü auf der ersten Ebene, wie bei \ref{nav:doku}, besitzt aber keine weitere Untergliederung. Der Bereich Probleme benötigte keine weitere Untergliederung, weswegen wir bei diesem Punkt ein weiteres Menü für nicht mehr nötig gehalten haben. Eine weitere Möglichkeit für die Navigation wäre zum Beispiel noch ein Kachelmenü gewesen, da dies aber eher typisch für Windows Phones ist, haben wir uns auch gegen diese Umsetzung entschieden.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=180px,height=\textheight,keepaspectratio]{nav_doku}
+	\includegraphics[width=180px,height=\textheight,keepaspectratio]{nav_doku_Berechnungen}
+	\caption{Navigationspfad Dokumentation}
+	\label{nav:doku}
+\end{figure}
+
+
+
+\subsection{Pflege}
+Bei der Pflege gehen wir genauer auf den \ref{care:ww} Wasserwechsel ein, da dieser die typische Eingabemaske, die Repräsentation der anschließend erhaltenen Informationen, Grundlagen für die Interaktion und auch einen Togglebutton beinhaltet. 
+\\
+Die Anordnung war aufgrund des Screen Design Standards aus \ref{sds} schon größtenteils Vorgegeben. Zunächst waren wir aber mit der Menge der Eingabefelder überfordert, weil wir anfangs noch zwei weitere Eingabefelder vorliegen hatten. Die Werte dieser Felder sind aber notwendigerweise mit der Erstöffnung anzugeben. Dadurch konnten wir diese Felder weglassen und dem Benutzer zum einen das Gefühl geben, dass er die schweren Berechnungen alleine durchführt und des weiteren auch noch redundante Informationen vermeiden. \\
+Die größte Überlegung auf \ref{care:WW} wurde anhand der Anordnung der zwei Container angestellt. Da bei einer Eingabe durch den Nutzer bei \ref{care:ww:a} beide Felder verschoben werden müssten, haben wir uns für Variante \ref{care:ww:b} entschieden. 
+
+\begin{figure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Wasserwechsel}
+		\caption{Variante A}
+		\label{care:ww:a}
+	\end{subfigure}	
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{wasserwechsel2}
+		\caption{Variante B}
+		\label{care:ww:b}
+	\end{subfigure}	
+	\caption{Pflege - Wasserwechsel}
+	\label{care:ww}
+\end{figure}
+
+\subsection{Dokumentation}
+Wichtige Bestandteile der Dokumentation fürs Aquarium sind die Berechnung des CO2- Gehalts, die Veränderung der Wasserwerte und das virtuelle Aquarium. Diese Teilpunkte können auch auf die anderen Berechnungen bezogen werden. 
+
+\subsubsection{Virtuelles Aquarium}
+Die Entscheidung ein virtuelles Aquarium zu erstellen, wurde deswegen getroffen, damit der Benutzer ein Element aus der wahren Welt hat. Zunächst war hier nur geringe Visualisierung und Unterstützung des Design Prinzips \ref{rule:2}, welche sich als Verwendung von realen Objekten in dem User Interface definiert, gegeben. Damit war \ref{doku:aq:c} 
+als Gestaltungslösung zunächst festgelegt. Nachdem wir weitere Ideen gesucht hatten, haben wir uns auf eine neue Lösung fokussiert, welche ein neues Element mit der alten Gestaltungslösung \ref{doku:aq:c} kombiniert. 
+
+Diese Lösung beinhaltet nun im oberen Bereich ein Foto, welches der Nutzer von seinem eigenen Aquarium aufnehmen muss und festen Werten. Wenn der Nutzer sich nun seine einzelnen Bestandteile anschauen möchte, kann dieser auf der Liste weiter nach unten swipen, um schließlich von der Ansicht \ref{doku:aq:a} zu der Ansicht \ref{doku:aq:c} zu kommen. Im Bereich \ref{doku:aq:c} kann der Benutzer des weiteren noch neue Objekte hinzufügen. Das Löschen funktioniert über das bekannte swipen nach links, in welcher Folge dann ein Button zum Löschen eingeblendet wird.\\
+Die Werte des oberen Bereiches können selbstverständlich durch den Benutzer geändert werden, falls er sich ein neues Aquarium kaufen möchte oder auch einfach nur das Bild von seinem Aquarium aktualisieren möchte. Dies passiert über die in \ref{doku:aq:b} angezeigte Maske. Die einzelnen Eingaben laufen dabei über das zentrale Eingabefeld. \\
+Alternativ hätte man diese Informationen auch durch längeres Betätigen einer Taste ändern können, allerdings ist die Änderung der vorgegebenen Datensätze nur sehr selten nötig.
+
+\begin{figure}
+	\begin{subfigure}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{virtuellesAquarium}
+		\caption{Übersicht}
+		\label{doku:aq:a}
+	\end{subfigure}	
+	\begin{subfigure}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{virtuellesAquariumEdit}
+		\caption{Ändern der Grunddaten}\label{doku:aq:b}
+	\end{subfigure}	
+	\begin{subfigure}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{virtuellesAquarium2}
+		\caption{Bestandteile Aquarium}\label{doku:aq:c}
+	\end{subfigure}	
+	\caption{Dokumentation - Virtuelles Aquarium}
+	\label{doku:va}
+\end{figure}
+
+\subsubsection{Wasserwerte}
+Die Darstellung der Wasserwerte sind für uns bereits von Beginn an klar gewesen, daher kam es hier auch nicht zur Entwicklung von Alternativen. Eine bessere visuelle Darstellung gibt es vermutlich, aber bei diesem Punkt war uns die Übersichtlichkeit am wichtigsten, damit der Benutzer direkt erkennt, wo seine problematischen Werte liegen und er direkt für Besserung sorgen kann. Diese Übersichtlichkeit ist durch die farbliche Gestaltung gegeben, wie man in \ref{doku:ww} erkennt. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=180px,height=\textheight,keepaspectratio]{Wasserwerte}
+	\caption{Dokumentation - Wasserwerte}
+	\label{doku:ww}
+\end{figure}
+
+\subsubsection{CO2-Gehalt}
+Wie bereits zu Abbildung \ref{care:ww} erläutert, bestand die Möglichkeit zwischen diesen beiden Gestaltungsmöglichkeiten. Zusätzlich zu der anderen Berechnung gibt es hier noch eine grafische Darstellung der Veränderung. Eigentlich präferieren wir \ref{doku:co2} in diesem Fall, die Gebrauchstauglichkeit des Systems wird aber aufgrund der Einheitlichkeit mehr durch die zweite Variante ermöglicht.  
+
+\begin{figure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{co2gehalt}
+		\caption{Variante A}
+		\label{doku:co2:a}
+	\end{subfigure}	
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{co2_gehalt_2}
+		\caption{Variante B}
+		\label{doku:co2:b}
+	\end{subfigure}	
+	\caption{Dokumentation - Berechnung - CO2-Gehalt}
+	\label{doku:co2}
+\end{figure}
+
+\subsection{Probleme}
+Im Bereich der Problembehandlung soll die direkte Kommunikation vom Kunden und dem Fachhändler bei Problemen mit dem Aquarium stattfinden. In der Übersicht \ref{probs} kann eine Problembeschreibung eingereicht werden und falls der Fachhandel keine Lösung findet, wird der ausgegraute Anrufen-Button freigeschaltet. Die Beschreibung wird aufgrund ihrer Länge nur in reduzierter Form angezeigt und die ausgegrauten Flächen skizzieren Anhänge. \\
+Mit Hilfe des Stiftes kommt man zu einer Suche mit Auto-Vervollständigung, in welcher Aquariengeschäfte in der Nähe gesucht werden können, um diese als Kommunikationspartner festzulegen. \\
+Auch hier ist wieder der Fokus auf eine möglichst simple und schnelle Verarbeitung gelegt, die Begrenzung des Textfeldes dient zum Beispiel dazu, dass dem Fachhandel keine unnötig langen Problembeschreibungen zugesendet werden. Durch die Verwendung der Kamera als weitere Möglichkeit der Dokumentation wird dem Benutzer ein weiterer Grund gegeben, dieses System als aktives Tool zu benutzen. 
+		
+\begin{figure}
+	\centering
+	\includegraphics[width=180px,height=\textheight,keepaspectratio]{Probleme}
+	\caption{Probleme - Übersicht}
+	\label{probs}
+\end{figure}
+
+\input{DesktopUI}

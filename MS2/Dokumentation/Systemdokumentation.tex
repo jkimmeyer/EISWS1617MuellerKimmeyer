@@ -51,7 +51,6 @@ Die Anwendungslogik des Benutzer Clients besteht aus den verschiedenen Berechnun
 \item Düngerdosierung
 \item Zielgerichteten Wasserwechsel
 \item Tägliche Änderung der Wasserwerte
-\item Gesamthärte
 \item CO\textsubscript{2}-Gehalt
 \item Tägliche Nährstoffveränderungen
 \end{itemize}
@@ -112,9 +111,7 @@ Die Variable ErgebnisLW beschreibt den Anteil des Leitungswassers und die Variab
 
 \subsubsection{Tägliche Änderungen der Wasserwerte}
 
-Um nicht regelmäßig seine Wasserwerte analysieren zu müssen, wäre eine Formel zur Berechnung der täglichen Änderungen sehr hilfreich. Allerdings haben wir hierzu keine Formel gefunden und auch eine empirische Befragung von Aquarienbesitzern war erfolglos. Das Ziel ist es nun, eine Formel zu entwickeln, die sich mit steigender Masse an Daten selbst verbessert. Da das aber recht schwer werden könnte, ist die Umsetzung nicht garantiert.
-
-\subsubsection{Gesamthärte}
+Um nicht regelmäßig seine Wasserwerte analysieren zu müssen, wäre eine Formel zur Berechnung der täglichen Änderungen sehr hilfreich. Allerdings haben wir hierzu keine Formel gefunden und auch eine empirische Befragung von Aquarienbesitzern war erfolglos. Das Ziel ist es nun, eine Formel zu entwickeln, die sich mit steigender Masse an Daten selbst verbessert. Der Algorithmus zur Verbesserung der Formel würde dann auf dem Server stattfinden. Da das aber recht schwer werden könnte, ist die Umsetzung nicht garantiert.
 
 \subsubsection{CO\textsubscript{2}-Gehalt}
 
@@ -130,6 +127,7 @@ Die tägliche Nährstoffveränderung lässt sich leicht berechnen, indem die Mes
 
 \subsection{Fachhandlung Client}
 
+Bei der Fachhandlung stehen die gleichen Berechnungen wie beim Benutzer zur Verfügung, bis auf die tägliche Nährstoffveränderung, da diese bei der Fachhandlung nicht benötigt wird.
 
 
 \section{Architekturmerkmale}

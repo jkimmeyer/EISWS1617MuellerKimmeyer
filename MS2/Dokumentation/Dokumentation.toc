@@ -2,162 +2,162 @@
 \defcounter {refsection}{0}\relax 
 \select@language {ngerman}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Wahl des Vorgehensmodells}{4}{chapter.2}
+\contentsline {chapter}{\numberline {1}Wahl des Vorgehensmodells}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Anforderungen}{6}{chapter.4}
+\contentsline {chapter}{\numberline {2}Anforderungen}{5}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Funktionale Anforderungen}{6}{section.5}
+\contentsline {section}{\numberline {2.1}Funktionale Anforderungen}{5}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Qualitative Anforderungen}{7}{section.6}
+\contentsline {section}{\numberline {2.2}Qualitative Anforderungen}{6}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Organisationale Anforderungen}{7}{section.7}
+\contentsline {section}{\numberline {2.3}Organisationale Anforderungen}{6}{section.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}User Profiles}{8}{chapter.8}
+\contentsline {chapter}{\numberline {3}User Profiles}{7}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Erwachsener - Aquarium Anf\IeC {\"a}nger}{8}{section.9}
+\contentsline {section}{\numberline {3.1}Erwachsener - Aquarium Anf\IeC {\"a}nger}{7}{section.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Fachh\IeC {\"a}ndler}{10}{section.13}
+\contentsline {section}{\numberline {3.2}Fachh\IeC {\"a}ndler}{9}{section.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Kontextbezogene Aufgaben-Analyse}{12}{chapter.17}
+\contentsline {chapter}{\numberline {4}Kontextbezogene Aufgaben-Analyse}{11}{chapter.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Task-Szenarios}{14}{section.19}
+\contentsline {section}{\numberline {4.1}Task-Szenarios}{13}{section.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Task: Problembehandlung}{14}{subsection.20}
+\contentsline {subsection}{\numberline {4.1.1}Task: Problembehandlung}{13}{subsection.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Task: Empfehlen von Fischen und Pflanzen}{15}{subsection.30}
+\contentsline {subsection}{\numberline {4.1.2}Task: Empfehlen von Fischen und Pflanzen}{14}{subsection.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}List of User Tasks for Aquarium-Besitzer}{16}{section.39}
+\contentsline {section}{\numberline {4.2}List of User Tasks for Aquarium-Besitzer}{15}{section.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}List of User Tasks for Fachhandel-Mitarbeiter}{17}{section.40}
+\contentsline {section}{\numberline {4.3}List of User Tasks for Fachhandel-Mitarbeiter}{16}{section.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}User Task Organization Models}{17}{section.41}
+\contentsline {section}{\numberline {4.4}User Task Organization Models}{16}{section.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Plattform Capabilities und Constraints}{19}{chapter.44}
+\contentsline {chapter}{\numberline {5}Plattform Capabilities und Constraints}{18}{chapter.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Gestaltungsprinzipien}{21}{chapter.47}
+\contentsline {chapter}{\numberline {6}Gestaltungsprinzipien}{20}{chapter.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Android - Mobile Anwendung}{21}{section.48}
+\contentsline {section}{\numberline {6.1}Android - Mobile Anwendung}{20}{section.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}Delight me in surprising ways}{21}{subsection.49}
+\contentsline {subsection}{\numberline {6.1.1}Delight me in surprising ways}{20}{subsection.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Real objects are more fun than buttons and menus}{21}{subsection.50}
+\contentsline {subsection}{\numberline {6.1.2}Real objects are more fun than buttons and menus}{20}{subsection.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}Only show what I need when I need it}{21}{subsection.51}
+\contentsline {subsection}{\numberline {6.1.3}Only show what I need when I need it}{20}{subsection.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.4}Do the heavy lifting for me}{22}{subsection.52}
+\contentsline {subsection}{\numberline {6.1.4}Do the heavy lifting for me}{21}{subsection.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Usability Goals}{23}{chapter.53}
+\contentsline {chapter}{\numberline {7}Usability Goals}{22}{chapter.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Auswertung der User Profiles und Task Analyse}{23}{section.54}
+\contentsline {section}{\numberline {7.1}Auswertung der User Profiles und Task Analyse}{22}{section.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Qualitative Usability Goals}{23}{section.55}
+\contentsline {section}{\numberline {7.2}Qualitative Usability Goals}{22}{section.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Formulierung der Ziele}{23}{subsection.56}
+\contentsline {subsection}{\numberline {7.2.1}Formulierung der Ziele}{22}{subsection.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Quantitative Usability Goals}{26}{section.57}
+\contentsline {section}{\numberline {7.3}Quantitative Usability Goals}{25}{section.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Work Re-Engineering}{27}{chapter.58}
+\contentsline {chapter}{\numberline {8}Work Re-Engineering}{26}{chapter.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Use-Cases}{27}{section.59}
+\contentsline {section}{\numberline {8.1}Use-Cases}{26}{section.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1.1}Aquariumverwaltung}{27}{subsection.60}
+\contentsline {subsection}{\numberline {8.1.1}Aquariumverwaltung}{26}{subsection.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1.2}Kundenverwaltung}{27}{subsection.66}
+\contentsline {subsection}{\numberline {8.1.2}Kundenverwaltung}{26}{subsection.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}User Task Diagramm}{30}{section.71}
+\contentsline {section}{\numberline {8.2}User Task Diagramm}{29}{section.71}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.1}Aquariumverwaltung}{30}{subsection.72}
+\contentsline {subsection}{\numberline {8.2.1}Aquariumverwaltung}{29}{subsection.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.2}Kundenverwaltung}{30}{subsection.74}
+\contentsline {subsection}{\numberline {8.2.2}Kundenverwaltung}{29}{subsection.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Konzeptuelles Modell}{32}{chapter.76}
+\contentsline {chapter}{\numberline {9}Konzeptuelles Modell}{31}{chapter.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Produkt- oder prozessorientiert}{32}{section.77}
+\contentsline {section}{\numberline {9.1}Produkt- oder prozessorientiert}{31}{section.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Identifizierung der Prozesse}{32}{section.78}
+\contentsline {section}{\numberline {9.2}Identifizierung der Prozesse}{31}{section.78}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Design Regeln}{32}{section.79}
+\contentsline {section}{\numberline {9.3}Design Regeln}{31}{section.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}Ausarbeitung der Modelle}{33}{section.80}
+\contentsline {section}{\numberline {9.4}Ausarbeitung der Modelle}{32}{section.80}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Screen Design Standards}{37}{chapter.86}
+\contentsline {chapter}{\numberline {10}Screen Design Standards}{36}{chapter.86}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}SDS - Mobile Anwendung}{37}{section.87}
+\contentsline {section}{\numberline {10.1}SDS - Mobile Anwendung}{36}{section.87}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.1}Control Standards}{37}{subsection.88}
+\contentsline {subsection}{\numberline {10.1.1}Control Standards}{36}{subsection.88}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.2}Allgemeine Standards}{37}{subsection.90}
+\contentsline {subsection}{\numberline {10.1.2}Allgemeine Standards}{36}{subsection.90}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.3}Message box content standards}{38}{subsection.91}
+\contentsline {subsection}{\numberline {10.1.3}Message box content standards}{37}{subsection.91}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.4}Input device interaction standards}{39}{subsection.92}
+\contentsline {subsection}{\numberline {10.1.4}Input device interaction standards}{38}{subsection.92}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1.5}Feedback standards}{39}{subsection.93}
+\contentsline {subsection}{\numberline {10.1.5}Feedback standards}{38}{subsection.93}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}SDS - Desktopanwendung}{39}{section.94}
+\contentsline {section}{\numberline {10.2}SDS - Desktopanwendung}{38}{section.94}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.1}Control Standards}{39}{subsection.95}
+\contentsline {subsection}{\numberline {10.2.1}Control Standards}{38}{subsection.95}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.2}Dialog box contents standards}{40}{subsection.97}
+\contentsline {subsection}{\numberline {10.2.2}Dialog box contents standards}{39}{subsection.97}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.3}Message box content standards}{40}{subsection.98}
+\contentsline {subsection}{\numberline {10.2.3}Message box content standards}{39}{subsection.98}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.4}Input device interaction standards}{40}{subsection.99}
+\contentsline {subsection}{\numberline {10.2.4}Input device interaction standards}{39}{subsection.99}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2.5}Feedback standards}{41}{subsection.100}
+\contentsline {subsection}{\numberline {10.2.5}Feedback standards}{40}{subsection.100}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}Systemdokumentation}{42}{chapter.101}
+\contentsline {chapter}{\numberline {11}Systemdokumentation}{41}{chapter.101}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.1}Iteration der Kommunikationsmodelle}{42}{section.102}
+\contentsline {section}{\numberline {11.1}Iteration der Kommunikationsmodelle}{41}{section.102}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.1}Deskriptives Modell}{42}{subsection.103}
+\contentsline {subsection}{\numberline {11.1.1}Deskriptives Modell}{41}{subsection.103}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.2}Pr\IeC {\"a}skriptives Modell}{43}{subsection.105}
+\contentsline {subsection}{\numberline {11.1.2}Pr\IeC {\"a}skriptives Modell}{42}{subsection.105}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.2}Iteration des Architekturmodells}{43}{section.107}
+\contentsline {section}{\numberline {11.2}Iteration des Architekturmodells}{42}{section.107}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.3}Anwendungslogik}{44}{section.109}
+\contentsline {section}{\numberline {11.3}Anwendungslogik}{43}{section.109}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.1}Benutzer Client}{44}{subsection.110}
+\contentsline {subsection}{\numberline {11.3.1}Benutzer Client}{43}{subsection.110}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline D\IeC {\"u}ngerdosierung}{45}{section*.111}
+\contentsline {subsubsection}{\nonumberline D\IeC {\"u}ngerdosierung}{44}{section*.111}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Zielgerichteter Wasserwechsel}{45}{section*.112}
+\contentsline {subsubsection}{\nonumberline Zielgerichteter Wasserwechsel}{44}{section*.113}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline T\IeC {\"a}glicher N\IeC {\"a}hrstoffverbrauch}{45}{section*.113}
+\contentsline {subsubsection}{\nonumberline T\IeC {\"a}glicher N\IeC {\"a}hrstoffverbrauch}{45}{section*.131}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Gesamth\IeC {\"a}rte}{45}{section*.114}
+\contentsline {subsubsection}{\nonumberline Gesamth\IeC {\"a}rte}{45}{section*.132}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline CO\textsubscript {2}-Gehalt}{45}{section*.115}
+\contentsline {subsubsection}{\nonumberline CO\textsubscript {2}-Gehalt}{45}{section*.133}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline T\IeC {\"a}gliche N\IeC {\"a}hrstoffver\IeC {\"a}nderungen}{46}{section*.117}
+\contentsline {subsubsection}{\nonumberline T\IeC {\"a}gliche N\IeC {\"a}hrstoffver\IeC {\"a}nderungen}{46}{section*.135}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.2}Fachhandlung Client}{46}{subsection.118}
+\contentsline {subsection}{\numberline {11.3.2}Fachhandlung Client}{46}{subsection.136}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.4}Architekturmerkmale}{46}{section.119}
+\contentsline {section}{\numberline {11.4}Architekturmerkmale}{46}{section.137}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.4.1}Ressourcen}{46}{subsection.120}
+\contentsline {subsection}{\numberline {11.4.1}Ressourcen}{46}{subsection.138}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Benutzer}{46}{section*.121}
+\contentsline {subsubsection}{\nonumberline Benutzer}{46}{section*.139}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Virtuelles Aquarium}{47}{section*.142}
+\contentsline {subsubsection}{\nonumberline Virtuelles Aquarium}{47}{section*.160}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Wasserwerte}{47}{section*.155}
+\contentsline {subsubsection}{\nonumberline Wasserwerte}{47}{section*.173}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}User Profiles}{52}{appendix.181}
+\contentsline {chapter}{\numberline {A}User Profiles}{52}{appendix.200}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Kind/Jugendlicher}{52}{section.182}
+\contentsline {section}{\numberline {A.1}Kind/Jugendlicher}{52}{section.201}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Erwachsener - Aquarium Neuling}{53}{section.186}
+\contentsline {section}{\numberline {A.2}Erwachsener - Aquarium Neuling}{53}{section.205}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Erwachsener - Aquarium Fortgeschritten}{54}{section.190}
+\contentsline {section}{\numberline {A.3}Erwachsener - Aquarium Fortgeschritten}{54}{section.209}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Erwachsener - Aquarium Experte}{56}{section.194}
+\contentsline {section}{\numberline {A.4}Erwachsener - Aquarium Experte}{56}{section.213}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Rentner - Aquarium Neuling}{57}{section.198}
+\contentsline {section}{\numberline {A.5}Rentner - Aquarium Neuling}{57}{section.217}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.6}Rentner - Aquarium Fortgeschritten}{58}{section.202}
+\contentsline {section}{\numberline {A.6}Rentner - Aquarium Fortgeschritten}{58}{section.221}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.7}Rentner - Aquarium Experte}{60}{section.206}
+\contentsline {section}{\numberline {A.7}Rentner - Aquarium Experte}{60}{section.225}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.8}Fachh\IeC {\"a}ndler}{61}{section.210}
+\contentsline {section}{\numberline {A.8}Fachh\IeC {\"a}ndler}{61}{section.229}

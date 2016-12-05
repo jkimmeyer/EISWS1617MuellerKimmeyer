@@ -61,11 +61,4 @@
   url       = {http://www.aq-technik.de/Aquarium-Rechner/duenger_dosierung.php},
 }
 
-@Misc{Formel:Wasserwechsel,
-  author    = {Peter Ehrenfried},
-  title     = {Teilwasserwechsel mit gezielter Enthärtung},
-  timestamp = {2016-12-05},
-  url       = {http://www.aq-technik.de/Aquarium-Rechner/tww_mit_zielwert.php},
-}
-
 @Comment{jabref-meta: databaseType:bibtex;}

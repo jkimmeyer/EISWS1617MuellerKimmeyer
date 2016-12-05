@@ -50,7 +50,7 @@ Die Anwendungslogik des Benutzer Clients besteht aus den verschiedenen Berechnun
 \begin{itemize}
 \item Düngerdosierung
 \item Zielgerichteten Wasserwechsel
-\item Täglicher Nährstoffverbrauch
+\item Tägliche Änderung der Wasserwerte
 \item Gesamthärte
 \item CO\textsubscript{2}-Gehalt
 \item Tägliche Nährstoffveränderungen
@@ -58,11 +58,61 @@ Die Anwendungslogik des Benutzer Clients besteht aus den verschiedenen Berechnun
 
 \subsubsection{Düngerdosierung}
 
-Um die Qualität seiner Pflanzen zu verbessern und gleichzeitig die Verbreitung von Algen zu vermindern, ist eine optimale Düngerdosierung erforderlich. Diese hängt von folgenden Faktoren ab: Beckenvolumen, CO\textsubscript{2}-Versorgung, Beleuchtung und Pflanzenmasse. Bei dieser Berechnung muss der Benutzer also in der Regel keine zusätzlichen Angaben mehr machen, da das Beckenvolumen durch die Größe seines Aquariums berechnet werden kann, welche er bereits beim Eintragen seines virtuellen Aquariums angegeben haben sollte. Außerdem sollte er bereits seine Pflanzen sowie ein mögliches CO\textsubscript{2}-Versorgungsgerät und die Beleuchtung zum virtuellen Aquarium hinzugefügt haben. Auf diese Werte kann das System also für die Berechnung zugreifen.
+Um die Qualität seiner Pflanzen zu verbessern und gleichzeitig die Verbreitung von Algen zu vermindern, ist eine optimale Düngerdosierung erforderlich. Mit dieser Berechnung ist es möglich, die erforderliche Düngermenge eines Flüssigdüngers zu bestimmen, mit der eine gewünschte Nährstoffkonzentration im Aquariumwasser erreicht werden kann. Die einzelnen Komponenten der Rechnung sind folgende \autocite{Formel:Dosierung}:
+
+\begin{itemize}
+\item VAQ = Nettowasservolumen im Aquarium in Liter
+\item KAQ = vorhandene Konzentration des Nährstoffes im Aquarium in mg/l
+\item KDueng = vorhandene Konzentration des Nährstoffes im zur Verfügung stehenden Flüssigdünger in mg/l
+\item Kgew = gewünschte Konzentration des Nährstoffes im Aquarienwasser in mg/l
+\item Dosierung = erforderliche Zugabemenge des Flüssigdüngers in ml
+\end{itemize}
+
+Die Formel lautet:
+
+\begin{equation}
+VAQ\cdot(Kgew-KAQ)/KDueng*1000
+\end{equation}
 
 \subsubsection{Zielgerichteter Wasserwechsel}
 
-\subsubsection{Täglicher Nährstoffverbrauch}
+Wenn man einen bestimmten Zielwert bei der Karbonathärte oder der Gesamthärte im Aquarium erreichen möchte, empfiehlt es sich, Leitungswasser und Reinwasser zu mischen. Um die entsprechenden Anteile ausrechnen zu können stellen wir diese Berechnung in unserer App bereit. Folgende Faktoren sind wichtig für die Formel \autocite{Formel:Wasserwechsel}:
+
+\begin{itemize}
+\item VAQ = Nettowasservolumen im Aquarium in Liter
+\item GWM = Gewünschte Wasserwechselmenge
+\item KG = KH oder GH im Aquarium
+\item KGL= KH oder GH des Leitungswassers
+\item GKG = Gewünschte KH oder GH
+\item WR = Wirkungsgrad Reinwassererzeugung
+\end{itemize}
+
+Den KH bzw. GH Anteil im Leitungswasser kann man in der Regel bei seinem Wasser-Anbieter erfahren. Der Wirkungsgrad vom Reinwasser hängt von der Anlage ab. Bei Osmoseanlagen ist es ca. 95\% und bei VE-Anlagen ca. 100\%. Da die Berechnung hier nicht nur aus einer Formel besteht, haben wir den Javascript Code unserer Quelle \autocite{Formel:Wasserwechsel} analysiert und daraus einen Pseudocode geschrieben:
+
+\begin{lstlisting}
+   WertR = (GKG-((VAQ-GWM)/VAQ)*KG)*VAQ/GWM
+   ErgebnisLW = GWM
+   ErgebnisOW = 0
+   WertT = KGL
+   WertW = KGL*(1-WR/100)
+   
+   SOLANGE(WertT ist groesser als WertR)
+      MACHE
+         WertT = (ErgebnisLW*KGL + ErgebnisOW*WertW) / GWM
+         ErgebnisLW = Ergebnis1 - 0,001
+         ErgebnisOW = GWM - ErgebnisLW
+
+   WENN(ErgebnisLW ist kleiner als 0)
+      DANN
+         ErgebnisOW = VAQ*(KG-GKG)/(KG-WertW)
+         ErgebnisLW = 0
+\end{lstlisting}
+
+Die Variable ErgebnisLW beschreibt den Anteil des Leitungswassers und die Variable ErgebnisOW beschreibt den Anteil des Osmosewassers oder des VE-Wassers.
+
+\subsubsection{Tägliche Änderungen der Wasserwerte}
+
+Um nicht regelmäßig seine Wasserwerte analysieren zu müssen, wäre eine Formel zur Berechnung der täglichen Änderungen sehr hilfreich. Allerdings haben wir hierzu keine Formel gefunden und auch eine empirische Befragung von Aquarienbesitzern war erfolglos. Das Ziel ist es nun, eine Formel zu entwickeln, die sich mit steigender Masse an Daten selbst verbessert. Da das aber recht schwer werden könnte, ist die Umsetzung nicht garantiert.
 
 \subsubsection{Gesamthärte}
 
@@ -76,7 +126,11 @@ CO\textsubscript{2} = (KH/2,8)\cdot10^{(7,90-pH)}
 
 \subsubsection{Tägliche Nährstoffveränderungen}
 
+Die tägliche Nährstoffveränderung lässt sich leicht berechnen, indem die Messungen der Wasserwerte von zwei aufeinanderfolgenden Tagen verglichen werden und die Änderungen festgehalten werden.
+
 \subsection{Fachhandlung Client}
+
+
 
 \section{Architekturmerkmale}
 

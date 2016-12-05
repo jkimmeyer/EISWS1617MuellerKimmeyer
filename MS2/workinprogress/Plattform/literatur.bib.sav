@@ -1,0 +1,24 @@
+% Encoding: UTF-8
+
+@Misc{Android:Komponenten,
+  title     = {Android Komponenten},
+  timestamp = {2016-12-01},
+  url       = {https://material.google.com/components/bottom-navigation.html},
+}
+
+@Misc{Java:Komponenten,
+  title     = {Java GUI Komponenten},
+  timestamp = {2016-12-01},
+  url       = {https://docs.oracle.com/javase/tutorial/uiswing/components/componentlist.html},
+}
+
+@Misc{Formel:CO2,
+  author    = {Olaf D.},
+  title     = {CO2 Berechnung},
+  month     = sep,
+  year      = {2010},
+  timestamp = {2016-12-04},
+  url       = {http://www.deters-ing.de/Berechnungen/Berechnungen.htm},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

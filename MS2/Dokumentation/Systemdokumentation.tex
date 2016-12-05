@@ -104,7 +104,7 @@ Die Benutzerinformationen werden in unserer Datenbank unter der MongoDB-Collecti
  
 Die ID ist eine fortlaufende Nummer, die automatisch generiert wird, um den Benutzer eindeutig identifizieren zu können. Der Token wird für das Firebase Cloud Messaging benötigt. Sobald der Benutzer das erste mal die App startet, wird dieser Token generiert und an den Server geschickt. Mit diesem Token können dann die Nachrichten der Fachhändler einem Benutzer zugeordnet werden. Theoretisch könnte man den Benutzer auch mit diesem Token eindeutig identifizieren, allerdings ist er ziemlich lang und somit haben wir uns noch für eine zusätzliche ID entschieden. Diese ID wird dem Benutzer angezeigt und diese muss er dann an seinen Fachhändler weitergeben, damit er den Kunden zu seinem System hinzufügen kann. Alle weiteren Attribute sind freiwillig, allerdings wird empfohlen, diese auch auszufüllen, damit die Fachhandlung direkt ein paar Informationen über den Kunden bekommt und ihn so besser zuordnen zu können.
 \\ \\
-Als REST-Methoden bekommt der Benutzer die vier üblichen Methoden, also GET um die Daten eines Benutzers zu bekommen, POST um einen Benutzer anzulegen, PUT um einen Benutzer zu bearbeiten und DELETE um ihn aus dem System zu entfernen. Nachfolgend ist ein kurzer Code-Ausschnitt der beispielhaft zeigen soll, wie man eine Liste aller Benutzer zurückgeben könnte.
+Als HTTP-Methoden bekommt der Benutzer die vier üblichen Methoden, also GET um die Daten eines Benutzers zu bekommen, POST um einen Benutzer anzulegen, PUT um einen Benutzer zu bearbeiten und DELETE um ihn aus dem System zu entfernen. Nachfolgend ist ein kurzer Code-Ausschnitt der beispielhaft zeigen soll, wie man eine Liste aller Benutzer zurückgeben könnte.
 
 \begin{lstlisting}
    app.route('/users')
@@ -134,7 +134,7 @@ Die Ressource für das virtuelle Aquarium ist für die Aquarium-Daten, die von e
    }
 \end{lstlisting}
 
-Zur eindeutigen Identifikation bekommt auch das Aquarium eine ID sowie die ID des Benutzers, der das Aquarium angelegt hat, um es diesem zuordnen zu können. Außerdem werden noch die Daten gespeichert, die der Benutzer eingetragen hat, also eine Bezeichnung des Aquariums, die Maße und den Inhalt, also Fische, Pflanzen und Geräte. Fische und Pflanzen sind jeweils Arrays, in denen verschiede Fisch- und Pflanzenarten mit deren Anzahl eingetragen werden können. Bei den Geräten muss noch ein Typ angegeben werden, also zum Beispiel ``Pumpe'', ``CO\textsubscript{2}-Aufbereitung'' oder Sonstiges. Die Aquarien werden genau wie die Benutzer die vier REST-Methoden bekommen. 
+Zur eindeutigen Identifikation bekommt auch das Aquarium eine ID sowie die ID des Benutzers, der das Aquarium angelegt hat, um es diesem zuordnen zu können. Außerdem werden noch die Daten gespeichert, die der Benutzer eingetragen hat, also eine Bezeichnung des Aquariums, die Maße und den Inhalt, also Fische, Pflanzen und Geräte. Fische und Pflanzen sind jeweils Arrays, in denen verschiede Fisch- und Pflanzenarten mit deren Anzahl eingetragen werden können. Bei den Geräten muss noch ein Typ angegeben werden, also zum Beispiel ``Pumpe'', ``CO\textsubscript{2}-Aufbereitung'' oder Sonstiges. Die Aquarien werden genau wie die Benutzer die vier HTTP-Methoden bekommen. 
 
 \subsubsection{Wasserwerte}
 
@@ -155,7 +155,7 @@ Die Ressource für die Wasserwerte dient zur Übermittlung der Daten von der Fac
    }
 \end{lstlisting}
 
-Hier sieht man, dass wieder eine ID vergeben wird und auch die ID des betroffenen Benutzers gespeichert wird. Danach folgen die verschiedenen Werte, die jeweils als String gespeichert werden, damit zusätzlich zu dem Wert noch eine Einheit mit angegeben werden kann. Auch hier werden wieder die vier REST-Methoden verwendet. Allerdings gibt es hier zwei Anwendungsfälle zur Benutzung der POST- und PUT-Methode. Entweder trägt der Benutzer die Daten ein und sie werden normal in der Datenbank gespeichert oder die Fachhandlung schickt die Daten an den Benutzer. Dann muss zusätzlich über das FCM noch eine Push-Benachrichtigung an den Benutzer geschickt werden. Um dies deutlich zu machen, werden wir die POST-Methode nachfolgend als Pseudocode darstellen.
+Hier sieht man, dass wieder eine ID vergeben wird und auch die ID des betroffenen Benutzers gespeichert wird. Danach folgen die verschiedenen Werte, die jeweils als String gespeichert werden, damit zusätzlich zu dem Wert noch eine Einheit mit angegeben werden kann. Auch hier werden wieder die vier HTTP-Methoden verwendet. Allerdings gibt es hier zwei Anwendungsfälle zur Benutzung der POST- und PUT-Methode. Entweder trägt der Benutzer die Daten ein und sie werden normal in der Datenbank gespeichert oder die Fachhandlung schickt die Daten an den Benutzer. Dann muss zusätzlich über das FCM noch eine Push-Benachrichtigung an den Benutzer geschickt werden. Um dies deutlich zu machen, werden wir die POST-Methode nachfolgend als Pseudocode darstellen.
 
 \begin{lstlisting}
    WENN(Absender ist gleich Fachhandlung)
@@ -169,3 +169,5 @@ Hier sieht man, dass wieder eine ID vergeben wird und auch die ID des betroffene
 \end{lstlisting}
 
 Den Absender könnte man zum Beispiel herausfinden, indem dieser im Request-Body als Parameter mit angegeben wird.
+
+\subsection{}

@@ -1,12 +1,12 @@
 \documentclass[12pt,a4paper,ngerman]{scrreprt}
 \setlength{\parindent}{0em} 
- 
+% !TEX TS–program = pdflatexmk 
 \usepackage[colorlinks,
 pdfpagelabels,
 pdfstartview = FitH,
 bookmarksopen = true,
 bookmarksnumbered = true,
-linkcolor = black,
+linkcolor = blue,
 plainpages = false,
 hypertexnames = false,
 citecolor = black] {hyperref}
@@ -27,7 +27,7 @@ top=2.5cm, bottom=2.5cm]{geometry}
 \usepackage{longtable}
 \usepackage{ltxtable, filecontents}
 \usepackage[babel, german=quotes]{csquotes}
-\bibliography{literatur}
+\addbibresource{literatur.bib}
 \usepackage{rotating}
 \usepackage{amsmath}
 \usepackage{listings}

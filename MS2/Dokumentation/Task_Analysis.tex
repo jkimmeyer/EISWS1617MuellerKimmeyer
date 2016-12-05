@@ -1,41 +1,18 @@
-\chapter{Kontextbezogene Aufgaben-Analyse}
+\chapter{Kontextbezogene Aufgaben-Analyse}\label{taskanalysis}
 
-Die "Contextual Task Analysis" hat das Ziel ein deskriptives Modell der aktuellen Aufgaben zu modellieren. Dazu müssen laut Mayhew zum Einen Hintergrundinformationen der zu automatisierenden Arbeit recherchiert werden. Zum anderen empfiehlt Mayhew Personen, welche in diesem Fall im Bereich der Aquaristik arbeiten oder Besitzer von Aquarien sind, zu interviewen und dadurch Informationen zum Arbeitsbereich und der Aufgabenbewältigung zu erhalten. Mit diesen Informationen als Grundlage soll anschließend ein deskriptives Aufgabenmodell erstellt werden. \\
+Die "Contextual Task Analysis" hat das Ziel ein deskriptives Modell der aktuellen Aufgaben zu modellieren. Dazu müssen laut Mayhew unter anderem Hintergrundinformationen der zu automatisierenden Arbeit recherchiert werden. Zum anderen empfiehlt Mayhew Personen, welche in diesem Fall im Bereich der Aquaristik arbeiten oder Besitzer von Aquarien sind, zu interviewen und dadurch Informationen zum Arbeitsbereich und der Aufgabenbewältigung zu erhalten. Mit diesen Informationen als Grundlage soll anschließend ein deskriptives Aufgabenmodell erstellt werden. \\
 
 In unserem Fall haben wir aufgrund von  vorhandenen Erfahrungen im Aquaristikbereich und begrenzter Zeit auf die Sammlung von Informationen durch Interviews verzichtet. \\ 
 
 Die Aufgaben- Analyse wurde also mit einer Wiederbetrachtung der Anforderungen begonnen, um die Grenzen bzw. den Rahmen des Systems zu erkennen. \\
 
-Anschließend wurden auf der vorhergegangen Formulierung der User-Profiles, in Kombination mit den Stakeholdern, die wichtigsten Rollen im System festgelegt. Dies waren für uns eindeutig die Aquariumbesitzer und die Mitarbeiter im Fachhandel. Zunächst wollten wir eine Spezifikation im Bereich der Aquarienbesitzer vornehmen, was wir aber für überflüssig gehalten haben, da die Unterschiede im Arbeitsumfeld bereits im Nutzungskontext dokumentiert wurde und der Fokus auf der Aufgabenerledigung liegt. Weil die Komplexität unseres Projektes  keine unübersichtlichen Größen erreicht hat, war es für uns möglich, die meisten als Brief-Use-Cases\footnote T zu formulieren. Besondere Beachtung wurde neben der Beschreibung auf die Trigger und Probleme gelegt, welche zusätzlich zu den üblichen Kriterien hinzugefügt wurden.  \\
-
-Die Szenarios wurden auf Grundlage der gemachten Erfahrungen verfasst und betrachten dabei ein oder mehrere Use-Cases und beziehen ebenso die Nutzungskontextanalyse mit \ref ein.\\
-
-Nachdem dann letztendlich die grundlegenden Benutzeraufgaben formuliert wurden, widmeten wir uns dem Entwurf des aktuellen "User Task Organization Model".\cite{Mayhew:UEL}
-
-\section{Task-Szenarios}
-\subsection{Task: Dokumentation der Wasserwerte}
-\textbf{User:} Aquarienbesitzer\\
-
-\textbf{Definition:} Der Aquarienbesitzer ist zu Hause und interessiert sich für die Wasserwerte in seinem Aquarium, da er sich für eine bestimmte neue Fischart interessiert. Um diese Fischart halten zu können, sind bestimmte Nährwerte im Wasser benötigt, damit diese Fische überleben.\\
-
-\textbf{Task Flow:}
-\begin{enumerate}
- 	\item Toni, der Aquarienbesitzer, geht zum Fachhandel mit seiner Wasserprobe und lässt diese analysieren.
- 	\item Der Fachhandel analysiert diese Wasserwerte, während Toni wieder nach Hause fährt und auf die Ergebnisse wartet.
- 	\item Nach ein paar Tagen erhält Toni eine Antwort vom Fachhandel, wie denn seine Wasserwerte momentan aussehen. Dazu fährt Toni wieder zum Fachhandel und lässt sich  hier auch noch die tägliche Änderungsrate dank einer alten Analyse berechnen.
- 	\item Toni kennt nun seine Wasserwerte und weiß, dass seine Wasserwerte für den neuen Fisch optimal sind und legt sich daraufhin diesen neuen Fisch zu.
-	 \item Der neue Fisch lebt ohne Probleme im neuen Aquarium und passt zum Gesamtbild sehr gut dazu.
-\end{enumerate}
-\textbf{Task Closure:} Dieses Szenarios nahm 3 Tage in Anspruch, am ersten Tag bringt Toni die Wasserwerte zur Fachhandlung, am 2. Tag findet die Analyse statt und am 3. Tag holt Toni sich die Wasserwerte ab und kauft sich den neuen Fisch.\\
-
-Um diese Aufgabe zu unterstützen, sollte das User Interface...
-\begin{itemize}
-  \item Die tägliche Änderungsrate der Nährwerte automatisch berechnen
-  \item Die Dokumentation der Wasserwerte zu digitalisieren
-\end{itemize}	
+Anschließend wurden auf der vorhergegangen Formulierung der User-Profiles \ref{userprofiles}, in Kombination mit den Stakeholdern \ref{stakeholder}, die wichtigsten Rollen im System festgelegt. Dies waren für uns eindeutig die Aquariumbesitzer und die Mitarbeiter im Fachhandel. Zunächst wollten wir eine Spezifikation im Bereich der Aquarienbesitzer vornehmen, was wir aber für überflüssig gehalten haben, da die Unterschiede im Arbeitsumfeld bereits im Nutzungskontext \ref{nutzungskontext} dokumentiert wurde und der Fokus auf der Aufgabenerledigung liegt. Weil die Komplexität unseres Projektes  keine unübersichtlichen Größen erreicht hat, war es für uns möglich, die Aufgaben als Brief-Use-Cases \ref{tab:buc} zu formulieren. Besondere Beachtung wurde neben der Beschreibung auf die Trigger und Probleme gelegt, welche zusätzlich zu den üblichen Kriterien hinzugefügt wurden, damit mögliche Potentiale für das zu entwickelnde System entdeckt werden. \\
 
 \input{BriefUseCase}
 
+Die Szenarios wurden auf Grundlage der gemachten Erfahrungen von Johannes verfasst und betrachten dabei einen oder mehrere Use-Cases und beziehen ebenso die Nutzungskontextanalyse mit ein. Die zwei wichtigsten Task-Szenarios, welche sich ebenso sehr auf unsere Alleinstellungsmerkmale \ref{app:usp} fokussieren, sind hier aufgeführt. Weitere Szenarien sind im Anhang \ref{app:taskscenarios} zu finden.\\
+
+\section{Task-Szenarios}
 \subsection{Task: Problembehandlung}
 \textbf{User:} Aquarienbesitzer\\
 
@@ -63,32 +40,6 @@ Um diese Aufgabe zu unterstützen, sollte das User Interface...
   \item Die Fische, Pflanzen und Lampen im Aquarium dem Fachhandel präsentieren, damit der Mitarbeiter des Fachhandels direkt eine Übersicht über alle Problemquellen hat
 \end{itemize}
 
-
-\subsection{Task: Wasserwechsel durchführen}
-
-\textbf{User:} Aquarienbesitzer\\
-
-\textbf{Description:} Zur guten Aquarienpflege gehört ein wöchentlicher Wasserwechsel. Da das Grundwasser an manchen Wohnorten abweichende Werte zu den Zielwerten des Aquariumwassers besitzt, ist eine gezielte Dosierung von Osmose- und Grundwasser selten zu vermeiden.\\
-
-\textbf{Task Flow:}
-\begin{enumerate}
- \item Mia wohnt in der Nähe eines Kanals, wo das Grundwasser aus dem Kanal abgepumpt wird, dadurch weichen die Wasserwerte des Grundwassers stark von den optimalen Werten für ihr Aquarium ab. Da ihr die Pflege ihres Aquariums aber trotzdem sehr wichtig ist, führt sie einen Wasserwechsel mit Berücksichtigung der Zielwerte durch
- \item Zunächst analysiert Mia die Werte ihres aktuellen Aquariumwassers und erhält Gesamt- und Karbonathärte sowie den pH-Wert.
- \item Mit Hilfe der Grundwasserwerte vom Versorger kann sie anschließend das benötigte Verhältnis des Osmose- und des Grundwasser unter Berücksichtigung der Menge des Wasserwechsels per Hand berechnen.
- \item Mia mischt das Grund- und Osmosewasser und führt den Wasserwechsel in ihrem Aquarium durch.
- \item Da Mia die Werte ihres Aquariums sorgfältig dokumentiert, ist das Eintragen des neuen Wasserwertes sehr einfach.
-\end{enumerate}
-
-\textbf{Task Closure:} Die Durchführung der Aufgabe dauert nur 40 Minuten. 10 Minuten für die Berechnung, 10 Minuten für die Analyse und noch 15 Minuten für die Durchführung der Wasserprobe und 5 weitere Minuten für das Eintragen der Dokumentation\\
-
-Um diese Aufgabe zu unterstützen, sollte das User Interface...
-\begin{itemize}
-  \item Die Berechnung des Aquarienbesitzer durchführen
-  \item An die Durchführung des Wasserwechsels erinnern
-  \item Die Dokumentation der Wasserwerte übernehmen und die Durchführung eines Wasserwechsels bereits vor der Durchführung anzuzeigen
-\end{itemize}
-
-
 \subsection{Task: Empfehlen von Fischen und Pflanzen}
 \textbf{User:} Mitarbeiter des Fachhandels\\
 
@@ -110,12 +61,13 @@ Um diese Aufgabe zu unterstützen, sollte das User Interface...
 
 Um diese Aufgaben zu unterstützen, sollte das User Interface...
 \begin{itemize}
-  \item Der Fachhandlung alle Informationen(Wasserwerte, Fische, Pflanzen) zum Aquarium bereitstellen für eine optimale Beratung
+  \item Der Fachhandlung alle Informationen(Wasserwerte, Fische, Pflanzen) zum Aquarium auf einen Blick bereitstellen für eine optimale Beratung.
+  \item Das schnelle Wechseln zwischen den einzelnen Informationen zu den Kunden ermöglichen.
 \end{itemize}
 
+Die grundlegenden Nutzeraufgaben haben wir erneut in die Aufgaben für Aquarium-Besitzer und Fachhandel-Mitarbeiter aufgeteilt. Bei den Aufgaben sind Gemeinsamkeiten zwischen beiden Gruppierungen zu erkennen, welche aber davon abhängig durchgeführt werden, wie viel die Erfahrung die einzelnen Personen letztendlich haben.
 
-
-\section{List of User Tasks for Aquariumusers}
+\section{List of User Tasks for Aquarium-Besitzer}
 \begin{itemize}
 \item Wasserprobe entnehmen
 \item Wasserprobe an die Fachhandlung bringen
@@ -130,7 +82,6 @@ Um diese Aufgaben zu unterstützen, sollte das User Interface...
 \item Aquarium sauber halten
 \end{itemize}
 
-
 \section{List of User Tasks for Fachhandel-Mitarbeiter}
 \begin{itemize}
 \item Kunden beraten
@@ -142,4 +93,21 @@ Um diese Aufgaben zu unterstützen, sollte das User Interface...
 \item Aquaristische Berechnungen durchführen
 \end{itemize}
 
+\section{User Task Organization Models}\label{utd}
+Letztendlich widmeten wir uns dem Entwurf des aktuellen "User Task Organization Model".\cite{Mayhew:UEL}
+Hier teilten wir erneut zwischen der Gruppe der Aquarienverwaltung für den Aquarium-Besitzer und der Kundenverwaltung für den Fachhandel-Mitarbeiter. Die Modelle sind in einer Top-Down Struktur realisiert worden und gliedert sich nach Hauptaspekt-Teilaspekt-Unteraspekt. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{utd_aqverwaltung}
+	\caption{User Task Diagramm: Aquariumverwaltung}
+	\label{utd_aqverwaltung}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio, angle=90]{utd_kuverwaltung}
+	\caption{User Task Diagramm: Kundenverwaltung}
+	\label{utd_kuverwaltung}
+\end{figure}
 

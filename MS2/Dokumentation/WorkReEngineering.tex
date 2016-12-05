@@ -1,4 +1,100 @@
-\chapter{Work Re-Engineering}
-Das Ziel des Work Re-Engineering ist nicht die Nachahmung des aktuellen Modells oder die Revolutionierung der Aufgabenbearbeitung, sondern viel mehr die Kombination zwischen der möglichen Effizienzsteigerung durch die Automatisierung der Prozesse, dem effizienteren Erreichen der Ziele und einem einfacheren Wiedereinstieg in das neue System unter Betrachtung der Einflüsse der Mensch-Computer-Interaktion.
+\chapter{Work Re-Engineering}\label{reengineering}
+Das Ziel des Work Re-Engineering ist nicht die Nachahmung des aktuellen Modells oder die Revolutionierung der Aufgabenbearbeitung, sondern viel mehr die Kombination zwischen der möglichen Effizienzsteigerung durch die Automatisierung der Prozesse, dem effizienteren Erreichen der Ziele und einem einfacheren Wiedereinstieg in das neue System unter Betrachtung der Einflüsse der Mensch-Computer-Interaktion.\cite{Mayhew:UEL}
+Neben den User Task Diagrammen nehmen alle bisher getätigten Schritte Einfluss auf die Neubetrachtung des Arbeitsmodells. Den größten Einfluss haben in diesem Fall aber wohl die Task Analyse unter \ref{taskanalysis} und die User Profiles unter \ref{userprofiles}. 
 
-Möglichkeiten um die Arbeit zu reduzieren durchs Task Model oder Arbeitsprozesse rationalisieren(optimale Zieleerreichung durch neue Bedingungen)Changing work practice ist gerechtfertig, wenn nicht nur automatisierung sondern auch Usability goals erreicht werden.Ein wenig Änderung ist benötigt
+\section{Use-Cases}
+Im Bereich der Use-Cases wurde auf Basis der Brief-Use-Cases \ref{tab:buc} im Prozess der Neubetrachtung die Einwirkung eines Systems mit eingeplant und Verbesserungen mit berücksichtigt. Es wurde also das Format der Essential-Use-Cases verwendet. Auch hier findet wieder die Aufteilung der zwei Instanzen Aquarium- und Kundenverwaltung statt.
+
+\subsection{Aquariumverwaltung}
+Im Bereich der Aquariumverwaltung haben wir uns auf einige wenige Beispiele reduziert, welche aber je nach Kontext auf alle ähnlichen Aufgaben angewendet werden kann. Es liegt ebenso Beachtung darauf, dass eben diese Aufgaben eine besondere Rolle in der Kommunikation zwischen Fachhandel-Mitarbeiter und Aquariumbesitzer hat.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{euc_aq_1}
+	\caption{Aquariumverwaltung - Düngen des Wassers}
+	\label{euc:aq:1}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{euc_aq_2}
+	\caption{Aquariumverwaltung - Nährwerte aktualisieren}
+	\label{euc:aq:2}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{euc_aq_4}
+	\caption{Aquariumverwaltung - Anlegen des virtuellen Aquariums}
+	\label{euc:aq:4}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{euc_aq_3}
+	\caption{Aquariumverwaltung - Bearbeiten des virtuellen Aquariums}
+	\label{euc:aq:3}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{euc_aq_5}
+	\caption{Aquariumverwaltung - Wasserwechsel}
+	\label{euc:aq:5}
+\end{figure}
+
+\subsection{Kundenverwaltung}
+Bei der Kundenverwaltung wird ebenso die Nährwertaktualisierung, siehe in \ref{euc:ku:3}, aufgeführt, da diese nicht zwingend abhängig von Fachhandel-Mitarbeiter oder dem Aquariumbesitzer, welcher Wassertests zum Beispiel durch Tröpfchentests durchführen kann, sind. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{euc_ku_1}
+	\caption{Kundenverwaltung - Objekte dem Kunden empfehlen}
+	\label{euc:ku:1}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{euc_ku_2}
+	\caption{Kundenverwaltung - Empfehlen eines Düngemittels}
+	\label{euc:ku:2}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{euc_ku_3}
+	\caption{Kundenverwaltung - Nährwerte aktualisieren}
+	\label{euc:ku:3}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{euc_ku_4}
+	\caption{Kundenverwaltung - Probleme behandeln}
+	\label{euc:ku:4}
+\end{figure}
+
+
+\section{User Task Diagramm}
+Möglichkeiten, um die Arbeit zu reduzieren, werden erreicht, indem das User Task Diagramm aus \ref{utd} auf seine Schwächen geprüft wird. Die Arbeitsprozesse sollen anschließend eine optimale Zielerreichung durch neue Bedingungen bieten. Das Abändern der aktuellen Arbeitserfahrung ist allerdings auch nur legitim, falls nicht nur der Prozess automatisiert wird, sondern gleichzeitig auch noch die in \ref{usabilityGoals} definierten Usability Ziele  erreicht werden. Für ein optimales Ergebnis ist daher eine gewisse Änderung nicht zu vermeiden.
+
+\subsection{Aquariumverwaltung}
+Das Arbeitsmodell \ref{utd_aqverwaltung} der Aquariumverwaltung hat nach der Betrachtung durch das Work Re-Engineering, vom Wegfallen einzelner Prozesse und dem Hinzufügen von Prozessen für ein optimaleres Arbeitsergebnis, profitiert. In \ref{utd_aqverwaltung_reengineering} erkennt man den neuen Teilzweig der Dokumentation, da in den meisten Fällen keine Dokumentation über das eigene Aquarium angefertigt wird. Dadurch findet oft nur eine Aktion bei akuten Problemen statt, dabei wäre eine Dokumentation der Wasserwerte für die langfristige Optimierung zum Beispiel ein großer Zeitvorteil.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{utd_aqverwaltung_reenginered}
+	\caption{User Task Diagramm: Aquariumverwaltung nach Re-Engineering}
+	\label{utd_aqverwaltung_reengineering}
+\end{figure}
+
+\subsection{Kundenverwaltung}
+Das Arbeitsmodell \ref{utd_kuverwaltung} der Kundenverwaltung erfuhr eine Änderung in der grundsätzlichen Prozessstruktur und wurde neu angeordnet. Das neue Modell \ref{utd_kuverwaltung_reengineering} geht viel mehr auf die vorher nicht vorhandene Kommunikation zwischen dem Kunden und den Mitarbeitern ein und zeigt die Potentiale auf, welche durch eine durch ein System gegebene Kommunikation erreicht werden kann. Des Weiteren fallen durch den Wandel der Zeit viele Prozeduren, welche früher sehr aufwendig gewesen werden, einfacher. Wie zum Beispiel eine Fernwartung des Mitarbeiters anstatt eines Besuches beim Kunden.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{utd_kuverwaltung_reenginered}
+	\caption{User Task Diagramm: Kundenverwaltung nach Re-Engineering}
+	\label{utd_kuverwaltung_reengineering}
+\end{figure}
+

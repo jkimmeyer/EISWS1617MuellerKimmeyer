@@ -80,3 +80,92 @@ CO\textsubscript{2} = (KH/2,8)\cdot10^{(7,90-pH)}
 
 \section{Architekturmerkmale}
 
+\subsection{Ressourcen}
+
+In unserem System gibt es drei wichtige Ressourcen, die über den Server ausgetauscht werden. Das sind die Benutzer, die virtuellen Aquarien und die Wasserwerte. Nachfolgend werden wir genauer auf die drei Ressourcen eingehen.
+
+\subsubsection{Benutzer}
+
+Die Benutzerinformationen werden in unserer Datenbank unter der MongoDB-Collection ``users'' gespeichert. Das Schema eines Benutzers wird wie folgt aussehen:
+
+\begin{lstlisting}
+   user{
+      id: Number,
+      token: String,
+      vorname: String,
+      nachname: String,
+      geburtsdatum: Date,
+      strasse: String,
+      hausnummer: String,
+      stadt: String,
+      plz: Number
+   }
+\end{lstlisting}
+ 
+Die ID ist eine fortlaufende Nummer, die automatisch generiert wird, um den Benutzer eindeutig identifizieren zu können. Der Token wird für das Firebase Cloud Messaging benötigt. Sobald der Benutzer das erste mal die App startet, wird dieser Token generiert und an den Server geschickt. Mit diesem Token können dann die Nachrichten der Fachhändler einem Benutzer zugeordnet werden. Theoretisch könnte man den Benutzer auch mit diesem Token eindeutig identifizieren, allerdings ist er ziemlich lang und somit haben wir uns noch für eine zusätzliche ID entschieden. Diese ID wird dem Benutzer angezeigt und diese muss er dann an seinen Fachhändler weitergeben, damit er den Kunden zu seinem System hinzufügen kann. Alle weiteren Attribute sind freiwillig, allerdings wird empfohlen, diese auch auszufüllen, damit die Fachhandlung direkt ein paar Informationen über den Kunden bekommt und ihn so besser zuordnen zu können.
+\\ \\
+Als REST-Methoden bekommt der Benutzer die vier üblichen Methoden, also GET um die Daten eines Benutzers zu bekommen, POST um einen Benutzer anzulegen, PUT um einen Benutzer zu bearbeiten und DELETE um ihn aus dem System zu entfernen. Nachfolgend ist ein kurzer Code-Ausschnitt der beispielhaft zeigen soll, wie man eine Liste aller Benutzer zurückgeben könnte.
+
+\begin{lstlisting}
+   app.route('/users')
+      .get(function (req, res) {
+         mongoose.model('users').find(function (err, users) {
+            var json = {"users": users};
+            res.json(json);
+         });
+   });
+\end{lstlisting}
+
+\subsubsection{Virtuelles Aquarium}
+
+Die Ressource für das virtuelle Aquarium ist für die Aquarium-Daten, die von einem Benutzer eingetragen werden, gedacht. In unserer Datenbank werden sie unter der MongoDB-Collection ``aquarien'' gespeichert. Wie auch bei den Benutzern werden wir zunächst das Schema mit den Attributen des Aquariums darstellen.
+
+\begin{lstlisting}
+   aquarium{
+      id: Number,
+      benutzer_id: Number,
+      bezeichnung: String,
+      laenge: Number,
+      breite: Number,
+      hoehe: Number,
+      fische: [{name: String, anzahl: Number}],
+      pflanzen: [{name: String, anzahl: Number}],
+      geraete: [{name: String, typ: String}]
+   }
+\end{lstlisting}
+
+Zur eindeutigen Identifikation bekommt auch das Aquarium eine ID sowie die ID des Benutzers, der das Aquarium angelegt hat, um es diesem zuordnen zu können. Außerdem werden noch die Daten gespeichert, die der Benutzer eingetragen hat, also eine Bezeichnung des Aquariums, die Maße und den Inhalt, also Fische, Pflanzen und Geräte. Fische und Pflanzen sind jeweils Arrays, in denen verschiede Fisch- und Pflanzenarten mit deren Anzahl eingetragen werden können. Bei den Geräten muss noch ein Typ angegeben werden, also zum Beispiel ``Pumpe'', ``CO\textsubscript{2}-Aufbereitung'' oder Sonstiges. Die Aquarien werden genau wie die Benutzer die vier REST-Methoden bekommen. 
+
+\subsubsection{Wasserwerte}
+
+Die Ressource für die Wasserwerte dient zur Übermittlung der Daten von der Fachhandlung zum Benutzer. Allerdings kann auch der Benutzer selbst die Wasserwerte eintragen und bearbeiten, weshalb da unterschieden werden muss. Dazu kommt aber später noch mehr. Jetzt kommt auch hier erstmal das Schema mit den Attributen der Ressource.
+
+\begin{lstlisting}
+   wasserwerte{
+      id: Number,
+      benutzer_id,
+      no3: String,
+      po3: String,
+      eisen: String,
+      kalium: String,
+      co2: String,
+      gh: String,
+      kh: String,
+      ph: String
+   }
+\end{lstlisting}
+
+Hier sieht man, dass wieder eine ID vergeben wird und auch die ID des betroffenen Benutzers gespeichert wird. Danach folgen die verschiedenen Werte, die jeweils als String gespeichert werden, damit zusätzlich zu dem Wert noch eine Einheit mit angegeben werden kann. Auch hier werden wieder die vier REST-Methoden verwendet. Allerdings gibt es hier zwei Anwendungsfälle zur Benutzung der POST- und PUT-Methode. Entweder trägt der Benutzer die Daten ein und sie werden normal in der Datenbank gespeichert oder die Fachhandlung schickt die Daten an den Benutzer. Dann muss zusätzlich über das FCM noch eine Push-Benachrichtigung an den Benutzer geschickt werden. Um dies deutlich zu machen, werden wir die POST-Methode nachfolgend als Pseudocode darstellen.
+
+\begin{lstlisting}
+   WENN(Absender ist gleich Fachhandlung)
+      DANN
+         Daten in DB speichern
+         Token anhand der ID des Benutzers abrufen
+         Push-Benachrichtigung mit Hilfe des Tokens 
+         an den Benutzer schicken
+   SONST
+      Daten in DB speichern
+\end{lstlisting}
+
+Den Absender könnte man zum Beispiel herausfinden, indem dieser im Request-Body als Parameter mit angegeben wird.

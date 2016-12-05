@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_share.xml",
+        "source": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/src/main/res/drawable-v21/ic_menu_share.xml"
+    },
+    {
+        "merged": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_slideshow.xml",
+        "source": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/src/main/res/drawable-v21/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_send.xml",
+        "source": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/src/main/res/drawable-v21/ic_menu_send.xml"
+    },
+    {
+        "merged": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_camera.xml",
+        "source": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/src/main/res/drawable-v21/ic_menu_camera.xml"
+    },
+    {
+        "merged": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_gallery.xml",
+        "source": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/src/main/res/drawable-v21/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_manage.xml",
+        "source": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/src/main/res/drawable-v21/ic_menu_manage.xml"
+    },
+    {
+        "merged": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/johannes/EIS16_17/MS1/Rapid Prototype/benutzerClient/MyApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable-v21/abc_edit_text_material.xml"
+    }
+]

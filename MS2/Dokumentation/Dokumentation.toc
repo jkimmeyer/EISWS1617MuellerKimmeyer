@@ -116,70 +116,76 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.1.4}Probleme}{48}{subsection.111}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}Systemdokumentation}{49}{chapter.113}
+\contentsline {section}{\numberline {10.2}Desktop - Anwendung}{48}{section.113}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.1}Iteration der Kommunikationsmodelle}{49}{section.114}
+\contentsline {chapter}{\numberline {11}Systemdokumentation}{52}{chapter.118}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.1}Deskriptives Modell}{49}{subsection.115}
+\contentsline {section}{\numberline {11.1}Iteration der Kommunikationsmodelle}{52}{section.119}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1.2}Pr\IeC {\"a}skriptives Modell}{50}{subsection.117}
+\contentsline {subsection}{\numberline {11.1.1}Deskriptives Modell}{52}{subsection.120}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.2}Iteration des Architekturmodells}{50}{section.119}
+\contentsline {subsection}{\numberline {11.1.2}Pr\IeC {\"a}skriptives Modell}{53}{subsection.122}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.3}Anwendungslogik}{51}{section.121}
+\contentsline {section}{\numberline {11.2}Iteration des Architekturmodells}{53}{section.124}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.1}Benutzer Client}{51}{subsection.122}
+\contentsline {section}{\numberline {11.3}Anwendungslogik}{54}{section.126}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline D\IeC {\"u}ngerdosierung}{52}{section*.123}
+\contentsline {subsection}{\numberline {11.3.1}Benutzer Client}{54}{subsection.127}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Zielgerichteter Wasserwechsel}{52}{section*.125}
+\contentsline {subsubsection}{\nonumberline D\IeC {\"u}ngerdosierung}{55}{section*.128}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline T\IeC {\"a}gliche \IeC {\"A}nderungen der Wasserwerte}{53}{section*.143}
+\contentsline {subsubsection}{\nonumberline Zielgerichteter Wasserwechsel}{55}{section*.130}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline CO\textsubscript {2}-Gehalt}{53}{section*.144}
+\contentsline {subsubsection}{\nonumberline T\IeC {\"a}gliche \IeC {\"A}nderungen der Wasserwerte}{56}{section*.148}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline T\IeC {\"a}gliche N\IeC {\"a}hrstoffver\IeC {\"a}nderungen}{54}{section*.146}
+\contentsline {subsubsection}{\nonumberline CO\textsubscript {2}-Gehalt}{56}{section*.149}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.2}Fachhandlung Client}{54}{subsection.147}
+\contentsline {subsubsection}{\nonumberline T\IeC {\"a}gliche N\IeC {\"a}hrstoffver\IeC {\"a}nderungen}{57}{section*.151}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.4}Architekturmerkmale}{54}{section.148}
+\contentsline {subsection}{\numberline {11.3.2}Fachhandlung Client}{57}{subsection.152}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.4.1}Ressourcen}{54}{subsection.149}
+\contentsline {section}{\numberline {11.4}Architekturmerkmale}{57}{section.153}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Benutzer}{54}{section*.150}
+\contentsline {subsection}{\numberline {11.4.1}Ressourcen}{57}{subsection.154}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Virtuelles Aquarium}{55}{section*.171}
+\contentsline {subsubsection}{\nonumberline Benutzer}{57}{section*.155}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Wasserwerte}{55}{section*.184}
+\contentsline {subsubsection}{\nonumberline Virtuelles Aquarium}{58}{section*.176}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}User Profiles}{59}{appendix.210}
+\contentsline {subsubsection}{\nonumberline Wasserwerte}{58}{section*.189}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Kind/Jugendlicher}{59}{section.211}
+\contentsline {subsection}{\numberline {11.4.2}Fehlerbehandlung}{59}{subsection.212}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Erwachsener - Aquarium Neuling}{60}{section.215}
+\contentsline {subsection}{\numberline {11.4.3}Richardson Maturity Model}{60}{subsection.213}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Erwachsener - Aquarium Fortgeschritten}{61}{section.219}
+\contentsline {chapter}{\numberline {A}User Profiles}{63}{appendix.216}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Erwachsener - Aquarium Experte}{63}{section.223}
+\contentsline {section}{\numberline {A.1}Kind/Jugendlicher}{63}{section.217}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Rentner - Aquarium Neuling}{64}{section.227}
+\contentsline {section}{\numberline {A.2}Erwachsener - Aquarium Neuling}{64}{section.221}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.6}Rentner - Aquarium Fortgeschritten}{65}{section.231}
+\contentsline {section}{\numberline {A.3}Erwachsener - Aquarium Fortgeschritten}{65}{section.225}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.7}Rentner - Aquarium Experte}{67}{section.235}
+\contentsline {section}{\numberline {A.4}Erwachsener - Aquarium Experte}{67}{section.229}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.8}Fachh\IeC {\"a}ndler}{68}{section.239}
+\contentsline {section}{\numberline {A.5}Rentner - Aquarium Neuling}{68}{section.233}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Anforderungen}{70}{appendix.243}
+\contentsline {section}{\numberline {A.6}Rentner - Aquarium Fortgeschritten}{69}{section.237}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}Funktionale Anforderungen}{70}{section.244}
+\contentsline {section}{\numberline {A.7}Rentner - Aquarium Experte}{71}{section.241}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.2}Qualitative Anforderungen}{71}{section.245}
+\contentsline {section}{\numberline {A.8}Fachh\IeC {\"a}ndler}{72}{section.245}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.3}Organisationale Anforderungen}{71}{section.246}
+\contentsline {chapter}{\numberline {B}Anforderungen}{74}{appendix.249}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Anhang: TaskSzenarios}{72}{appendix.247}
+\contentsline {section}{\numberline {B.1}Funktionale Anforderungen}{74}{section.250}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C.1}Task: Dokumentation der Wasserwerte}{72}{section.248}
+\contentsline {section}{\numberline {B.2}Qualitative Anforderungen}{75}{section.251}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C.2}Task: Wasserwechsel durchf\IeC {\"u}hren}{72}{section.254}
+\contentsline {section}{\numberline {B.3}Organisationale Anforderungen}{75}{section.252}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}Anhang: TaskSzenarios}{76}{appendix.253}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C.1}Task: Dokumentation der Wasserwerte}{76}{section.254}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C.2}Task: Wasserwechsel durchf\IeC {\"u}hren}{76}{section.260}

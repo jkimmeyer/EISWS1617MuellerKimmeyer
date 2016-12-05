@@ -52,29 +52,32 @@
 \BOOKMARK [2][]{subsection.102}{10.1.2 Pflege}{section.99}% 52
 \BOOKMARK [2][]{subsection.104}{10.1.3 Dokumentation}{section.99}% 53
 \BOOKMARK [2][]{subsection.111}{10.1.4 Probleme}{section.99}% 54
-\BOOKMARK [0][]{chapter.113}{11 Systemdokumentation}{}% 55
-\BOOKMARK [1][]{section.114}{11.1 Iteration der Kommunikationsmodelle}{chapter.113}% 56
-\BOOKMARK [2][]{subsection.115}{11.1.1 Deskriptives Modell}{section.114}% 57
-\BOOKMARK [2][]{subsection.117}{11.1.2 Pr\344skriptives Modell}{section.114}% 58
-\BOOKMARK [1][]{section.119}{11.2 Iteration des Architekturmodells}{chapter.113}% 59
-\BOOKMARK [1][]{section.121}{11.3 Anwendungslogik}{chapter.113}% 60
-\BOOKMARK [2][]{subsection.122}{11.3.1 Benutzer Client}{section.121}% 61
-\BOOKMARK [2][]{subsection.147}{11.3.2 Fachhandlung Client}{section.121}% 62
-\BOOKMARK [1][]{section.148}{11.4 Architekturmerkmale}{chapter.113}% 63
-\BOOKMARK [2][]{subsection.149}{11.4.1 Ressourcen}{section.148}% 64
-\BOOKMARK [0][]{appendix.210}{A User Profiles}{}% 65
-\BOOKMARK [1][]{section.211}{A.1 Kind/Jugendlicher}{appendix.210}% 66
-\BOOKMARK [1][]{section.215}{A.2 Erwachsener - Aquarium Neuling}{appendix.210}% 67
-\BOOKMARK [1][]{section.219}{A.3 Erwachsener - Aquarium Fortgeschritten}{appendix.210}% 68
-\BOOKMARK [1][]{section.223}{A.4 Erwachsener - Aquarium Experte}{appendix.210}% 69
-\BOOKMARK [1][]{section.227}{A.5 Rentner - Aquarium Neuling}{appendix.210}% 70
-\BOOKMARK [1][]{section.231}{A.6 Rentner - Aquarium Fortgeschritten}{appendix.210}% 71
-\BOOKMARK [1][]{section.235}{A.7 Rentner - Aquarium Experte}{appendix.210}% 72
-\BOOKMARK [1][]{section.239}{A.8 Fachh\344ndler}{appendix.210}% 73
-\BOOKMARK [0][]{appendix.243}{B Anforderungen}{}% 74
-\BOOKMARK [1][]{section.244}{B.1 Funktionale Anforderungen}{appendix.243}% 75
-\BOOKMARK [1][]{section.245}{B.2 Qualitative Anforderungen}{appendix.243}% 76
-\BOOKMARK [1][]{section.246}{B.3 Organisationale Anforderungen}{appendix.243}% 77
-\BOOKMARK [0][]{appendix.247}{C Anhang: TaskSzenarios}{}% 78
-\BOOKMARK [1][]{section.248}{C.1 Task: Dokumentation der Wasserwerte}{appendix.247}% 79
-\BOOKMARK [1][]{section.254}{C.2 Task: Wasserwechsel durchf\374hren}{appendix.247}% 80
+\BOOKMARK [1][]{section.113}{10.2 Desktop - Anwendung}{chapter.98}% 55
+\BOOKMARK [0][]{chapter.118}{11 Systemdokumentation}{}% 56
+\BOOKMARK [1][]{section.119}{11.1 Iteration der Kommunikationsmodelle}{chapter.118}% 57
+\BOOKMARK [2][]{subsection.120}{11.1.1 Deskriptives Modell}{section.119}% 58
+\BOOKMARK [2][]{subsection.122}{11.1.2 Pr\344skriptives Modell}{section.119}% 59
+\BOOKMARK [1][]{section.124}{11.2 Iteration des Architekturmodells}{chapter.118}% 60
+\BOOKMARK [1][]{section.126}{11.3 Anwendungslogik}{chapter.118}% 61
+\BOOKMARK [2][]{subsection.127}{11.3.1 Benutzer Client}{section.126}% 62
+\BOOKMARK [2][]{subsection.152}{11.3.2 Fachhandlung Client}{section.126}% 63
+\BOOKMARK [1][]{section.153}{11.4 Architekturmerkmale}{chapter.118}% 64
+\BOOKMARK [2][]{subsection.154}{11.4.1 Ressourcen}{section.153}% 65
+\BOOKMARK [2][]{subsection.212}{11.4.2 Fehlerbehandlung}{section.153}% 66
+\BOOKMARK [2][]{subsection.213}{11.4.3 Richardson Maturity Model}{section.153}% 67
+\BOOKMARK [0][]{appendix.216}{A User Profiles}{}% 68
+\BOOKMARK [1][]{section.217}{A.1 Kind/Jugendlicher}{appendix.216}% 69
+\BOOKMARK [1][]{section.221}{A.2 Erwachsener - Aquarium Neuling}{appendix.216}% 70
+\BOOKMARK [1][]{section.225}{A.3 Erwachsener - Aquarium Fortgeschritten}{appendix.216}% 71
+\BOOKMARK [1][]{section.229}{A.4 Erwachsener - Aquarium Experte}{appendix.216}% 72
+\BOOKMARK [1][]{section.233}{A.5 Rentner - Aquarium Neuling}{appendix.216}% 73
+\BOOKMARK [1][]{section.237}{A.6 Rentner - Aquarium Fortgeschritten}{appendix.216}% 74
+\BOOKMARK [1][]{section.241}{A.7 Rentner - Aquarium Experte}{appendix.216}% 75
+\BOOKMARK [1][]{section.245}{A.8 Fachh\344ndler}{appendix.216}% 76
+\BOOKMARK [0][]{appendix.249}{B Anforderungen}{}% 77
+\BOOKMARK [1][]{section.250}{B.1 Funktionale Anforderungen}{appendix.249}% 78
+\BOOKMARK [1][]{section.251}{B.2 Qualitative Anforderungen}{appendix.249}% 79
+\BOOKMARK [1][]{section.252}{B.3 Organisationale Anforderungen}{appendix.249}% 80
+\BOOKMARK [0][]{appendix.253}{C Anhang: TaskSzenarios}{}% 81
+\BOOKMARK [1][]{section.254}{C.1 Task: Dokumentation der Wasserwerte}{appendix.253}% 82
+\BOOKMARK [1][]{section.260}{C.2 Task: Wasserwechsel durchf\374hren}{appendix.253}% 83

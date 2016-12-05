@@ -221,3 +221,19 @@ Hier sieht man, dass wieder eine ID vergeben wird und auch die ID des betroffene
 \end{lstlisting}
 
 Den Absender könnte man zum Beispiel herausfinden, indem dieser im Request-Body als Parameter mit angegeben wird.
+
+\subsection{Fehlerbehandlung}
+
+Zur Fehlerbehandlung benutzen wir die HTTP-Statuscodes. Diese werden je nach Erfolg oder Misserfolg eines Requests im Response Header angegeben, sodass der Absender einen Status über den Erfolg übermittelt bekommt. Die wichtigsten Statuscodes werden wir kurz erläutern:
+
+\begin{itemize}
+\item 200: Die Anfrage war erfolgreich und das Ergebnis wurde in der Antwort übertragen
+\item 201: Wird nach einem POST-Request gesetzt, falls die Ressource erfolgreich erstellt wurde
+\item 400: Die Anfrage war fehlerhaft
+\item 404: Die angeforderte Ressource wurde nicht gefunden
+\item 500: Unerwarteter Serverfehler
+\end{itemize}
+
+\subsection{Richardson Maturity Model}
+
+Zur Einordnung unseres REST-Servers in das Richardson Maturity Model ist unsere Implementation noch zu wenig fortgeschritten. Wir sind uns aber sicher, dass wir mindestens Level 2 erreichen werden, da wir, wie bereits bei den Ressourcen beschrieben, für jede Ressource die vier üblichen HTTP-Operationen, also GET, PUT, POST und DELETE anbieten werden und diese jeweils unter ihren eigenen URIs erreichbar sein werden. Ob wir Hypermedia verwenden werden und somit Level 3 erreichen, können wir erst zu einem späteren Implementations-Fortschritt sagen.

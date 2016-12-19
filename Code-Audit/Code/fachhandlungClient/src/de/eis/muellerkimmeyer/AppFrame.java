@@ -1,4 +1,4 @@
-package fachhandlungClient;
+package de.eis.muellerkimmeyer;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;

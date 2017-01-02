@@ -2,28 +2,49 @@ package de.eis.muellerkimmeyer;
 
 public class Customer {
 	
-	public int id;
-	public String name;
+	public String id;
+	public String vorname;
+	public String nachname;
+	public String geburtsdatum;
 	
-	public Customer(int id, String name){
+	public Customer(String id, String vorname, String nachname, String geburtsdatum){
 		this.id = id;
-		this.name = name;
+		this.vorname = vorname;
+		this.nachname = nachname;
+		this.geburtsdatum = geburtsdatum;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getVorname() {
+		return vorname;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setVorname(String vorname) {
+		this.vorname = vorname;
 	}
+
+	public String getNachname() {
+		return nachname;
+	}
+
+	public void setNachname(String nachname) {
+		this.nachname = nachname;
+	}
+
+	public String getGeburtsdatum() {
+		return geburtsdatum;
+	}
+
+	public void setGeburtsdatum(String geburtsdatum) {
+		this.geburtsdatum = geburtsdatum;
+	}
+
 
 }

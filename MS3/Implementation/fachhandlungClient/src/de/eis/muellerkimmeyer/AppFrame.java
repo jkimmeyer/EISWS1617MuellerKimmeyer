@@ -27,6 +27,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 
 /*
  *  EISWS1617
@@ -92,7 +93,8 @@ public class AppFrame extends JFrame {
     }
     
     private void openCustomerTab(Customer customer){
-    	JPanel panel = new JPanel(false);
+    	JPanel panel = new JPanel();
+    	panel.setLayout(null);
         /*
          *  Den zuletzt geöffneten Kunden speichern, 
          *  damit der entsprechende Tab direkt nach
@@ -107,6 +109,20 @@ public class AppFrame extends JFrame {
     	 */
     	searchField.setText("");
     	table.clearSelection();
+    	
+    	// Inhalt des Panels
+    	ArrayList<Section> sections = new ArrayList<Section>();
+    	
+    	JPanel kundeninformationen = new JPanel();
+    	JPanel kaufberatung = new JPanel();
+    	JPanel problemanalyse = new JPanel();
+    	JPanel wasseranalyse = new JPanel();
+    	sections.add(new Section("Kundeninformationen", kundeninformationen, true));
+    	sections.add(new Section("Kaufberatung", kaufberatung, false));
+    	sections.add(new Section("Problemanalyse", problemanalyse, false));
+    	sections.add(new Section("Wasseranalyse", wasseranalyse, false));
+    	Accordion accordion = new Accordion(sections);
+    	panel.add(accordion);
     	
     	String name = "[" + customer.getId() + "] " + customer.getVorname() + " " + customer.getNachname();
 		tabbedPane.addTab(name, null, panel, name);
@@ -178,6 +194,8 @@ public class AppFrame extends JFrame {
 		 */
 		DefaultTableModel tableModel = new DefaultTableModel(customerData, columnNames) {
 
+			private static final long serialVersionUID = 1L;
+
 			@Override
 		    public boolean isCellEditable(int row, int column) {
 		       return false;
@@ -203,7 +221,9 @@ public class AppFrame extends JFrame {
 	    */
 		
 		table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
-		    @Override
+			private static final long serialVersionUID = 1L;
+
+			@Override
 		    public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
 		        final Component c = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 		        if(isSelected){

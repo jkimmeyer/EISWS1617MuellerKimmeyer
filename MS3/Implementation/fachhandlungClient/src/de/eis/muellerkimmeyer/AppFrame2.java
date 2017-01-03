@@ -19,8 +19,6 @@ public class AppFrame2 extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -50,29 +48,13 @@ public class AppFrame2 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-		tabbedPane.setBounds(10, 11, 414, 239);
-		contentPane.add(tabbedPane);
-		
 		JPanel panel = new JPanel();
-		tabbedPane.addTab("New tab", null, panel, null);
+		panel.setBounds(10, 11, 414, 239);
 		panel.setLayout(null);
+		contentPane.add(panel);
 		
-		JLabel lblSuche = new JLabel("Suche");
-		lblSuche.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblSuche.setBounds(10, 11, 46, 14);
-		panel.add(lblSuche);
-		
-		textField = new JTextField();
-		textField.setBounds(50, 8, 349, 20);
-		panel.add(textField);
-		textField.setColumns(10);
-		
-		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 38, 389, 162);
-		panel.add(scrollPane);
-		
-		table = new JTable();
-		scrollPane.setViewportView(table);
+		JPanel panel_1 = new JPanel();
+		panel_1.setBounds(10, 10, 200, 100);
+		panel.add(panel_1);
 	}
 }

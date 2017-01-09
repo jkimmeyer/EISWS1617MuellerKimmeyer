@@ -3,12 +3,48 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.8.0_33c5d1a42969fcaf7733d5a223b8f86bf04f571f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.8.0_36fe55c7050e7d3def9fa61eb8366a392ba02874\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.8.0_57291b6cf4c669524398873188b8de432c2c6d00\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
         <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_500ca0dfd7f4d744e9a126b5107de05f9843a325\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_11e5364721f959106b181fab6c455c14af2ec676\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -57,12 +93,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_070bc946da381a9a82309dd80665077d7cea7f65\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.8.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="190a642ba16d1421296a4d794606279b80039c59">
         <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.8.0_404f70a2ddc5d6e6367302d2401d0aa097f98a95\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="844470697d2aa5f7aff646506fa79e4f3921374b">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_a0ebdc6d837806ffb6dfcf5a6cd2eb6b7b3c12bc\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,12 +138,66 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_d33d51d6e737b50d53cf221a9320d71a6671d452\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
         <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_8992547123322b5848b0dea72bf734101a1fa2df\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_e98666a855ec684e73d28df8e039dd6c94179f35\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\libs\okhttp-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\2\okhttp-3.4.1_9dc7e8e53c77362265a90aff43d5b743bed97adb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_6e4c33f93dc1bc48d42f3216dfdf9d98c24b1544\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.8.0_62d7a4c2e5c1e6398f5cd454b258e578c7eca454\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_9ba21382588caea26f8a0b6a917b50cadbd67f1a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -102,6 +210,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_73343c5cd795a364ab798caace1d3fc18d4d9706\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -111,12 +228,57 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_b3398426064ff5f204b2578aedb39f932080c330\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_8d0be094ab10562ae699c1ea85266dbef302f6e2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.8.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
         <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.8.0_1bf13ea6dfad6e3e91e44d8cc77eab9e712cb74a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f3198030853a0549e210fc939e98b678cd279300\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.8.0_20d593aeb4dfee9739d17afabe63c3bda6c6d451\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\libs\okio-1.11.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\2\okio-1.11.0_2850044a83cc81e991382f1d756c95cf4e3744c3\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -156,6 +318,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_7e13f470400facb7988c9cf72af281826349bda6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -183,12 +354,66 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.8.0_c9040fbe03172371f5c31e95e61e8a8972a44dac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="d5c731fc64c03dfe04d51134955b483551c35849">
         <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_a2dd9cfa4055b13deb46a8b060baad58a828f91e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_894b4475f2109f9580b9fd1d491b0859999ab906\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fee929bfed8fb3b7c10ccc53335c604f1ab2db7a">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f018752cdda4d88618025b17a1216412569bf794\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.8.0_c02b18baf0aa5bbe3f0e1a7b34129ccd175d177b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_8c6b57905fb96aa1b47a643ba7c73e365bdb8b43\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_a7d1d16a6aead88e742038ade3bb9e92fa3bc214\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -228,12 +453,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_11a984520c6fd8f86fcb61d88845ffa16a74eb0c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="9b2b7116189259df8c4c57536948b2e9d7679283">
         <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\Code-Audit\Code\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_59b43ead2ef364525540c97178cf688a241c6d1e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Moritz\Desktop\EISWS1617MuellerKimmeyer\MS3\Implementation\benutzerClient\Aquaapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_ce8de3d722637a24f39d594d6e9949aefc99e0cc\classes.dex" />
     </item>
 
 </items>

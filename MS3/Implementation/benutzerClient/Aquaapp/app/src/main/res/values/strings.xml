@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Aquaapp</string>
+    <string name="title_activity_dokumentation">DokumentationActivity</string>
+    <string name="title_activity_probleme">ProblemeActivity</string>
+    <string name="title_activity_pflege">PflegeActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

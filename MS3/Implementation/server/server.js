@@ -31,19 +31,41 @@ app.set('port', process.env.PORT || 61000);
 // Mongoose Models
 
 var userSchema = mongoose.Schema({
-    token: String
+    uid: String,
+	sid: String,
+	token: String
 });
 userSchema.set('collection', 'users');
 mongoose.model('users', userSchema);
 
 var wwSchema = mongoose.Schema({
-    token: String,
-    ph: Number,
-    KH: Number,
-    dailyUse: Number
+    userUID: String,
+    von: String,
+	datum: String,
+	kh: Number,
+	gh: Number,
+	ph: Number,
+	co2: Number,
+	eisen: Number,
+	kalium: Number,
+	no3: Number,
+	po3: Number
 });
 wwSchema.set('collection', 'wasserwerte');
 mongoose.model('wasserwerte', wwSchema);
+
+var aqSchema = mongoose.Schema({
+	userUID: String,
+    bezeichnung: String,
+    breite: Number,
+	laenge: Number,
+	hoehe: Number,
+	glasstaerke: Number,
+	kieshoehe: Number,
+	fd: Number
+});
+aqSchema.set('collection', 'aquarien');
+mongoose.model('aquarien', aqSchema);
 
 // Routen
 

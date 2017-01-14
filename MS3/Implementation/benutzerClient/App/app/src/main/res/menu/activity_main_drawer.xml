@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Dokumentation">
+        <menu>
+            <item
+                android:id="@+id/nav_aquarium"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Virtuelles Aquarium" />
+            <item
+                android:id="@+id/nav_wasserwerte"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Wasserwerte" />
+            <item
+                android:id="@+id/nav_logbuch"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logbuch" />
+        </menu>
+    </item>
+
+    <item android:title="Pflege">
+        <menu>
+            <item
+                android:id="@+id/nav_wasserwechsel"
+                android:icon="@drawable/ic_nav_wasserwechsel"
+                android:title="Wasserwechsel" />
+            <item
+                android:id="@+id/nav_berechnungen"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Berechnungen" />
+        </menu>
+    </item>
+
+    <item android:title="Probleme">
+        <menu>
+            <item
+                android:id="@+id/nav_hinweise"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Hinweise" />
+            <item
+                android:id="@+id/nav_fachhandel"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Fachhandel" />
+        </menu>
+    </item>
+
+</menu>

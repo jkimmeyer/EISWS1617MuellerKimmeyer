@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eis1617.muellerkimmeyer.app.AquariumFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:layout_width="348dp"
+                android:layout_height="151dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ivAquarium"
+                android:src="@drawable/aquarium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBezeichnung"
+                android:text="Aquarium Bezeichnung:"
+                android:layout_below="@id/ivAquarium"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:hint="Bezeichnung"
+                android:ems="10"
+                android:layout_below="@+id/tvBezeichnung"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/etName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:nextFocusDown="@+id/etLaenge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etName"
+                android:text="Länge:"
+                android:id="@+id/tvLaenge"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="in cm"
+                android:ems="10"
+                android:layout_below="@id/tvLaenge"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:id="@id/etLaenge"
+                android:layout_width="100dp"
+                android:nextFocusDown="@+id/etBreite"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etName"
+                android:text="Breite:"
+                android:id="@+id/tvBreite"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@id/etBreite"/>
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="in cm"
+                android:ems="10"
+                android:id="@id/etBreite"
+                android:layout_alignBaseline="@id/etLaenge"
+                android:layout_alignBottom="@id/etLaenge"
+                android:layout_centerHorizontal="true"
+                android:nextFocusDown="@+id/etHoehe"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etName"
+                android:text="Höhe:"
+                android:id="@+id/tvHoehe"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@id/etHoehe"/>
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="in cm"
+                android:ems="10"
+                android:id="@id/etHoehe"
+                android:layout_alignBaseline="@id/etBreite"
+                android:layout_alignBottom="@id/etBreite"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:nextFocusDown="@+id/etGlasstaerke"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etLaenge"
+                android:text="Glasstärke:"
+                android:id="@+id/tvGlasstaerke"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="in cm"
+                android:ems="10"
+                android:layout_below="@id/tvGlasstaerke"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:id="@id/etGlasstaerke"
+                android:layout_width="100dp"
+                android:nextFocusDown="@+id/etKieshoehe"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etLaenge"
+                android:text="Kieshöhe:"
+                android:id="@+id/tvKieshoehe"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@id/etKieshoehe"/>
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="in cm"
+                android:ems="10"
+                android:id="@id/etKieshoehe"
+                android:layout_alignBaseline="@id/etGlasstaerke"
+                android:layout_alignBottom="@id/etGlasstaerke"
+                android:layout_centerHorizontal="true"
+                android:nextFocusDown="@+id/etFuellstanddifferenz"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etLaenge"
+                android:text="Füllstanddifferenz:"
+                android:id="@+id/tvFuellstanddifferenz"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@id/etFuellstanddifferenz"
+                android:textSize="11dp"/>
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="in cm"
+                android:ems="10"
+                android:id="@id/etFuellstanddifferenz"
+                android:layout_alignBaseline="@id/etGlasstaerke"
+                android:layout_alignBottom="@id/etGlasstaerke"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:text="Speichern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etKieshoehe"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:id="@+id/buttonSpeichern" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

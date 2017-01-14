@@ -1,5 +1,47 @@
 <resources>
     <string name="app_name">App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
     <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="wasserwechsel_info">
+        Um einen bestimmten Zielwert bei der Karbonathärte (KH) oder Gesamthärte (GH) im Aquarium zu
+        erhalten, sollte bei einem Wasserwechsel Leitungswasser und Reinwasser (Osmose oder VE-Wasser)
+        gemischt werden. Der Anteil kann hier berechnet werden.
+    </string>
+    <string name="welcome_message">
+        Zuerst solltest du ein paar Werte an deinem Aquarium nachmessen und in die folgenden Felder
+        eintragen. Anschließend wirst du zu deinem Dashboard weitergeleitet. Viel Spaß und Erfolg mit
+        der Nutzung deines Aquariums und unserer App!
+    </string>
+    <string name="nettowasservolumen_info">
+        Der Wert des Nettowasservolumens wurde bereits anhand deiner eingetragenen Aquariummaße berechnet. Er kann aber trotzdem noch manuell angepasst werden.
+    </string>
+    <string name="gewuenschte_menge_info">
+        Hier soll angegeben werden, wie viel Wasser du insgesamt aus deinem Aquarium wechseln möchtest.
+    </string>
+    <string name="khghlw_info">
+        Die Karbonathärte (KH) bzw. die Gesamthärte (GH) des Leitungswassers können in der Regel beim Wasser-Anbieter erfragt werden.
+        Eine weitere Möglichkeit zum Herausfinden der Wasserhärte wären Verzeichnisse wie zum Beispiel das auf www.wasserhaerte.net.
+    </string>
+    <string name="khghaq_info">
+        Die Karbonathärte (KH) bzw. die Gesamthärte (GH) des Aquariums solltest du von deiner Fachhandlung berechnen lassen.
+        Falls der Wert bereits vorliegt, wird er hier automatisch eingefügt.
+    </string>
+    <string name="gewuenschte_khgh_info">
+        Gib hier deinen Zielwert der gewünschten Karbonathärte (KH) bzw. Gesamthärte (GH) an. Dieser sollte ebenfalls
+        bei der Fachhandlung erfragt werden und wird hier auch automatisch eingefügt, falls dies bereits geschehen ist.
+    </string>
+    <string name="wirkungsgrad_re_info" formatted="false">
+        Hier soll eine Prozentzahl zwischen 0 und 100 angegeben werden, die dem Wirkungsgrad deiner
+        Reinwassererzeugung entspricht. Bei Osmoseanlagen liegt der Wert bei ca. 95% und bei
+        VE-Anlagen bei ca. 100%.
+    </string>
+    <string name="title_activity_login">Sign in</string>
+
 </resources>

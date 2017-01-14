@@ -46,7 +46,7 @@ public class RvAdapterWasserwerte extends RecyclerView.Adapter<RvAdapterWasserwe
         holder.tvVon.setText(eintraege.get(position).von);
 
         if(eintraege.get(position).von == "Fachhandlung") {
-            holder.ivIcon.setImageResource(R.drawable.ic_home);
+            holder.ivIcon.setImageResource(R.drawable.ic_fachhandlung);
         }
         else{
             holder.ivIcon.setImageResource(R.drawable.ic_account_circle);
@@ -86,7 +86,7 @@ public class RvAdapterWasserwerte extends RecyclerView.Adapter<RvAdapterWasserwe
         if(focusedItem > position){
             focusedItem--;
         }
-        else if(focusedItem == position){
+        else if(focusedItem == position && eintraege.size() > 0){
             WasserwerteFragment.setTextFields(eintraege.get(focusedItem));
         }
         if(eintraege.size() == 0){
@@ -94,14 +94,6 @@ public class RvAdapterWasserwerte extends RecyclerView.Adapter<RvAdapterWasserwe
         }
         notifyItemRemoved(position);
         notifyItemRangeChanged(position, eintraege.size());
-    }
-
-    public int getFocusedItem() {
-        return focusedItem;
-    }
-
-    public void setFocusedItem(int focusedItem) {
-        this.focusedItem = focusedItem;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

@@ -10,6 +10,7 @@ import android.support.v7.app.AlertDialog;
 import android.text.Html;
 import android.text.Spanned;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +26,13 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.iid.FirebaseInstanceId;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 
@@ -40,7 +48,9 @@ public class WasserwechselFragment extends Fragment implements View.OnClickListe
     private AlertDialog.Builder dialogBuilder;
 
     private FirebaseAuth firebaseAuth;
+    private FirebaseUser firebaseUser;
     private DatabaseReference databaseReference;
+    private ServerRequest serverRequest;
 
     public WasserwechselFragment() {
         // Required empty public constructor
@@ -80,10 +90,52 @@ public class WasserwechselFragment extends Fragment implements View.OnClickListe
         btnWasserwechselBerechnen.setOnClickListener(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
+        firebaseUser = firebaseAuth.getCurrentUser();
         databaseReference = FirebaseDatabase.getInstance().getReference();
+        serverRequest = new ServerRequest();
+
+        dialogBuilder = new AlertDialog.Builder(getActivity());
+
+        loadLatestWasserwerte();
 
         // Inflate the layout for this fragment
         return rootView;
+    }
+
+    private void loadLatestWasserwerte(){
+
+        JSONObject response = serverRequest.doAsyncRequest("GET", "http://eis1617.lupus.uberspace.de/nodejs/wasserwerte/"+ firebaseUser.getUid(), null);
+
+        try {
+            if (response.getString("success") != null && response.getString("success").toString() != "false") {
+                JSONArray entries = response.getJSONArray("wasserwerte");
+
+                if(entries.length() > 0) {
+
+                    int i = entries.length() - 1; // Letzter Eintrag
+
+                    String von = entries.getJSONObject(i).getString("von");
+                    String datumStr = entries.getJSONObject(i).getString("datum");
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                    Date datum = dateFormat.parse(datumStr);
+
+                    double kh = entries.getJSONObject(i).getDouble("kh");
+                    double gh = entries.getJSONObject(i).getDouble("gh");
+
+                    etKhGhAq.setHint("KH: " + kh + " / GH: " + gh);
+                }
+
+            }
+            else{
+                Log.w("WasserwechselFragment", "insertWasserwerte:failed");
+            }
+        }
+        catch (JSONException e){
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void addLogbuchEintrag(String aktion, int icon, String message){
@@ -130,14 +182,13 @@ public class WasserwechselFragment extends Fragment implements View.OnClickListe
                 double[] wassermengen = MainActivity.aquarium.getBenoetigteWassermengen(Double.parseDouble(nettoWasserVolumen), Double.parseDouble(gewuenschteMenge), Double.parseDouble(khGhLw), Double.parseDouble(khGhAq), Double.parseDouble(gewuenschteKhGh), Double.parseDouble(wirkungsgradRE));
                 double leitungswasser = wassermengen[0];
                 double reinwasser = wassermengen[1];
-                dialogBuilder = new AlertDialog.Builder(getActivity());
                 final String message = "Leitungswasser: " + leitungswasser + " Liter\nReinwasser: " + reinwasser + " Liter";
                 dialogBuilder.setMessage(message)
                              .setTitle("Ergebnis")
                              .setPositiveButton("In Logbuch eintragen", new DialogInterface.OnClickListener() {
                                  @Override
                                  public void onClick(DialogInterface dialog, int which) {
-                                     addLogbuchEintrag("Wasserwechsel berechnet", R.drawable.ic_logbuch_wasserwechsel, message);
+                                     addLogbuchEintrag("Wasserwechsel berechnet", R.drawable.ic_wasserwechsel_neu, message);
                                      dialog.dismiss();
                                      Toast.makeText(getContext(), "Zum Logbuch hinzugefügt!", Toast.LENGTH_SHORT).show();
                                  }
@@ -159,7 +210,6 @@ public class WasserwechselFragment extends Fragment implements View.OnClickListe
     }
 
     private void makeAlertDialog(int string, String title){
-        dialogBuilder = new AlertDialog.Builder(getActivity());
         dialogBuilder.setMessage(string).setTitle(title).setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

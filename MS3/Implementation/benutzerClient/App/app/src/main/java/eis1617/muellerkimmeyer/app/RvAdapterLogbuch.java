@@ -63,6 +63,21 @@ public class RvAdapterLogbuch extends RecyclerView.Adapter<RvAdapterLogbuch.MyVi
 
     }
 
+    public void insertItem(LogbuchEintrag eintrag){
+        eintraege.add(0, eintrag);
+        notifyItemInserted(0);
+        notifyItemRangeChanged(0, eintraege.size());
+    }
+
+    public void removeItem(int position) {
+        eintraege.remove(position);
+        notifyDataSetChanged();
+        /*
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position, eintraege.size());
+        */
+    }
+
     @Override
     public int getItemCount() {
         return eintraege.size();

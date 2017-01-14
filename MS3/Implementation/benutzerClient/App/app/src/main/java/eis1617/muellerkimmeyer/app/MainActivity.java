@@ -2,6 +2,7 @@ package eis1617.muellerkimmeyer.app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.view.View;
@@ -26,6 +27,8 @@ import com.google.firebase.messaging.FirebaseMessaging;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -166,18 +169,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             LogbuchFragment logbuchFragment = new LogbuchFragment();
             manager.beginTransaction().replace(R.id.content_main, logbuchFragment, logbuchFragment.getTag()).commit();
             getSupportActionBar().setTitle("Logbuch");
-        } else if (id == R.id.nav_berechnungen) {
-
-        } else if (id == R.id.nav_fachhandel) {
-
-        } else if (id == R.id.nav_hinweise) {
-
+        } else if (id == R.id.nav_duengerdosierung) {
+            DuengerdosierungFragment duengerdosierungFragment = new DuengerdosierungFragment();
+            manager.beginTransaction().replace(R.id.content_main, duengerdosierungFragment, duengerdosierungFragment.getTag()).commit();
+            getSupportActionBar().setTitle("Düngerdosierung");
         } else if (id == R.id.nav_wasserwerte) {
             WasserwerteFragment wasserwerteFragment = new WasserwerteFragment();
             manager.beginTransaction().replace(R.id.content_main, wasserwerteFragment, wasserwerteFragment.getTag()).commit();
             getSupportActionBar().setTitle("Deine Wasserwerte");
-        }
+        } else if (id == R.id.nav_co2_berechnung) {
+            CO2BerechnungFragment co2BerechnungFragment = new CO2BerechnungFragment();
+            manager.beginTransaction().replace(R.id.content_main, co2BerechnungFragment, co2BerechnungFragment.getTag()).commit();
+            getSupportActionBar().setTitle("CO2 Berechnung");
+        } else if (id == R.id.nav_fachhandel) {
 
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

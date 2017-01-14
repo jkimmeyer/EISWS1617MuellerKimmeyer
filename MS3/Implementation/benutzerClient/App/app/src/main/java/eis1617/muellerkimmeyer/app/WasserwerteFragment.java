@@ -1,19 +1,17 @@
 package eis1617.muellerkimmeyer.app;
 
 
+import android.support.v4.app.DialogFragment;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.PorterDuff;
 import android.graphics.RectF;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
@@ -26,15 +24,11 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -43,7 +37,6 @@ import org.json.JSONObject;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Date;
 
 
@@ -62,7 +55,10 @@ public class WasserwerteFragment extends Fragment implements View.OnClickListene
     private ServerRequest serverRequest;
 
     private static EditText etKh, etGh, etPh, etCo2, etEisen, etKalium, etNo3, etPo3;
+    private ImageView ivKhDiagramm, ivGhDiagramm, ivPhDiagramm, ivCo2Diagramm, ivEisenDiagramm, ivKaliumDiagramm, ivNo3Diagramm, ivPo3Diagramm;
     private Button btnNeueWasserwerteEintragen;
+
+    private AlertDialog.Builder dialogBuilder;
 
     private Paint paint = new Paint();
 
@@ -83,8 +79,26 @@ public class WasserwerteFragment extends Fragment implements View.OnClickListene
         etKalium = (EditText) rootView.findViewById(R.id.etKalium);
         etNo3 = (EditText) rootView.findViewById(R.id.etNo3);
         etPo3 = (EditText) rootView.findViewById(R.id.etPo3);
+
+        ivKhDiagramm = (ImageView) rootView.findViewById(R.id.ivKhDiagramm);
+        ivGhDiagramm = (ImageView) rootView.findViewById(R.id.ivGhDiagramm);
+        ivPhDiagramm = (ImageView) rootView.findViewById(R.id.ivPhDiagramm);
+        ivCo2Diagramm = (ImageView) rootView.findViewById(R.id.ivCo2Diagramm);
+        ivEisenDiagramm = (ImageView) rootView.findViewById(R.id.ivEisenDiagramm);
+        ivKaliumDiagramm = (ImageView) rootView.findViewById(R.id.ivKaliumDiagramm);
+        ivNo3Diagramm = (ImageView) rootView.findViewById(R.id.ivNo3Diagramm);
+        ivPo3Diagramm = (ImageView) rootView.findViewById(R.id.ivPo3Diagramm);
+
         btnNeueWasserwerteEintragen = (Button) rootView.findViewById(R.id.btnNeueWasserwerteEintragen);
         btnNeueWasserwerteEintragen.setOnClickListener(this);
+        ivKhDiagramm.setOnClickListener(this);
+        ivGhDiagramm.setOnClickListener(this);
+        ivPhDiagramm.setOnClickListener(this);
+        ivCo2Diagramm.setOnClickListener(this);
+        ivEisenDiagramm.setOnClickListener(this);
+        ivKaliumDiagramm.setOnClickListener(this);
+        ivNo3Diagramm.setOnClickListener(this);
+        ivPo3Diagramm.setOnClickListener(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
@@ -93,6 +107,8 @@ public class WasserwerteFragment extends Fragment implements View.OnClickListene
         recyclerView = (RecyclerView) rootView.findViewById(R.id.rvWasserwerte);
         rvLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(rvLayoutManager);
+
+        dialogBuilder = new AlertDialog.Builder(getActivity());
 
         setUpItemTouchHelper();
 
@@ -143,7 +159,6 @@ public class WasserwerteFragment extends Fragment implements View.OnClickListene
                     c.drawRect(background,paint);
                     icon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_delete_forever);
                     RectF icon_dest = new RectF((float) Math.max(itemView.getRight() - marginRight - height, itemView.getRight() + dX), itemView.getTop(), itemView.getRight() - marginRight, itemView.getBottom());
-                    // left top right bottom
                     c.drawBitmap(icon,null,icon_dest,paint);
 
                 }
@@ -278,5 +293,69 @@ public class WasserwerteFragment extends Fragment implements View.OnClickListene
             }
 
         }
+        else if(v == ivKhDiagramm){
+            double[] values = new double[eintraege.size()];
+            for(int i = 0; i < eintraege.size(); i++){
+                values[i] = eintraege.get(i).kh;
+            }
+            makeGraphDialog(values, "KH Verlauf", "dH°");
+        }
+        else if(v == ivGhDiagramm){
+            double[] values = new double[eintraege.size()];
+            for(int i = 0; i < eintraege.size(); i++){
+                values[i] = eintraege.get(i).gh;
+            }
+            makeGraphDialog(values, "GH Verlauf", "dH°");
+        }
+        else if(v == ivPhDiagramm){
+            double[] values = new double[eintraege.size()];
+            for(int i = 0; i < eintraege.size(); i++){
+                values[i] = eintraege.get(i).ph;
+            }
+            makeGraphDialog(values, "pH-Wert Verlauf", "pH");
+        }
+        else if(v == ivCo2Diagramm){
+            double[] values = new double[eintraege.size()];
+            for(int i = 0; i < eintraege.size(); i++){
+                values[i] = eintraege.get(i).co2;
+            }
+            makeGraphDialog(values, "CO2 Verlauf", "mg/l");
+        }
+        else if(v == ivEisenDiagramm){
+            double[] values = new double[eintraege.size()];
+            for(int i = 0; i < eintraege.size(); i++){
+                values[i] = eintraege.get(i).eisen;
+            }
+            makeGraphDialog(values, "Eisen Verlauf", "mg/l");
+        }
+        else if(v == ivKaliumDiagramm){
+            double[] values = new double[eintraege.size()];
+            for(int i = 0; i < eintraege.size(); i++){
+                values[i] = eintraege.get(i).kalium;
+            }
+            makeGraphDialog(values, "Kalium Verlauf", "mg/l");
+        }
+        else if(v == ivNo3Diagramm){
+            double[] values = new double[eintraege.size()];
+            for(int i = 0; i < eintraege.size(); i++){
+                values[i] = eintraege.get(i).no3;
+            }
+            makeGraphDialog(values, "NO3 Verlauf", "mg/l");
+        }
+        else if(v == ivPo3Diagramm){
+            double[] values = new double[eintraege.size()];
+            for(int i = 0; i < eintraege.size(); i++){
+                values[i] = eintraege.get(i).po3;
+            }
+            makeGraphDialog(values, "PO3 Verlauf", "mg/l");
+        }
+
+    }
+
+    private void makeGraphDialog(double[] values, String title, String einheit){
+
+        DialogFragment dialog = GraphDialog.newInstance(values, title, einheit);
+        dialog.show(getFragmentManager(), "graph_dialog");
+
     }
 }

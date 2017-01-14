@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="eis1617.muellerkimmeyer.app.WasserwechselFragment">
+    tools:context="eis1617.muellerkimmeyer.app.DuengerdosierungFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,9 +25,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/relativeLayout">
 
-
                 <TextView
-                    android:text="@string/wasserwechsel_info"
+                    android:text="@string/duengerdosierung_info"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/infoIcon"
@@ -46,20 +45,17 @@
                     android:id="@+id/infoIcon"/>
             </RelativeLayout>
 
-            <RelativeLayout
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/relativeLayout"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
                 android:layout_marginTop="10dp">
 
                 <TextView
                     android:text="Nettowasservolumen im Aquarium:"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
                     android:layout_marginTop="11dp"
                     android:id="@+id/tvVolumenAquarium" />
 
@@ -67,7 +63,6 @@
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tvVolumenAquarium"
                     android:layout_marginTop="10dp"
                     android:id="@+id/llVolumenAquarium">
 
@@ -105,35 +100,33 @@
                 </LinearLayout>
 
                 <TextView
-                    android:text="Gewünschte Wasserwechselmenge:"
+                    android:text="Konzentration des Nährstoffs im Aquarium:"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:layout_below="@id/llVolumenAquarium"
-                    android:id="@+id/tvGewuenschteMenge" />
+                    android:id="@+id/tvKonzentrationAquarium" />
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tvGewuenschteMenge"
                     android:layout_marginTop="10dp"
-                    android:id="@+id/llGewuenschteMenge">
+                    android:id="@+id/llKonzentrationAquarium">
 
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="numberDecimal"
-                        android:hint="in Liter"
+                        android:hint="in mg/l"
                         android:ems="10"
-                        android:id="@+id/etGewuenschteMenge"/>
+                        android:id="@+id/etKonzentrationAquarium"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="in Liter"
+                        android:text="in mg/l"
                         android:layout_marginLeft="10dp"
-                        android:id="@+id/tvGewuenschteMengeEinheit"/>
+                        android:id="@+id/tvKonzentrationAquariumEinheit"/>
 
                     <View
                         android:layout_width="0dp"
@@ -148,40 +141,38 @@
                         android:tint="@color/colorPrimary"
                         android:clickable="true"
                         android:layout_gravity="center"
-                        android:id="@+id/ivGewuenschteMengeInfo"/>
+                        android:id="@+id/ivKonzentrationAquariumInfo"/>
 
                 </LinearLayout>
 
                 <TextView
-                    android:text="KH / GH des Leitungswassers:"
+                    android:text="Konzentration des Nährstoffs im Dünger:"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:layout_below="@id/llGewuenschteMenge"
-                    android:id="@+id/tvKhGhLw" />
+                    android:id="@+id/tvKonzentrationDuenger" />
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tvKhGhLw"
                     android:layout_marginTop="10dp"
-                    android:id="@+id/llKhGhLw">
+                    android:id="@+id/llKonzentrationDuenger">
 
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="numberDecimal"
-                        android:hint="in dH°"
+                        android:hint="in mg/l"
                         android:ems="10"
-                        android:id="@+id/etKhGhLw"/>
+                        android:id="@+id/etKonzentrationDuenger"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="in dH°"
+                        android:text="in mg/l"
                         android:layout_marginLeft="10dp"
-                        android:id="@+id/tvKhGhLwEinheit"/>
+                        android:id="@+id/tvKonzentrationDuengerEinheit"/>
 
                     <View
                         android:layout_width="0dp"
@@ -196,40 +187,38 @@
                         android:tint="@color/colorPrimary"
                         android:clickable="true"
                         android:layout_gravity="center"
-                        android:id="@+id/ivKhGhLwInfo"/>
+                        android:id="@+id/ivKonzentrationDuengerInfo"/>
 
                 </LinearLayout>
 
                 <TextView
-                    android:text="KH / GH im Aquarium:"
+                    android:text="Gewünschte Konzentration im Aquarium:"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:layout_below="@id/llKhGhLw"
-                    android:id="@+id/tvKhGhAq" />
+                    android:id="@+id/tvGewuenschteKonzentration" />
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tvKhGhAq"
                     android:layout_marginTop="10dp"
-                    android:id="@+id/llKhGhAq">
+                    android:id="@+id/llGewuenschteKonzentration">
 
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="numberDecimal"
-                        android:hint="in dH°"
+                        android:hint="in mg/l"
                         android:ems="10"
-                        android:id="@+id/etKhGhAq"/>
+                        android:id="@+id/etGewuenschteKonzentration"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="in dH°"
+                        android:text="in mg/l"
                         android:layout_marginLeft="10dp"
-                        android:id="@+id/tvKhGhAqEinheit"/>
+                        android:id="@+id/tvGewuenschteKonzentrationEinheit"/>
 
                     <View
                         android:layout_width="0dp"
@@ -244,118 +233,23 @@
                         android:tint="@color/colorPrimary"
                         android:clickable="true"
                         android:layout_gravity="center"
-                        android:id="@+id/ivKhGhAqInfo"/>
+                        android:id="@+id/ivGewuenschteKonzentrationInfo"/>
 
                 </LinearLayout>
 
-                <TextView
-                    android:text="Gewünschte KH / GH:"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_below="@id/llKhGhAq"
-                    android:id="@+id/tvGewuenschteKhGh" />
 
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tvGewuenschteKhGh"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/llGewuenschteKhGh">
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"
-                        android:hint="in dH°"
-                        android:ems="10"
-                        android:id="@+id/etGewuenschteKhGh"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="in dH°"
-                        android:layout_marginLeft="10dp"
-                        android:id="@+id/tvGewuenschteKhGhEinheit"/>
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:layout_weight="1">
-                    </View>
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        app:srcCompat="@android:drawable/ic_dialog_info"
-                        android:tint="@color/colorPrimary"
-                        android:clickable="true"
-                        android:layout_gravity="center"
-                        android:id="@+id/ivGewuenschteKhGhInfo"/>
-
-                </LinearLayout>
-
-                <TextView
-                    android:text="Wirkungsgrad Reinwassererzeugung:"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_below="@id/llGewuenschteKhGh"
-                    android:id="@+id/tvWirkungsgradRE" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tvWirkungsgradRE"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/llWirkungsgradRE">
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"
-                        android:hint="in %"
-                        android:ems="10"
-                        android:id="@+id/etWirkungsgradRE"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="in %"
-                        android:layout_marginLeft="10dp"
-                        android:id="@+id/tvWirkungsgradREEinheit"/>
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:layout_weight="1">
-                    </View>
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        app:srcCompat="@android:drawable/ic_dialog_info"
-                        android:tint="@color/colorPrimary"
-                        android:clickable="true"
-                        android:layout_gravity="center"
-                        android:id="@+id/ivWirkungsgradREInfo"/>
-
-                </LinearLayout>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/llWirkungsgradRE"
                     android:text="Berechnen"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:background="@color/colorPrimary"
                     android:textColor="#FFFFFF"
-                    android:id="@+id/btnWasserwechselBerechnen"/>
+                    android:id="@+id/btnDuengerdosierungBerechnen"/>
 
-            </RelativeLayout>
+            </LinearLayout>
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

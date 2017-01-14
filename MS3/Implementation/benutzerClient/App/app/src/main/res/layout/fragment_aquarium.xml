@@ -182,6 +182,10 @@
                 android:layout_below="@id/etKieshoehe"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:id="@+id/buttonSpeichern" />
 
         </RelativeLayout>

@@ -5,15 +5,15 @@
         <menu>
             <item
                 android:id="@+id/nav_aquarium"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_aquarium"
                 android:title="Virtuelles Aquarium" />
             <item
                 android:id="@+id/nav_wasserwerte"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_wasserwerte"
                 android:title="Wasserwerte" />
             <item
                 android:id="@+id/nav_logbuch"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_dokumentation"
                 android:title="Logbuch" />
         </menu>
     </item>
@@ -21,25 +21,29 @@
     <item android:title="Pflege">
         <menu>
             <item
-                android:id="@+id/nav_wasserwechsel"
-                android:icon="@drawable/ic_nav_wasserwechsel"
-                android:title="Wasserwechsel" />
+                android:id="@+id/nav_duengerdosierung"
+                android:icon="@drawable/ic_dosierung"
+                android:title="Düngerdosierung" />
+
             <item
-                android:id="@+id/nav_berechnungen"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Berechnungen" />
+                android:id="@+id/nav_wasserwechsel"
+                android:icon="@drawable/ic_wasserwechsel_neu"
+                android:title="Wasserwechsel" />
+
+            <item
+                android:id="@+id/nav_co2_berechnung"
+                android:icon="@drawable/ic_co2"
+                android:title="CO2 Berechnung" />
+
+
         </menu>
     </item>
 
     <item android:title="Probleme">
         <menu>
             <item
-                android:id="@+id/nav_hinweise"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Hinweise" />
-            <item
                 android:id="@+id/nav_fachhandel"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_fachhandlung"
                 android:title="Fachhandel" />
         </menu>
     </item>

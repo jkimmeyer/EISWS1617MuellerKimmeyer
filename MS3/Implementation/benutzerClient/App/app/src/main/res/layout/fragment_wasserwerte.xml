@@ -1,6 +1,6 @@
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="eis1617.muellerkimmeyer.app.WasserwerteFragment"
@@ -8,7 +8,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="300dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,61 +19,55 @@
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_vertical_margin">
 
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Karbonathärte (KH):"
-                    android:layout_weight="1"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Gesamthärte (GH):"
-                    android:layout_weight="1"/>
-
-            </LinearLayout>
+                android:text="Karbonathärte (KH):"
+                android:layout_weight="1"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
 
                 <EditText
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:ems="10"
                     android:inputType="numberDecimal"
                     android:nextFocusDown="@+id/etGh"
                     android:id="@+id/etKh"/>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="in dH°"
-                    android:paddingLeft="10dp"
-                    android:layout_weight="1"/>
+                    android:paddingLeft="10dp"/>
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="numberDecimal"
-                    android:nextFocusDown="@+id/etPh"
-                    android:id="@id/etGh"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                </View>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="in dH°"
-                    android:paddingLeft="10dp"
-                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_statistics"
+                    android:tint="@color/colorPrimary"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/ivKhDiagramm"/>
 
             </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gesamthärte (GH):"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -81,182 +75,310 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="10dp">
 
-                <TextView
-                    android:layout_width="match_parent"
+                <EditText
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="pH-Wert:"
-                    android:layout_weight="1"/>
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etGh"/>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kohlenstoffdioxid (CO2):"
-                    android:layout_weight="1"/>
+                    android:text="in dH°"
+                    android:paddingLeft="10dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                </View>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_statistics"
+                    android:tint="@color/colorPrimary"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/ivGhDiagramm"/>
 
             </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pH-Wert:"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
 
                 <EditText
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:ems="10"
                     android:inputType="numberDecimal"
-                    android:nextFocusDown="@+id/etCo2"
-                    android:id="@id/etPh"/>
+                    android:id="@+id/etPh"/>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="in pH"
-                    android:paddingLeft="10dp"
-                    android:layout_weight="1"/>
+                    android:paddingLeft="10dp"/>
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="numberDecimal"
-                    android:nextFocusDown="@+id/etEisen"
-                    android:id="@id/etCo2"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                </View>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="in mg/l"
-                    android:paddingLeft="10dp"
-                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_statistics"
+                    android:tint="@color/colorPrimary"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/ivPhDiagramm"/>
+
             </LinearLayout>
 
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Eisen:"
-                    android:layout_weight="1"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Kalium:"
-                    android:layout_weight="1"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="numberDecimal"
-                    android:nextFocusDown="@+id/etKalium"
-                    android:id="@id/etEisen"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="in mg/l"
-                    android:paddingLeft="10dp"
-                    android:layout_weight="1"/>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="numberDecimal"
-                    android:nextFocusDown="@+id/etNo3"
-                    android:id="@id/etKalium"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="in mg/l"
-                    android:paddingLeft="10dp"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Nitrat (NO3):"
-                    android:layout_weight="1"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Phosphat (PO3):"
-                    android:layout_weight="1"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="numberDecimal"
-                    android:nextFocusDown="@+id/etPo3"
-                    android:id="@id/etNo3"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="in mg/l"
-                    android:paddingLeft="10dp"
-                    android:layout_weight="1"/>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="numberDecimal"
-                    android:id="@id/etPo3"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="in mg/l"
-                    android:paddingLeft="10dp"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:text="Neuer Eintrag"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:textColor="#FFF"
+                android:text="Kohlenstoffdioxid (CO2):"
                 android:layout_marginTop="10dp"
-                android:background="@color/colorPrimary"
-                android:layout_gravity="center"
-                android:id="@+id/btnNeueWasserwerteEintragen"/>
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etCo2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in mg/l"
+                    android:paddingLeft="10dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                </View>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_statistics"
+                    android:tint="@color/colorPrimary"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/ivCo2Diagramm"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eisen:"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etEisen"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in mg/l"
+                    android:paddingLeft="10dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                </View>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_statistics"
+                    android:tint="@color/colorPrimary"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/ivEisenDiagramm"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kalium:"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etKalium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in mg/l"
+                    android:paddingLeft="10dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                </View>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_statistics"
+                    android:tint="@color/colorPrimary"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/ivKaliumDiagramm"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nitrat (NO3):"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etNo3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in mg/l"
+                    android:paddingLeft="10dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                </View>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_statistics"
+                    android:tint="@color/colorPrimary"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/ivNo3Diagramm"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phosphat (PO3):"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etPo3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in mg/l"
+                    android:paddingLeft="10dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                </View>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_statistics"
+                    android:tint="@color/colorPrimary"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/ivPo3Diagramm"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Neuer Eintrag"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#FFF"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:id="@+id/btnNeueWasserwerteEintragen"/>
 
     <View
         android:layout_width="match_parent"

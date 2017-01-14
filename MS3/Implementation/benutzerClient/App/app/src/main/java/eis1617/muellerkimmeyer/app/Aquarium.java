@@ -20,6 +20,18 @@ public class Aquarium {
 
     }
 
+    // Formel von http://www.aq-technik.de/Aquarium-Rechner/co2_kh_ph.php
+
+    public int getCO2Gehalt(double kh, double ph){
+        return (int)Math.round(Math.pow(10,(7.477+(0.4343*Math.log(kh))-ph)));
+    }
+
+    // Formel von http://www.aq-technik.de/Aquarium-Rechner/duenger_dosierung.php
+
+    public int getDuengerdosierung(double nettoWasserVolumen, double konzentrationAquarium, double konzentrationDuenger, double gewuenschteKonzentration){
+        return (int)Math.round(nettoWasserVolumen*(gewuenschteKonzentration - konzentrationAquarium) / konzentrationDuenger * 1000);
+    }
+
     /*
     * QUELLENANGABE
     * getBenoetigteWassermenge() übernommen aus http://www.aq-technik.de/Aquarium-Rechner/tww_mit_zielwert.php

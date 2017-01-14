@@ -14,6 +14,18 @@
         erhalten, sollte bei einem Wasserwechsel Leitungswasser und Reinwasser (Osmose oder VE-Wasser)
         gemischt werden. Der Anteil kann hier berechnet werden.
     </string>
+    <string name="duengerdosierung_info">
+        Um eine gewünschte Nährstoffkonzentration im Aquariumwasser zu erreichen, sollte eine
+        bestimmte Menge an Flüssigdünger verwendet werden. Diese Menge kann hier berechnet werden.
+    </string>
+    <string name="co2_berechnung_info">
+        Kohlendioxid (CO2) wird von Pflanzen aufgenommen und ist deren wichtigster Aufbaustoff. Ein
+        Aquarium mit vielen Pflanzen hat zum Beispiel einen hohen Bedarf an CO2 und eine hohe Anzahl
+        an Fischen senkt hingegen den Bedarf. Um ggf. Anpassungen vornehmen zu können, kann hier
+        der aktuelle CO2 Gehalt berechnet werden. Zur Berechnung benötigt man nur KH und pH, welche
+        sich meistens schon mit einfachen Tröpfchentests bestimmen lassen können. Somit ist keine
+        Wasseranalyse bei der Fachhandlung nötig.
+    </string>
     <string name="welcome_message">
         Zuerst solltest du ein paar Werte an deinem Aquarium nachmessen und in die folgenden Felder
         eintragen. Anschließend wirst du zu deinem Dashboard weitergeleitet. Viel Spaß und Erfolg mit
@@ -31,17 +43,41 @@
     </string>
     <string name="khghaq_info">
         Die Karbonathärte (KH) bzw. die Gesamthärte (GH) des Aquariums solltest du von deiner Fachhandlung berechnen lassen.
-        Falls der Wert bereits vorliegt, wird er hier automatisch eingefügt.
+        Falls der Wert bereits vorliegt, wird er dir im Text Feld angezeigt. Da wir aber nicht wissen ob du die KH oder
+        die GH berechnest, musst du den entsprechenden Wert selbst eintragen.
     </string>
     <string name="gewuenschte_khgh_info">
         Gib hier deinen Zielwert der gewünschten Karbonathärte (KH) bzw. Gesamthärte (GH) an. Dieser sollte ebenfalls
-        bei der Fachhandlung erfragt werden und wird hier auch automatisch eingefügt, falls dies bereits geschehen ist.
+        bei der Fachhandlung erfragt werden.
     </string>
     <string name="wirkungsgrad_re_info" formatted="false">
         Hier soll eine Prozentzahl zwischen 0 und 100 angegeben werden, die dem Wirkungsgrad deiner
         Reinwassererzeugung entspricht. Bei Osmoseanlagen liegt der Wert bei ca. 95% und bei
         VE-Anlagen bei ca. 100%.
     </string>
+    <string name="konzentration_aquarium_info">
+        Gib hier an, wie hoch die aktuelle Konzentration des gewünschten Nährstoffes im Aquarium ist.
+        Diese kann bei der Fachhandlung erfragt werden. Falls du bereits Wasserwerte bekommen hast,
+        kannst du sie unter \"Wasserwerte\" nachgucken.
+    </string>
+    <string name="konzentration_duenger_info">
+        Gib hier die vorhandene Konzentration des Nährstoffes im zur Verfügung stehenden
+        Flüssigdünger an. Diese sollte auf der Verpackung des Produkts stehen.
+    </string>
+    <string name="gewuenschte_konzentration_info">
+        Gib hier an, wie hoch die Konzentration des Nährstoffes im Aquariumwasser sein soll.
+        Informationen dazu solltest du von deiner Fachhandlung bekommen.
+        Darauf basierend wird die Düngerdosierung berechnet.
+    </string>
+    <string name="kh_info">
+        Du kannst die Karbonathärte von der Fachhandlung bestimmen lassen oder diese auch selbst
+        mit einem einfachen Tröpfchentest ermitteln.
+    </string>
+    <string name="ph_info">
+        Du kannst den pH-Wert von der Fachhandlung bestimmen lassen oder diesen auch selbst
+        mit einem einfachen Tröpfchentest ermitteln.
+    </string>
+    <string name="graph_dialog_title">Graph Dialog</string>
     <string name="title_activity_login">Sign in</string>
 
 </resources>

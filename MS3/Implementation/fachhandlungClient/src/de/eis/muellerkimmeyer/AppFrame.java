@@ -4,12 +4,14 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.RowFilter;
+import javax.swing.UIManager;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -20,6 +22,7 @@ import javax.swing.table.TableRowSorter;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -27,6 +30,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 /*
@@ -35,7 +44,7 @@ import java.util.ArrayList;
  *  Implementation - Desktop Anwendung (Fachhandlung Client)
  *  Layout Klasse
  *
- *  Autor: Moritz Müller, (Johannes Kimmeyer)
+ *  Autor: Moritz Müller
  */
 
 public class AppFrame extends JFrame {
@@ -47,9 +56,11 @@ public class AppFrame extends JFrame {
     private JComponent searchPanel, latestCustomer;
     private int tabbedPaneWidth, tabbedPaneHeight, tabbedPaneMargin;
     private JTextField searchField;
+    private JButton btnKundeAnlegen;
     private JTable table;
     private JLabel searchLabel;
     private JScrollPane scrollPane;
+    private SQLiteHelper sqliteHelper;
     
     final Color frameBG = new Color(225,230,246);
     final Color panelBG = new Color(242,242,242);
@@ -58,11 +69,10 @@ public class AppFrame extends JFrame {
     final Color tableRow2BG = new Color(240,240,240);
     final Color tableSelectedBG = new Color(184,207,229);
     
-
     public AppFrame(){
         
+    	sqliteHelper = new SQLiteHelper();
         this.initComponents();
-        //this.initListeners();
         
         setVisible(true);
     }
@@ -92,81 +102,6 @@ public class AppFrame extends JFrame {
         
     }
     
-    private void openCustomerTab(Customer customer){
-    	JPanel panel = new JPanel();
-    	panel.setLayout(null);
-        /*
-         *  Den zuletzt geöffneten Kunden speichern, 
-         *  damit der entsprechende Tab direkt nach
-         *  dem erstellen selektiert werden kann
-         */
-        latestCustomer = panel;
-    	/*
-    	 * Damit nicht mehr der zuletzt gesuchte
-    	 * Kunde in der Suche steht bzw. selektiert
-    	 * ist, wird das Suchfeld geleert und die
-    	 * Selektierung aufgehoben
-    	 */
-    	searchField.setText("");
-    	table.clearSelection();
-    	
-    	// Inhalt des Panels
-    	ArrayList<Section> sections = new ArrayList<Section>();
-    	
-    	JPanel kundeninformationen = new JPanel();
-    	JPanel kaufberatung = new JPanel();
-    	JPanel problemanalyse = new JPanel();
-    	JPanel wasseranalyse = new JPanel();
-    	sections.add(new Section("Kundeninformationen", kundeninformationen, true));
-    	sections.add(new Section("Kaufberatung", kaufberatung, false));
-    	sections.add(new Section("Problemanalyse", problemanalyse, false));
-    	sections.add(new Section("Wasseranalyse", wasseranalyse, false));
-    	Accordion accordion = new Accordion(sections);
-    	panel.add(accordion);
-    	
-    	String name = "[" + customer.getId() + "] " + customer.getVorname() + " " + customer.getNachname();
-		tabbedPane.addTab(name, null, panel, name);
-		
-		/*
-	    * QUELLENANGABE
-	    * Close-Buttons zu den Tabs hinzufügen
-	    * Übernommen aus: http://stackoverflow.com/questions/11553112/how-to-add-close-button-to-a-jtabbedpane-tab
-	    * Autor: "MadProgrammer", Abruf am: 02.01.2017
-	    * Änderung: Variablen-Namen angepasst, Platz zwischen Label und Button hinzugefügt, Aussehen des Buttons geändert  
-	    */
-		
-		int index = tabbedPane.indexOfTab(name);
-		JPanel pnlTab = new JPanel(new GridBagLayout());
-		pnlTab.setOpaque(false);
-		JLabel lblTitle = new JLabel(name);
-		
-		JButton btnClose = new JButton("x");
-		
-		GridBagConstraints gbc = new GridBagConstraints();
-		gbc.gridx = 0;
-		gbc.gridy = 0;
-		gbc.weightx = 1;
-
-		pnlTab.add(lblTitle, gbc);
-
-		gbc.gridx++;
-		gbc.weightx = 0;
-		pnlTab.add(new JLabel("    "), gbc);
-		
-		gbc.gridx++;
-		gbc.weightx = 0;
-		btnClose.setBorder(null);
-		btnClose.setOpaque(false);
-		btnClose.setContentAreaFilled(false);
-		btnClose.setBorderPainted(false);
-		btnClose.setCursor(new Cursor(Cursor.HAND_CURSOR));
-		pnlTab.add(btnClose, gbc);
-
-		tabbedPane.setTabComponentAt(index, pnlTab);
-
-		btnClose.addActionListener(new CloseActionHandler(name));
-    }
-    
     protected JComponent makeSearchPanel() {
         JPanel panel = new JPanel();
         panel.setBackground(panelBG);
@@ -180,8 +115,22 @@ public class AppFrame extends JFrame {
 		panel.add(searchLabel);
 		
 		searchField = new JTextField();
-		searchField.setBounds(100, panelPadding, tabbedPaneWidth-panelPadding-100, 30);
+		searchField.setBounds(100, panelPadding, tabbedPaneWidth-panelPadding-400, 30);
 		panel.add(searchField);
+		
+		btnKundeAnlegen = new JButton("Neuen Kunden hinzufügen");
+		btnKundeAnlegen.setBounds(tabbedPaneWidth-panelPadding-280, panelPadding, 280, 30);
+		btnKundeAnlegen.addActionListener(new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				
+				showKundenAnlegenDialog();
+				
+			}
+			
+		});
+		panel.add(btnKundeAnlegen);
 		
 		String[] columnNames = {"Kunden ID", "Vorname", "Nachname", "Geburtsdatum"};
 		Object[][] customerData = loadCustomerData();
@@ -269,8 +218,6 @@ public class AppFrame extends JFrame {
 		    		String id = table.getValueAt(table.getSelectedRow(), 0).toString();
 		        	String vorname = table.getValueAt(table.getSelectedRow(), 1).toString();
 		        	String nachname = table.getValueAt(table.getSelectedRow(), 2).toString();
-		        	String geburtsdatum = table.getValueAt(table.getSelectedRow(), 3).toString();
-		            Customer customer = new Customer(id, vorname, nachname, geburtsdatum);
 		            
 		            /* Wenn bereits ein Tab mit dem Kunden geöffnet ist, soll
 		             * dieser selektiert werden, anstatt einen neuen Tab zu öffnen
@@ -281,7 +228,7 @@ public class AppFrame extends JFrame {
 		            }
 		            else{
 			            tabbedPane.remove(searchPanel);
-						openCustomerTab(customer);
+						openCustomerTab(id);
 						tabbedPane.addTab("+", null, searchPanel, "Kunde öffnen");
 						tabbedPane.setSelectedComponent(latestCustomer);
 			        }
@@ -291,67 +238,194 @@ public class AppFrame extends JFrame {
         return panel;
     }
     
+    private void openCustomerTab(String id){
+    	
+    	Customer customer = null;
+    	try {
+			ResultSet rs = sqliteHelper.getKunde(Integer.parseInt(id));
+			if(rs.next()){
+				customer = new Customer(rs.getInt("id"), rs.getString("appId"), rs.getString("vorname"), rs.getString("nachname"), rs.getString("geburtsdatum"));
+			}
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+    	
+    	if(customer != null){
+    	
+	    	JPanel panel = new JPanel();
+	    	panel.setLayout(null);
+	        /*
+	         *  Den zuletzt geöffneten Kunden speichern, 
+	         *  damit der entsprechende Tab direkt nach
+	         *  dem erstellen selektiert werden kann
+	         */
+	        latestCustomer = panel;
+	    	/*
+	    	 * Damit nicht mehr der zuletzt gesuchte
+	    	 * Kunde in der Suche steht bzw. selektiert
+	    	 * ist, wird das Suchfeld geleert und die
+	    	 * Selektierung aufgehoben
+	    	 */
+	    	searchField.setText("");
+	    	table.clearSelection();
+	    	
+	    	// Inhalt des Panels
+	    	ArrayList<Section> sections = new ArrayList<Section>();
+	    	
+	    	Kundeninformationen kundeninformationen = new Kundeninformationen(customer);
+	    	JPanel kaufberatung = new JPanel();
+	    	JPanel problemanalyse = new JPanel();
+	    	JPanel wasseranalyse = new JPanel();
+	    	sections.add(new Section("Kundeninformationen", kundeninformationen, true));
+	    	sections.add(new Section("Kaufberatung", kaufberatung, false));
+	    	sections.add(new Section("Problemanalyse", problemanalyse, false));
+	    	sections.add(new Section("Wasseranalyse", wasseranalyse, false));
+	    	Accordion accordion = new Accordion(sections);
+	    	panel.add(accordion);
+	    	
+	    	String name = "[" + customer.getId() + "] " + customer.getVorname() + " " + customer.getNachname();
+			tabbedPane.addTab(name, null, panel, name);
+			
+			/*
+		    * QUELLENANGABE
+		    * Close-Buttons zu den Tabs hinzufügen
+		    * Übernommen aus: http://stackoverflow.com/questions/11553112/how-to-add-close-button-to-a-jtabbedpane-tab
+		    * Autor: "MadProgrammer", Abruf am: 02.01.2017
+		    * Änderung: Variablen-Namen angepasst, Platz zwischen Label und Button hinzugefügt, Aussehen des Buttons geändert  
+		    */
+			
+			int index = tabbedPane.indexOfTab(name);
+			JPanel pnlTab = new JPanel(new GridBagLayout());
+			pnlTab.setOpaque(false);
+			JLabel lblTitle = new JLabel(name);
+			
+			JButton btnClose = new JButton("x");
+			
+			GridBagConstraints gbc = new GridBagConstraints();
+			gbc.gridx = 0;
+			gbc.gridy = 0;
+			gbc.weightx = 1;
+	
+			pnlTab.add(lblTitle, gbc);
+	
+			gbc.gridx++;
+			gbc.weightx = 0;
+			pnlTab.add(new JLabel("    "), gbc);
+			
+			gbc.gridx++;
+			gbc.weightx = 0;
+			btnClose.setBorder(null);
+			btnClose.setOpaque(false);
+			btnClose.setContentAreaFilled(false);
+			btnClose.setBorderPainted(false);
+			btnClose.setCursor(new Cursor(Cursor.HAND_CURSOR));
+			pnlTab.add(btnClose, gbc);
+	
+			tabbedPane.setTabComponentAt(index, pnlTab);
+	
+			btnClose.addActionListener(new CloseActionHandler(name));
+    	}
+    	else{
+    		JOptionPane.showMessageDialog(null, "Ein Fehler ist aufgetreten!", "Fehler", JOptionPane.PLAIN_MESSAGE);
+    	}
+    }
+    
+    private void showKundenAnlegenDialog(){
+    	int padding = 10;
+    	JPanel dialogPanel = new JPanel();
+    	dialogPanel.setLayout(null);
+    	
+        JLabel labelAppId = new JLabel("App ID:");
+        labelAppId.setBounds(padding, padding, 100, 20);
+        dialogPanel.add(labelAppId);
+        
+        JTextField tfAppId = new JTextField();
+        tfAppId.setBounds(100+padding, padding, 130, 20);
+        dialogPanel.add(tfAppId);
+        
+        JLabel labelVorname = new JLabel("Vorname:");
+        labelVorname.setBounds(padding, 20+(2*padding), 100, 20);
+        dialogPanel.add(labelVorname);
+        
+        JTextField tfVorname = new JTextField();
+        tfVorname.setBounds(100+padding, 20+(2*padding), 130, 20);
+        dialogPanel.add(tfVorname);
+        
+        JLabel labelNachname = new JLabel("Nachname:");
+        labelNachname.setBounds(padding, 40+(3*padding), 100, 20);
+        dialogPanel.add(labelNachname);
+        
+        JTextField tfNachname = new JTextField();
+        tfNachname.setBounds(100+padding, 40+(3*padding), 130, 20);
+        dialogPanel.add(tfNachname);
+        
+        JLabel labelGeburstdatum = new JLabel("Geburstdatum:");
+        labelGeburstdatum.setBounds(padding, 60+(4*padding), 100, 20);
+        dialogPanel.add(labelGeburstdatum);
+        
+        JTextField tfGeburtsdatum = new JTextField();
+        tfGeburtsdatum.setBounds(100+padding, 60+(4*padding), 130, 20);
+        dialogPanel.add(tfGeburtsdatum);
+        
+        UIManager.put("OptionPane.minimumSize", new Dimension(300,200));
+    	int result = JOptionPane.showConfirmDialog(null, dialogPanel, "Neuen Kunden anlegen", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+    	if(result == JOptionPane.OK_OPTION){
+    		
+    		String appId = tfAppId.getText();
+    		String vorname = tfVorname.getText();
+    		String nachname = tfNachname.getText();
+    		String geburtsdatum = tfGeburtsdatum.getText();
+    		
+    		if(!appId.isEmpty() && !vorname.isEmpty() && !nachname.isEmpty() && !geburtsdatum.isEmpty()){
+    			
+    			try {
+					int id = sqliteHelper.addKunde(appId, vorname, nachname, geburtsdatum);
+					DefaultTableModel model = (DefaultTableModel) table.getModel();
+					model.addRow(new Object[]{id, vorname, nachname, geburtsdatum});
+				} catch (ClassNotFoundException e) {
+					e.printStackTrace();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+    			
+    		}
+    		
+    	}
+    }
+    
     private Object[][] loadCustomerData() {
-    	Object[][] customerData = {
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0004", "Jürgen", "Müller", "25.07.1950"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"},
-		    {"0001", "Jürgen", "Müller", "13.08.1968"},
-		    {"0002", "Silvia", "Schulte", "22.01.1985"},
-		    {"0003", "Max", "Ulrich", "01.12.1992"}
-		};
+    	
+    	ArrayList<Customer> kunden = new ArrayList<>();
+    	
+    	try {
+    		ResultSet rs = sqliteHelper.getAllKunden();
+    		while(rs.next()){
+    			kunden.add(new Customer(rs.getInt("id"), rs.getString("appId"), rs.getString("vorname"), rs.getString("nachname"), rs.getString("geburtsdatum")));
+    		}
+    		
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+    	
+    	Object[][] customerData = new Object[kunden.size()][4];
+    	
+    	for(int i = 0; i < kunden.size(); i++){
+    		
+    		customerData[i][0] = kunden.get(i).getId();
+    		customerData[i][1] = kunden.get(i).getVorname();
+    		customerData[i][2] = kunden.get(i).getNachname();
+    		customerData[i][3] = kunden.get(i).getGeburtsdatum();
+    		
+    	}
+    		
 		return customerData;
 	}
-
-	private void initListeners(){
-        
-		
-		
-    }
-
-    // Berechnung des täglichen Nährstoffverbrauches anhand der Anzahl der Tage und 2 Messungen
-    private float calcDailyUse(float n1, float nX, float X){
-    	return (float)(n1-nX)/(float)(X-1);
-    }
     
     /*
     * QUELLENANGABE

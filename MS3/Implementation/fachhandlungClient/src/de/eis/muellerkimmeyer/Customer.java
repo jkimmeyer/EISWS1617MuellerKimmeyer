@@ -2,24 +2,35 @@ package de.eis.muellerkimmeyer;
 
 public class Customer {
 	
-	public String id;
+	public int id;
+	public String appId;
 	public String vorname;
 	public String nachname;
 	public String geburtsdatum;
 	
-	public Customer(String id, String vorname, String nachname, String geburtsdatum){
+	public Customer(int id, String appId, String vorname, String nachname, String geburtsdatum) {
+		super();
 		this.id = id;
+		this.appId = appId;
 		this.vorname = vorname;
 		this.nachname = nachname;
 		this.geburtsdatum = geburtsdatum;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
+	}
+
+	public String getAppId() {
+		return appId;
+	}
+
+	public void setAppId(String appId) {
+		this.appId = appId;
 	}
 
 	public String getVorname() {
@@ -45,6 +56,5 @@ public class Customer {
 	public void setGeburtsdatum(String geburtsdatum) {
 		this.geburtsdatum = geburtsdatum;
 	}
-
 
 }

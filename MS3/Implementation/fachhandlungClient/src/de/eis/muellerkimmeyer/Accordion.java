@@ -17,12 +17,19 @@ public class Accordion extends JPanel {
 	private static final long serialVersionUID = 1L;
 	
 	private ArrayList<Section> sections;
-	private int accordionPaneWidth;
-	private int accordionPaneHeight;
+	public int accordionPaneWidth;
+	public int accordionPaneHeight;
 	private int yCounter;
 	
 	final int sectionHeaderHeight = 30;
 	final int accordionPaneMargin = 15;
+	
+	public Accordion(){
+		
+		this.accordionPaneWidth = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width-(2*accordionPaneMargin)-25;
+		this.accordionPaneHeight = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height-(2*accordionPaneMargin)-110;
+		
+	}
 	
 	public Accordion(ArrayList<Section> section){
 		this.sections = section;

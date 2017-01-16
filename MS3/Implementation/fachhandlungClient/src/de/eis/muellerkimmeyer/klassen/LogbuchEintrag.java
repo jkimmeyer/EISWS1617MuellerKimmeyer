@@ -2,6 +2,14 @@ package de.eis.muellerkimmeyer.klassen;
 
 import java.sql.Date;
 
+/*
+ *  EISWS1617
+ *
+ *  Implementation - Desktop Anwendung (Fachhandlung Client)
+ *
+ *  Autor: Moritz Müller
+ */
+
 public class LogbuchEintrag {
 	
 	private int id;

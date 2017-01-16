@@ -12,7 +12,7 @@ import java.net.URL;
 /*
  *  EISWS1617
  *
- *  Proof of Concept - Desktop Anwendung (Fachhandlung Client)
+ *  Implementation - Desktop Anwendung (Fachhandlung Client)
  *
  *  Autor: Moritz Müller
  */

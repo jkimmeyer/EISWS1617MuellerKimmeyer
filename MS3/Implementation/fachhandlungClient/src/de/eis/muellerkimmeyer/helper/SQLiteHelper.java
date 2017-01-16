@@ -11,9 +11,8 @@ import java.sql.Statement;
 /*
  * QUELLENANGABE
  * Klasse zum verarbeiten von SQLite Operationen
- * Übernommen aus: https://www.youtube.com/watch?v=JPsWaI5Z3gs
+ * Abgeleitet aus: https://www.youtube.com/watch?v=JPsWaI5Z3gs
  * Autor: John McNeil, Abruf am: 15.01.2017
- * Änderung: Anpassung der Datenbank Struktur, addKunde gibt die neue ID zurück, getKunde aus getAllKunden abgeleitet
  */
 
 public class SQLiteHelper {

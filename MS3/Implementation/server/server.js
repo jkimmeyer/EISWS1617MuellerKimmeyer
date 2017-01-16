@@ -1,9 +1,9 @@
 /*
  *  EISWS1617
  * 
- *  Rapid Prototype - Server
+ *  Aquaapp - Server
  *
- *  Autor: Moritz Müller, Johannes Kimmeyer
+ *  Autor: Moritz Müller
  */
 
 // Node Module einbinden
@@ -69,8 +69,30 @@ mongoose.model('aquarien', aqSchema);
 
 // Routen
 
-var routes = require('./routes/routes.js');
-routes.init(app);
+// Start
+
+var start = require('./routes/start.js');
+start.init(app);
+
+// Users
+
+var users = require('./routes/users.js');
+users.init(app);
+
+// Users
+
+var wasserwerte = require('./routes/wasserwerte.js');
+wasserwerte.init(app);
+
+// Aquarien
+
+var aquarien = require('./routes/aquarien.js');
+aquarien.init(app);
+
+// Nährstoffverbrauch
+
+var naehrstoffverbrauch = require('./routes/naehrstoffverbrauch.js');
+naehrstoffverbrauch.init(app);
 
 // App starten
 

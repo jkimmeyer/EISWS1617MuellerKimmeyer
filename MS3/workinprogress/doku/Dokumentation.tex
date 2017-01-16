@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper,ngerman]{scrreprt}
+\setlength{\parindent}{0em} 
+% !TEX TS–program = pdflatexmk 
+\usepackage[colorlinks,
+pdfpagelabels,
+pdfstartview = FitH,
+bookmarksopen = true,
+bookmarksnumbered = true,
+linkcolor = blue,
+plainpages = false,
+hypertexnames = false,
+citecolor = black] {hyperref}
+\usepackage[backend=biber]{biblatex}
+\usepackage{filecontents}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage[sc]{mathpazo}
+\usepackage{graphicx}
+\usepackage{multirow} 
+\usepackage{booktabs}
+\usepackage[a4paper, 
+left=2.5cm, right=2.5cm, 
+top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{ltxtable, filecontents}
+\usepackage[babel, german=quotes]{csquotes}
+\addbibresource{literatur.bib}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+
+
+\begin{document}
+
+ \title{Entwicklung interaktiver Systeme\\
+  -\\
+ Aquaapp\\
+ -\\
+ Implementationsdokumentation}
+\author{Moritz Müller}
+%date
+\maketitle
+\tableofcontents
+
+\input{Einleitung}
+\input{Systemdokumentation}
+\input{Design}
+\input{Installationsdokumentation}
+\input{Implementierung}
+
+\listoftables \listoffigures
+\printbibliography
+\appendix
+
+
+\end{document}
+

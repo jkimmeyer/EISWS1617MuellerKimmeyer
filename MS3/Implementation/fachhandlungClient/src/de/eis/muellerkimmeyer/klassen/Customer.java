@@ -1,5 +1,13 @@
 package de.eis.muellerkimmeyer.klassen;
 
+/*
+ *  EISWS1617
+ *
+ *  Implementation - Desktop Anwendung (Fachhandlung Client)
+ *
+ *  Autor: Moritz Müller
+ */
+
 public class Customer {
 	
 	private int id;

@@ -1,0 +1,14 @@
+\chapter{Implementierung}
+
+\section{Benutzer App}
+
+Die App besteht aus vier verschiedenen Activities, und zwar für die Registrierung, für den Login, für den ersten Login und für Hauptbereich der App. Wenn man sich das erste mal einloggt, muss man erstmal seine Aquarium-Maße eintragen und danach kommt man zum Hauptbereich der App. Wie bereits erwähnt, hat die App eine Sidemenu-Struktur. Die App (nach dem Login) besteht quasi nur aus einer Activity, die verschiedene Fragmente lädt, je nachdem welche Button im Sidemenu angetippt wurde. Für jedes Fragment wurde eine eigene Klasse und eine eigene Layout Datei angelegt, sodass alle Fragmente individuell angepasst werden konnten. Lange Texte und Beschriftungen wurden außerdem in die strings.xml Datei ausgelagert, da dies zu einer besseren Übersicht führt. Kurze Beschriftungen wurden direkt in den Quellcode geschrieben. Aus Zeitgründen musste ich den Menüpunkt ``Fachhandlung'' auslassen, über den noch Kontakt zu der Fachhandlung hätte aufgenommen werden können. Da man dies aber auch mit einem einfachen Anruf erledigen kann, war das für mich nicht sehr wichtig.
+
+\section{Fachhandlung Client}
+
+Den Fachhandlung Client habe ich vom Design her wie geplant umgesetzt. Die Hauptklasse der Anwendung ist die AppFrame Klasse. Diese wird in der Main Klasse ein mal instanziiert. In der AppFrame Klasse werden die verschiedenen Ansichten, wie zum Beispiel die Kundenübersicht und die einzelnen Kunden Tabs erstellt. Es gibt Tabs für verschiedene Kunden, zwischen denen man schnell hin und her wechseln kann. Wenn man sich auf einem Tab von einem Kunden befindet wird dort das Accordion mit den Menüpunkten dargestellt. Da ich dafür keine optimale Java Library gefunden habe, habe ich mir die Klasse dafür selbst programmiert. Als Menüpunkte gibt es ``Kundeninformationen'' und ``Wasseranalyse''. Normalerweise waren noch zwei Punkte mehr geplant, diese konnten aber ebenfalls aus Zeitgründen nicht umgesetzt werden. Einer davon wäre die Kaufberatung gewesen. Da ich aber das Eintragen von Fischen, Pflanzen und Geräten sowieso in der App nicht umgesetzt hatte, konnte ich auch diesen Punkt bei der Fachhandlung auslassen. Der andere Punkt wäre die Problemanalyse gewesen. Hier hätte der Fachhändler einen Ablaufplan zur Fehlerfindung vorfinden können. Da ein Fachhändler dies aber auch ohne Hilfestellung drauf haben sollte, konnte ich diesen Punkt auch weg lassen.
+
+\section{Server}
+
+Der Server wurde soweit wie geplant umgesetzt. Den Teil zur Anwendungslogik habe ich ja bereits weiter oben beschrieben.
+

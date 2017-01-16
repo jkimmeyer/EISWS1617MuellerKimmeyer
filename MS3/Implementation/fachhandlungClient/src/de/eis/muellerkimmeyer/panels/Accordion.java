@@ -14,6 +14,14 @@ import java.awt.Cursor;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+/*
+ *  EISWS1617
+ *
+ *  Implementation - Desktop Anwendung (Fachhandlung Client)
+ *
+ *  Autor: Moritz Müller
+ */
+
 public class Accordion extends JPanel {
 	
 	private static final long serialVersionUID = 1L;

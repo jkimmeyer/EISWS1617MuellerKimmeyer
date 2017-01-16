@@ -16,7 +16,6 @@ import javax.swing.JTextField;
 import javax.swing.border.Border;
 import javax.swing.table.DefaultTableModel;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -24,6 +23,14 @@ import de.eis.muellerkimmeyer.helper.SQLiteHelper;
 import de.eis.muellerkimmeyer.helper.ServerRequest;
 import de.eis.muellerkimmeyer.klassen.Aquarium;
 import de.eis.muellerkimmeyer.klassen.Customer;
+
+/*
+ *  EISWS1617
+ *
+ *  Implementation - Desktop Anwendung (Fachhandlung Client)
+ *
+ *  Autor: Moritz Müller
+ */
 
 public class Wasseranalyse extends JPanel {
 	
@@ -53,7 +60,7 @@ public class Wasseranalyse extends JPanel {
 		
 		JPanel absendenPanel = new JPanel();
 		Accordion accordion = new Accordion();
-		absendenPanel.setBounds(accordion.accordionPaneWidth-PADDING-400, PADDING, 400, 540);
+		absendenPanel.setBounds(accordion.accordionPaneWidth-PADDING-400, PADDING, 400, 500);
 		Border border = BorderFactory.createLineBorder(Color.black);
 		absendenPanel.setBorder(border);
 		absendenPanel.setBackground(Color.WHITE);
@@ -141,7 +148,7 @@ public class Wasseranalyse extends JPanel {
 		// Setup Berechnungen Panel
 		
 		JPanel berechnungenPanel = new JPanel();
-		berechnungenPanel.setBounds(PADDING, PADDING, 400, 540);
+		berechnungenPanel.setBounds(PADDING, PADDING, 400, 500);
 		berechnungenPanel.setBorder(border);
 		berechnungenPanel.setBackground(Color.WHITE);
 		berechnungenPanel.setLayout(null);
@@ -183,12 +190,9 @@ public class Wasseranalyse extends JPanel {
 					antwort2.setText("Bitte alle Felder ausfüllen!");
 				}
 				
-				
 			}
 		
 		});
-		
-		
 		
 		this.add(berechnungenPanel);
 		

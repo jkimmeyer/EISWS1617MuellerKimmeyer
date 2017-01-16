@@ -1,0 +1,110 @@
+\chapter{Systemdokumentation}
+
+\section{Iteration des Architekturmodells}
+
+Die Systemarchitektur hat sich während der Programmierung ein wenig geändert bzw. erweitert. Auf diese Änderungen werde ich nun genauer eingehen. In Abbildung ~\ref{architektur} befindet sich das aktuelle Modell der Architektur.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{Architektur}
+\caption{Architekturmodell}
+\label{architektur}
+\end{figure}
+
+\subsection{Firebase Authentication}
+
+Neu dazu gekommen ist u.a. die Firebase Authentication, womit ich einen Login ermögliche. Da der Token, welcher für das Firebase Cloud Messaging generiert wird, zum Beispiel bei einer Neu-Installation neu generiert wird, eignet sich dieser nicht um Daten einem Benutzer zuordnen zu können. Deshalb war die Umsetzung eines Logins nötig, welcher mit Hilfe der Firebase Authentication recht einfach umzusetzen war. Zur Anmeldung benötigt man lediglich eine E-Mail Adresse und ein Passwort. Wenn man sich registriert hat, bekommt man eine eindeutige 28-stellige ID zugewiesen. Diese ID kann für die Zuordnung der Aquarium- und Wasserwerte-Daten benutzt werden. Neben dieser ID wird noch eine zusätzliche ``Short-ID'' generiert, welche nur aus vier Zeichen besteht. Diese dient dazu, dass der Benutzer sie an den Fachhändler weiter geben kann, sodass er den Kunden zu seinem System hinzufügen kann. Somit muss der Benutzer nicht eine 28-stellige ID weiter geben.
+
+\subsection{Firebase Database}
+
+Ebenfalls neu hinzugekommen ist die Firebase Database. Diese bietet neben dem Server und dem lokalen Speicher eine zusätzliche Möglichkeit Daten zu speichern. Die Idee dahinter war, dass Daten, die nur der Benutzer benötigt, wie zum Beispiel sein Logbuch, in der Firebase Database gespeichert werden und Daten, auf die sowohl Benutzer als auch Fachhandlung zugreifen können, wie zum Beispiel die Aquarium-Daten, auf dem Server gespeichert werden. Der Vorteil daran ist, dass es sehr leicht zu implementieren war und man als Administrator im Dashboard von Firebase einen guten Überblick über die Daten hat und diese auch bearbeiten kann. Ansonsten hätte aber auch nichts dagegen gesprochen, alle Daten auf dem Server zu speichern.
+
+\subsection{Datenspeicher im Allgemeinen}
+
+Ein weiterer Unterschied zum vorherigen Modell ist, dass ich den Datenspeicher beim Benutzer entfernt habe. Dieser wird durch die Firebase Database nicht mehr benötigt. Man hätte dort zwar auch eine SQLite Datenbank verwenden können, allerdings wäre dadurch unnötiger Speicher angefallen. Bei der Fachhandlung habe ich eine SQLite Datenbank für die Logbuch-Einträge und Kunden verwendet, da es meines Wissens nach bis jetzt noch nicht möglich ist Firebase für eine Desktop Anwendung zu verwenden. Bei den jeweiligen Datenspeichern habe ich noch zusätzlich die Daten mit bei geschrieben, die jeweils gespeichert werden.
+
+\section{Anwendungslogik}
+
+\subsection{Benutzer App}
+
+Bei der App haben wir wie geplant verschiedene Berechnungen als Anwendungslogik implementiert. Dazu gehören folgende Berechnungen:
+
+\begin{itemize}
+\item Volumen des Aquariums
+\item Netto-Wasser-Volumen im Aquarium
+\item Zielgerichteter Wasserwechsel
+\item Düngerdosierung
+\item CO2-Gehalt
+\end{itemize}
+
+Eine Berechnung für den täglichen Nährstoffverbrauch habe ich für die Benutzer App nicht direkt implementiert, allerdings habe ich für jeden Wasserwert einen Graph implementiert, in dem man den Verlauf des Wertes aus den verschiedenen Messungen sehen kann. Außerdem sieht man gleichzeitig den Durchschnittswert aller anderen App-Nutzer angezeigt, um einen Vergleich haben zu können.
+
+\subsection{Fachhändler Anwendung}
+
+Die Fachhandlung hat ebenfalls die Berechnungen für das Volumen, das Netto-Wasser-Volumen und die CO2 Berechnung zur Verfügung. Berechnungen für den zielgerichteten Wasserwechsel und die Düngerdosierung waren hier nicht erforderlich.
+
+\subsection{Server}
+
+Als Anwendungslogik für den Server war geplant, den täglichen Nährstoffverbrauch anhand von steigender Masse an Daten berechnen zu können. Aus Zeitgründen hatte ich das bis zum Tag der Abgabe noch nicht umgesetzt gehabt. Durch ein Tipp von Herrn Proffessor Hartmann bei der Code Inspektion habe ich mich dann aber doch noch dazu entschieden, diese Berechnung umzusetzen. Allerdings konnte ich sie nicht mehr sinnvoll in einen der Clients einbauen. Somit ist es jetzt möglich diese Berechnung auf dem Server ausführen zu lassen, in dem man die Route /naehrstoffverbrauch aufruft. Die Ausgabe findet dann im Browser als HTML Seite statt. Herr Professor Hartmann hatte mir den Tipp gegeben, das ganze mit der Extrapolation zu lösen. Da das Ziel aber nicht direkt war eine Prognose für die Zukunft zu machen, sondern den täglichen Verbrauch zu ermitteln, hat sich die Interpolation besser geeignet. Dabei geht es darum, dass man einen Wert zwischen zwei gegebenen Werten ungefähr berechnen kann. Somit habe ich das so programmiert, dass immer zwei Wassermessungen miteinander verglichen werden. Dabei wird die Differenz der Tage sowie der Verbrauch des Nährstoffes berücksichtigt. Nach der Anwendung der Formel hat man den ungefähren Verbrauch nach einem Tag. Wenn man das mit jedem möglichem Mess-Paar macht und die Ergebnisse zusammen rechnet und das dann durch alle teilt, bekommt man einen durchschnittlichen Verbrauch des Nährstoffes pro Tag. Dabei gilt: Je mehr Wasserwerte durch Benutzer und Fachhandlungen eingetragen werden, desto genauer wird das Ergebnis dieser Berechnung. Unter der oben angegebenen Route habe ich das ganze erstmal nur für den CO2-Gehalt umgesetzt, man könnte es aber genau so gut auf alle anderen Nährstoffe anwenden.
+
+\section{Architekturmerkmale}
+
+\subsection{Ressourcen}
+
+Bei den Ressourcen gab es kleine Änderungen an den jeweiligen Eigenschaften. Diese werde ich hier vorstellen.
+
+\subsubsection{Benutzer}
+
+Beim Benutzer werden auf dem Server nur noch die beiden IDs und der Token gespeichert. Vorname, Nachname und Geburtsdatum werden nur noch lokal bei der Fachhandlung gespeichert. Diese Daten muss der Benutzer dann angeben, wenn er sich bei der Fachhandlung registrieren lässt. Die Adressinformationen habe ich nicht unbedingt als nötig empfunden und nicht implementiert.
+
+\begin{lstlisting}
+   user{
+      uid: String,
+      sid: String
+      token: String
+   }
+\end{lstlisting}
+
+\subsubsection{Virtuelles Aquarium}
+
+Beim Aquarium sind die Werte Glasstärke, Kieshöhe und Füllstanddifferenz hinzugekommen. Diese helfen beim Berechnen des Netto-Wasser-Volumen. Da der Benutzer sowieso Maße wie Länge, Breite und Höhe angeben muss, finde ich es passend, dass die drei neuen Daten ebenfalls direkt beim Erstellen des Aquariums eingetragen werden und nicht erst bei Ausführen der Berechnung. Weggelassen habe ich hingegen Fische, Pflanzen und Geräte. Diese haben wir zwar am Anfang als wichtig empfunden, aber es stellte sich heraus, dass sie eigentlich nur zu einem geringen Anteil beim Netto-Wasser-Volumen beitragen. Bei den anderen Berechnungen haben sie keine Rolle gespielt, weswegen ich mir ein aufwendiges Design zum Eintragen der jeweiligen Sachen gespart habe.
+
+\begin{lstlisting}
+   aquarium{
+      uid: String,
+      bezeichnung: String,
+      laenge: Number,
+      breite: Number,
+      hoehe: Number,
+      glasstaerke: Number,
+      kieshoehe: Number,
+      fuellstanddifferenz: Number
+   }
+\end{lstlisting}
+
+\subsubsection{Wasserwerte}
+
+Bei den Wasserwerten sind lediglich die Werte ``von'' und ``datum'' hinzugekommen. ``Von'' gibt an, wer die Wasserwerte eingetragen hat, also entweder der Benutzer oder die Fachhandlung. Somit kann zum Beispiel unterschieden werden, ob eine Benachrichtigung an den Benutzer geschickt werden muss, falls die Fachhandlung die Daten eingetragen hat. Das Datum hilft bei der Einordnung der Wasserwerte.
+
+\begin{lstlisting}
+   wasserwerte{
+      uid: String,
+      von: String,
+      datum: String,
+      no3: String,
+      po3: String,
+      eisen: String,
+      kalium: String,
+      co2: String,
+      gh: String,
+      kh: String,
+      ph: String
+   }
+\end{lstlisting}
+
+\section{Richardson Maturity Model}
+
+Wie bereits in der Projekt-Dokumentation von uns vermutet haben wir Level 2 des Richardson Maturity Model erreicht, da wir die üblichen Standard-Methoden wie GET, POST, PUT und DELETE verwendet haben. Wir haben zwar nicht bei jeder Ressource alle vier Methoden benutzt, aber da wo es von Nutzen war haben wir die Methoden implementiert. Zum Beispiel war es nicht erforderlich die DELETE Mehtode für Benutzer zu implementieren, da nicht vorgesehen war, dass Benutzer gelöscht werden können. Level 3 des Modells konnte nicht erreicht werden, da kein Hypertext verwendet wurde und dieses auch nicht benötigt wurde.
+
+
+

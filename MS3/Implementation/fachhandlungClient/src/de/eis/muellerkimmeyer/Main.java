@@ -1,7 +1,5 @@
 package de.eis.muellerkimmeyer;
 
-import javax.swing.JFrame;
-
 import de.eis.muellerkimmeyer.panels.AppFrame;
 
 /*
@@ -12,6 +10,7 @@ import de.eis.muellerkimmeyer.panels.AppFrame;
  *
  *  Autor: Moritz Müller
  */
+
 public class Main {
     
     public static void main(String[] args) {

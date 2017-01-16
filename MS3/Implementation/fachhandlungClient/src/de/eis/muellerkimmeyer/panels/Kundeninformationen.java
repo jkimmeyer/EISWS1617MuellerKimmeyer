@@ -5,9 +5,6 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,7 +12,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -41,6 +37,14 @@ import de.eis.muellerkimmeyer.helper.ServerRequest;
 import de.eis.muellerkimmeyer.klassen.Aquarium;
 import de.eis.muellerkimmeyer.klassen.Customer;
 import de.eis.muellerkimmeyer.klassen.LogbuchEintrag;
+
+/*
+ *  EISWS1617
+ *
+ *  Implementation - Desktop Anwendung (Fachhandlung Client)
+ *
+ *  Autor: Moritz Müller
+ */
 
 public class Kundeninformationen extends JPanel {
 	
@@ -116,7 +120,7 @@ public class Kundeninformationen extends JPanel {
 		JPanel aquariumDaten = new JPanel();
 		aquariumDaten.setLayout(null);
 		Accordion accordion = new Accordion();
-		aquariumDaten.setBounds(accordion.accordionPaneWidth-PADDING-408, PADDING, 408, 540);
+		aquariumDaten.setBounds(accordion.accordionPaneWidth-PADDING-408, PADDING, 408, 500);
 		Border border = BorderFactory.createLineBorder(Color.black);
 		aquariumDaten.setBorder(border);
 		aquariumDaten.setBackground(Color.WHITE);
@@ -272,7 +276,7 @@ public class Kundeninformationen extends JPanel {
 		});
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(PADDING, PADDING+340, 750, 200);
+		scrollPane.setBounds(PADDING, PADDING+340, 750, 160);
 		scrollPane.setViewportView(table);
 		this.add(scrollPane);
 		
@@ -383,9 +387,4 @@ public class Kundeninformationen extends JPanel {
     	}
     }
 	
-	
-	
-	
-	
-
 }

@@ -30,12 +30,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 
 import org.json.JSONArray;
@@ -287,12 +283,8 @@ public class AppFrame extends JFrame {
 	    	ArrayList<Section> sections = new ArrayList<Section>();
 	    	
 	    	Kundeninformationen kundeninformationen = new Kundeninformationen(customer);
-	    	//JPanel kaufberatung = new JPanel();
-	    	//JPanel problemanalyse = new JPanel();
 	    	Wasseranalyse wasseranalyse = new Wasseranalyse(customer);
 	    	sections.add(new Section("Kundeninformationen", kundeninformationen, true));
-	    	//sections.add(new Section("Kaufberatung", kaufberatung, false));
-	    	//sections.add(new Section("Problemanalyse", problemanalyse, false));
 	    	sections.add(new Section("Wasseranalyse", wasseranalyse, false));
 	    	Accordion accordion = new Accordion(sections);
 	    	panel.add(accordion);
@@ -384,6 +376,11 @@ public class AppFrame extends JFrame {
         UIManager.put("OptionPane.minimumSize", new Dimension(300,200));
     	int result = JOptionPane.showConfirmDialog(null, dialogPanel, "Neuen Kunden anlegen", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
     	if(result == JOptionPane.OK_OPTION){
+    		
+    		// Testdaten laden
+    		
+    		
+    		// Tesdaten ENDE
     		
     		String appId = tfAppId.getText();
     		String vorname = tfVorname.getText();

@@ -1,0 +1,49 @@
+\chapter{Installationsdokumentation}
+
+Bevor ich genauer auf die Implementierung eingehen werde, erkläre ich kurz den Installationsvorgang, um die Anwendungen zum Laufen zu bekommen. Die Ordner befinden sich jeweils in unserem Repository (\url{https://github.com/jkimmeyer/EISWS1617MuellerKimmeyer}) unter ``MS3/Implementation/''.
+
+\section{Server}
+
+Den Server habe ich auf uberspace.de gehostet, sodass er durchgehen läuft und von jedem Gerät aus erreichbar ist, ohne dass erst immer der Server gestartet werden muss. Der Server ist unter (\url{http://eis1617.lupus.uberspace.de/nodejs}) zu erreichen. Als Ressource kann zum Beispiel ``users'' angegeben werden. Um den Server zu testen können Requests zum Beispiel von der Seite \url{https://www.hurl.it/} abgeschickt werden. Dabei sollte man beachten, dass der Header ``Content-Type'' gleich ``application/json'' gesetzt werden sollte. Im Body sollte ein JSON String mit den entsprechenden Parametern stehen. Wenn Sie den Server auch lokal testen wollen, müssen Sie folgende Installationsschritte vornehmen:
+
+\subsubsection{Vorbereitungen}
+
+\begin{enumerate}
+\item MongoDB installieren (\url{https://www.mongodb.com/download-center#community})
+\item Folgenden Ordner manuell erstellen: C:{\textbackslash}data{\textbackslash}db
+\item Die Datei C:{\textbackslash}Program Files{\textbackslash}MongoDB{\textbackslash}Server{\textbackslash}3.4{\textbackslash}bin{\textbackslash}mongod.exe ausführen
+\item Der Server läuft nun
+\end{enumerate}
+
+\subsubsection{Server Installation}
+
+\begin{enumerate}
+\item Repository (\url{https://github.com/jkimmeyer/EISWS1617MuellerKimmeyer}) runterladen und in den Ordner /MS3/Implementation/server gehen
+\item Die Konsole in diesem Ordner öffnen und folgenden Befehl eingeben: npm install
+\item Die Datei server.js öffnen und Zeile 23 auskommentieren und Zeile 25 entfernen
+\item Nun in der Konsole eingeben: node server.js
+\item Jetzt können Sie im Browser die Adresse localhost:61000 aufrufen oder mit dem REST Client Ihrer Wahl Requests an den Server schicken
+\end{enumerate}
+
+\section{Benutzer Client - Android App}
+
+folgt
+
+\section{Fachhändler Client - Desktop Anwendung}
+
+\subsubsection{Vorbereitung}
+
+\begin{enumerate}
+\item Eclipse installieren (\url{https://www.eclipse.org/downloads/})
+\end{enumerate}
+
+\subsubsection{Projekt importieren}
+
+\begin{enumerate}
+\item Repository (\url{https://github.com/jkimmeyer/EISWS1617MuellerKimmeyer}) runterladen
+\item Bei Eclipse unter File->Open Project from File System... und dann auf Directory... den Ordner ``fachhandlungClient'' in unserem Repository auswählen und auf ``Finish'' klicken
+\item Unter Aquaapp/src/de.eis.muellerkimmeyer können nun die Java Dateien geöffnet werden
+\item Anwendung kann jetzt gestartet werden
+\end{enumerate}
+
+\section{Testdaten}

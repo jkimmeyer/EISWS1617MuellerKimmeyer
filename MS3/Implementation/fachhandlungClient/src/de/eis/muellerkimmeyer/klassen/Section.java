@@ -2,6 +2,14 @@ package de.eis.muellerkimmeyer.klassen;
 
 import javax.swing.JPanel;
 
+/*
+ *  EISWS1617
+ *
+ *  Implementation - Desktop Anwendung (Fachhandlung Client)
+ *
+ *  Autor: Moritz Müller
+ */
+
 public class Section {
 
 	private String title;

@@ -1,0 +1,23 @@
+\BOOKMARK [0][]{chapter.2}{1 Einleitung}{}% 1
+\BOOKMARK [0][]{chapter.3}{2 Systemdokumentation}{}% 2
+\BOOKMARK [1][]{section.4}{2.1 Iteration des Architekturmodells}{chapter.3}% 3
+\BOOKMARK [2][]{subsection.6}{2.1.1 Firebase Authentication}{section.4}% 4
+\BOOKMARK [2][]{subsection.7}{2.1.2 Firebase Database}{section.4}% 5
+\BOOKMARK [2][]{subsection.8}{2.1.3 Datenspeicher im Allgemeinen}{section.4}% 6
+\BOOKMARK [1][]{section.9}{2.2 Anwendungslogik}{chapter.3}% 7
+\BOOKMARK [2][]{subsection.10}{2.2.1 Benutzer App}{section.9}% 8
+\BOOKMARK [2][]{subsection.11}{2.2.2 Fachh\344ndler Anwendung}{section.9}% 9
+\BOOKMARK [2][]{subsection.12}{2.2.3 Server}{section.9}% 10
+\BOOKMARK [1][]{section.13}{2.3 Architekturmerkmale}{chapter.3}% 11
+\BOOKMARK [2][]{subsection.14}{2.3.1 Ressourcen}{section.13}% 12
+\BOOKMARK [1][]{section.49}{2.4 Richardson Maturity Model}{chapter.3}% 13
+\BOOKMARK [0][]{chapter.50}{3 Design \304nderungen}{}% 14
+\BOOKMARK [0][]{chapter.51}{4 Installationsdokumentation}{}% 15
+\BOOKMARK [1][]{section.52}{4.1 Server}{chapter.51}% 16
+\BOOKMARK [1][]{section.64}{4.2 Benutzer Client - Android App}{chapter.51}% 17
+\BOOKMARK [1][]{section.65}{4.3 Fachh\344ndler Client - Desktop Anwendung}{chapter.51}% 18
+\BOOKMARK [1][]{section.73}{4.4 Testdaten}{chapter.51}% 19
+\BOOKMARK [0][]{chapter.74}{5 Implementierung}{}% 20
+\BOOKMARK [1][]{section.75}{5.1 Benutzer App}{chapter.74}% 21
+\BOOKMARK [1][]{section.76}{5.2 Fachhandlung Client}{chapter.74}% 22
+\BOOKMARK [1][]{section.77}{5.3 Server}{chapter.74}% 23

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.29)  16 JAN 2017 22:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.29)  16 JAN 2017 23:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1294,7 +1294,7 @@ Class scrreprt Warning: \float@addtolists detected!
 
 ]
 chapter 2.
-<Architektur.jpg, id=137, 313.17pt x 313.17pt>
+<Architektur.jpg, id=147, 313.17pt x 313.17pt>
 File: Architektur.jpg Graphic file (type jpg)
  <use Architektur.jpg>
 Package pdftex.def Info: Architektur.jpg used on input line 9.
@@ -1334,7 +1334,19 @@ Overfull \hbox (4.27084pt too wide) in paragraph at lines 12--13
 
 [10
 
-]) (./Implementierung.tex [11]
+] [11]
+Overfull \hbox (14.09833pt too wide) in paragraph at lines 82--83
+[]\T1/pplx/m/n/12 java-json.jar: [][]$\T1/cmtt/m/n/12 http : / / www . java2s .
+ com / Code / Jar / j / Downloadjavajsonjar . htm$[][] 
+ []
+
+
+Overfull \hbox (19.90544pt too wide) in paragraph at lines 83--84
+[]\T1/pplx/m/n/12 sqlite-jdbc-3.16.1.jar: [][]$\T1/cmtt/m/n/12 https : / / bitb
+ucket . org / xerial / sqlite-[]jdbc / downloads$[][] 
+ []
+
+) (./Implementierung.tex [12]
 chapter 5.
 
 Overfull \hbox (0.82086pt too wide) in paragraph at lines 9--10
@@ -1342,32 +1354,34 @@ Overfull \hbox (0.82086pt too wide) in paragraph at lines 9--10
 nt um-ge-setzt. Die Haupt-
  []
 
-) [12
+) (./Fazit.tex [13
 
-] [13] (./Dokumentation.lot)
-\tf@lot=\write7
-\openout7 = `Dokumentation.lot'.
-
- [14
-
-] (./Dokumentation.lof)
-\tf@lof=\write8
-\openout8 = `Dokumentation.lof'.
-
-
-
-LaTeX Warning: Empty bibliography on input line 58.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
-[15
+] [14]
+chapter 6.
+) (./Prozessassessment.tex [15
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
+chapter 7.
+) [16
+
+] (./Dokumentation.lof)
+\tf@lof=\write7
+\openout7 = `Dokumentation.lof'.
+
+
+
+LaTeX Warning: Empty bibliography on input line 60.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+[17
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
  (./Dokumentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `Dokumentation.out' has not changed.
-(rerunfilecheck)             Checksum: 2C7150A05B56A1564A90DE34145F5F70;1522.
+(rerunfilecheck)             Checksum: 9450D2276928538E5EA47B165441CEEC;1620.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1375,13 +1389,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'Dokumentation.run.xml'.
 \openout1 = `Dokumentation.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 20479 strings out of 493013
- 334052 string characters out of 6132402
+ 20503 strings out of 493013
+ 334289 string characters out of 6132402
  913340 words of memory out of 5000000
- 23640 multiletter control sequences out of 15000+600000
+ 23643 multiletter control sequences out of 15000+600000
  24429 words of font info for 54 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  48i,8n,66p,8853b,1800s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1394,10 +1408,10 @@ mme/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><f:/Progra
 mme/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb><f:/Progra
 mme/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><f:/Progra
 mme/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on Dokumentation.pdf (15 pages, 353488 bytes).
+Output written on Dokumentation.pdf (17 pages, 362233 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 95 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 316 compressed objects within 4 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 

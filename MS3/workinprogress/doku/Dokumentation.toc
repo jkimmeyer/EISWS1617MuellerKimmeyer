@@ -46,18 +46,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Benutzer Client - Android App}{11}{section.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Fachh\IeC {\"a}ndler Client - Desktop Anwendung}{11}{section.65}
+\contentsline {subsubsection}{\nonumberline Vorraussetzungen}{11}{section*.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Vorbereitung}{11}{section*.66}
+\contentsline {subsubsection}{\nonumberline Vorbereitung}{11}{section*.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Projekt importieren}{11}{section*.68}
+\contentsline {subsubsection}{\nonumberline Projekt importieren}{11}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Testdaten}{11}{section.73}
+\contentsline {subsubsection}{\nonumberline App starten}{11}{section*.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Implementierung}{12}{chapter.74}
+\contentsline {subsubsection}{\nonumberline APK Datei auf Smartphone installieren}{11}{section*.75}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Benutzer App}{12}{section.75}
+\contentsline {section}{\numberline {4.3}Fachh\IeC {\"a}ndler Client - Desktop Anwendung}{11}{section.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Fachhandlung Client}{12}{section.76}
+\contentsline {subsubsection}{\nonumberline Vorraussetzungen}{11}{section*.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Server}{13}{section.77}
+\contentsline {subsubsection}{\nonumberline Vorbereitung}{11}{section*.79}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Projekt importieren}{11}{section*.81}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Executable Jar File}{12}{section*.87}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Testdaten}{12}{section.88}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Implementierung}{13}{chapter.89}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Benutzer App}{13}{section.90}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Fachhandlung Client}{13}{section.91}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Server}{14}{section.92}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Fazit}{15}{chapter.93}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Prozessassessment}{16}{chapter.94}

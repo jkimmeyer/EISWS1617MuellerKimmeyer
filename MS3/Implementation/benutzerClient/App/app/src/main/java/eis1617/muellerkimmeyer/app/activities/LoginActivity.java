@@ -107,6 +107,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     // Benutzer-Token auf unserem Server aktualisieren
 
                     String token = FirebaseInstanceId.getInstance().getToken();
+
                     String urlParameters = "{\"UID\": \""+ firebaseAuth.getCurrentUser().getUid() +"\", \"token\": \"" + token + "\"}";
                     JSONObject response = serverRequest.doAsyncRequest("PUT", "http://eis1617.lupus.uberspace.de/nodejs/users", urlParameters);
 

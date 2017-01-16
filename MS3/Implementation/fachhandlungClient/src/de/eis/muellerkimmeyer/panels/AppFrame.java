@@ -377,11 +377,6 @@ public class AppFrame extends JFrame {
     	int result = JOptionPane.showConfirmDialog(null, dialogPanel, "Neuen Kunden anlegen", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
     	if(result == JOptionPane.OK_OPTION){
     		
-    		// Testdaten laden
-    		
-    		
-    		// Tesdaten ENDE
-    		
     		String appId = tfAppId.getText();
     		String vorname = tfVorname.getText();
     		String nachname = tfNachname.getText();

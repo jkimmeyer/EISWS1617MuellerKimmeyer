@@ -27,6 +27,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import eis1617.muellerkimmeyer.app.fragmente.StartFragment;
 import eis1617.muellerkimmeyer.app.klassen.Aquarium;
 import eis1617.muellerkimmeyer.app.R;
 import eis1617.muellerkimmeyer.app.klassen.UserInformation;
@@ -99,6 +100,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         };
         userReference.addListenerForSingleValueEvent(valueEventListener);
+
+        FragmentManager manager = getSupportFragmentManager();
+        StartFragment startFragment = new StartFragment();
+        manager.beginTransaction().replace(R.id.content_main, startFragment, startFragment.getTag()).commit();
 
         FirebaseMessaging.getInstance().subscribeToTopic("test");
     }
@@ -189,13 +194,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             CO2BerechnungFragment co2BerechnungFragment = new CO2BerechnungFragment();
             manager.beginTransaction().replace(R.id.content_main, co2BerechnungFragment, co2BerechnungFragment.getTag()).commit();
             getSupportActionBar().setTitle("CO2 Berechnung");
-        } else if (id == R.id.nav_fachhandel) {
-
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+
+    public void bla(){
+
+        int ed1 = 1;
+        ServerRequest server = new ServerRequest();
+        String parameters = "{\"betreuervonTag\": \""+ ed1 +"\"}";
+        server.doAsyncRequest("POST", "http://localhost:3000/betreuer", parameters);
+
+    }
+
 }

@@ -27,9 +27,43 @@ Den Server habe ich auf uberspace.de gehostet, sodass er durchgehen läuft und v
 
 \section{Benutzer Client - Android App}
 
-folgt
+\subsubsection{Vorraussetzungen}
+
+\begin{enumerate}
+\item Android Smartphone oder Android Studio Entwicklungsumgebung mit einem Virtual Device
+\end{enumerate}
+
+\subsubsection{Vorbereitung}
+
+\begin{enumerate}
+\item Android Studio installieren (\url{https://developer.android.com/studio/index.html})
+\end{enumerate}
+
+\subsubsection{Projekt importieren}
+
+\begin{enumerate}
+\item Am besten den Ordner ``App'' unter MS3/Implementation/benutzerClient auf den Desktop verschieben, da der Dateipfad sonst für manche Dateien zu lang ist und die nicht mehr von Android Studio erkannt werden.
+\item In Android Studio unter File -> Open... den Dateipfad angeben und das Projekt importieren
+\end{enumerate}
+
+\subsubsection{App starten}
+
+\begin{enumerate}
+\item Oben in der Menüleiste auf den grünen Pfeil klicken
+\item Dann ein virtuelles Device erstellen oder ein Android Smartphone anschließen und dieses auswählen
+\end{enumerate}
+
+\subsubsection{APK Datei auf Smartphone installieren}
+
+Im Ordner ``Implementation'' befindet sich eine APK Datei, welche auf einem Android Smartphone installiert werden kann.
 
 \section{Fachhändler Client - Desktop Anwendung}
+
+\subsubsection{Vorraussetzungen}
+
+\begin{enumerate}
+\item Windows Betriebssystem
+\end{enumerate}
 
 \subsubsection{Vorbereitung}
 
@@ -43,7 +77,18 @@ folgt
 \item Repository (\url{https://github.com/jkimmeyer/EISWS1617MuellerKimmeyer}) runterladen
 \item Bei Eclipse unter File->Open Project from File System... und dann auf Directory... den Ordner ``fachhandlungClient'' in unserem Repository auswählen und auf ``Finish'' klicken
 \item Unter Aquaapp/src/de.eis.muellerkimmeyer können nun die Java Dateien geöffnet werden
+\item Nun müssen eventuell noch zwei Bibliotheken runtergeladen und in Eclipse eingebunden werden. Dafür muss man in Eclipse einen Rechtsklick auf das Projekt machen, dann auf Build Path -> Configure Build Path.... und dann unter Libraries auf Add JARs... klicken. Dort muss man dann die folgenden Dateien auswählen, die vorher runtergeladen werden müssen:
+\begin{itemize}
+\item java-json.jar: \url{http://www.java2s.com/Code/Jar/j/Downloadjavajsonjar.htm}
+\item sqlite-jdbc-3.16.1.jar: \url{https://bitbucket.org/xerial/sqlite-jdbc/downloads}
+\end{itemize}
 \item Anwendung kann jetzt gestartet werden
 \end{enumerate}
 
+\subsubsection{Executable Jar File}
+
+Im Implementations-Ordner befindet sich eine ausführbare Jar Datei der Kundenverwaltung sowie die Zugehörige Datenbank Datei. Die Jar Datei lässt sich ausführen und öffnet das Programm, allerdings werden die Bilder leider nicht angezeigt. Wenn die Anwendung über Eclipse gestartet wird, klappt es.
+
 \section{Testdaten}
+
+Es wurde bereits für die App ein Account angelegt. Man kann sich mit folgenden Login Daten einloggen: E-Mail: user1@web.de, Passwort: 123456. Auf diesem Account befinden sich schon ein paar Eintragungen für Wasserwerte. Dieser Account wurde auch schon bereits im Fachhandlung Client hinzugefügt.

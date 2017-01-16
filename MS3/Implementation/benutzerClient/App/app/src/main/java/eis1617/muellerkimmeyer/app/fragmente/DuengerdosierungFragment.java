@@ -118,7 +118,7 @@ public class DuengerdosierungFragment extends Fragment implements View.OnClickLi
                         .setPositiveButton("In Logbuch eintragen", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                addLogbuchEintrag("Düngerdosierung berechnet", R.drawable.ic_logbuch_wasserwechsel, message);
+                                addLogbuchEintrag("Düngerdosierung berechnet", R.drawable.ic_dosierung, message);
                                 dialog.dismiss();
                                 Toast.makeText(getContext(), "Zum Logbuch hinzugefügt!", Toast.LENGTH_SHORT).show();
                             }

@@ -39,13 +39,4 @@
         </menu>
     </item>
 
-    <item android:title="Probleme">
-        <menu>
-            <item
-                android:id="@+id/nav_fachhandel"
-                android:icon="@drawable/ic_fachhandlung"
-                android:title="Fachhandel" />
-        </menu>
-    </item>
-
 </menu>

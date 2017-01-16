@@ -76,7 +76,7 @@ public class Kundeninformationen extends JPanel {
 		
 		// Setup Image
 		
-		ImageIcon image = new ImageIcon("src/benutzer.jpg");
+		ImageIcon image = new ImageIcon("images/benutzer.jpg");
 		JLabel labelImage = new JLabel("", image, JLabel.CENTER);
 		labelImage.setBounds(PADDING,PADDING,150,150);
 		this.add(labelImage);
@@ -125,7 +125,7 @@ public class Kundeninformationen extends JPanel {
 		aquariumDaten.setBorder(border);
 		aquariumDaten.setBackground(Color.WHITE);
 		
-		ImageIcon imageAq = new ImageIcon("src/aquarium.png");
+		ImageIcon imageAq = new ImageIcon("images/aquarium.png");
 		JLabel labelImageAq = new JLabel("", imageAq, JLabel.CENTER);
 		labelImageAq.setBounds(PADDING,PADDING,348,151);
 		aquariumDaten.add(labelImageAq);

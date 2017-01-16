@@ -77,6 +77,14 @@
         Du kannst den pH-Wert von der Fachhandlung bestimmen lassen oder diesen auch selbst
         mit einem einfachen Tröpfchentest ermitteln.
     </string>
+    <string name="start_fragment_text">
+        Herzlich Willkommen! \n\nDu hast nun die Möglichkeit über das Menü
+        zu den einzelnen Seiten zu gelangen. Schau dich am besten mal
+        etwas um! Um mit den Berechnungen beginnen zu können,
+        solltest du zunächst eine Wasserprobe zu einer Fachhandlung
+        in deiner Nähe bringen und dich dort registrieren lassen.
+        Du wirst benachrichtigt, sobald die Ergebnisse eingetroffen sind.
+    </string>
     <string name="graph_dialog_title">Graph Dialog</string>
     <string name="title_activity_login">Sign in</string>
 

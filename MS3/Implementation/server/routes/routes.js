@@ -93,6 +93,30 @@ module.exports = {
 					});
                 }
             });
+		
+		/* * * * * * * * * * * * * * * * * *
+		 *  User anhand der SID ermitteln  *
+		 * * * * * * * * * * * * * * * * * */
+			
+		app.route('/users/:sid')
+
+            .get(function (req, res) {
+				
+                var sid = req.params.sid;
+				
+                mongoose.model('users').find({"sid": sid}, function (err, user) {
+					
+					if(err){
+						return res.status(500).json({ success: "false" });	
+					}
+					else{
+						var json = {success: "true", user: user};
+						res.status(200).json(json);
+					}
+					
+                });
+				
+            });
 			
 		app.route('/aquarien')
 
@@ -181,8 +205,13 @@ module.exports = {
 				
                 mongoose.model('aquarien').find({"userUID": user}, function (err, aquarien) {
 					
-					var json = {"aquarien": aquarien};
-					res.json(json);
+					if(err){
+						return res.status(500).json({ success: "false" });	
+					}
+					else{
+						var json = {success: "true", aquarien: aquarien};
+						res.status(200).json(json);
+					}
 					
                 });
             })
@@ -302,8 +331,6 @@ module.exports = {
              * * * * * * * * * * * * * */
 
             .post(function (req, res) {
-				
-				console.log("Bin da");
 
                 if (!req.body.von || !req.body.datum || !req.body.kh || !req.body.gh || !req.body.ph || !req.body.co2 || !req.body.eisen || !req.body.kalium || !req.body.no3 || !req.body.po3) {
                     return res.status(400).json({ success: "false", message: "Es wurden nicht alle Angaben abgeschickt!" });
@@ -356,7 +383,7 @@ module.exports = {
 
 						// Notification senden
 	
-						var serverKey = 'AIzaSyBdxXLHWmA_E_b9dpRPdWIDaYPQ59dqLVE';
+						var serverKey = 'AAAArt8gDDE:APA91bHbqepf4VNJKHQAUp8XY2yyTt3ntuB-s1tUII2ihwCWyhIDJmwTfali7bu8jOwAd7hMKhr7zbS9hO_VkuF9aU9Yok8Du0lb5ZgEXZdfDW_jAYDA6AM7FoeE8RgNMuNXcpxpaWXH35u3hhSiymvosvdfb2tknA';
 						var fcm = new FCM(serverKey);
 						
 						// Token aus Datenbank lesen
@@ -364,7 +391,7 @@ module.exports = {
 						mongoose.model('users').find({ "uid": user }, function (err, ergebnis) {
 							if (ergebnis.length > 0) {
 								// User gefunden
-								var token = ergebnis.token;
+								var token = ergebnis[0].token;
 								
 								var message = {
 									to: token,
@@ -376,7 +403,7 @@ module.exports = {
 			
 								fcm.send(message, function (err, response) {
 									if (err) {
-										res.status(500).json({ success: "false", message: "Fehler beim Senden der Notification!" });
+										res.status(500).json({ success: "false", message: "Fehler beim Senden der Notification!", error: err });
 									}
 									else {
 										res.status(200).json({ success: "true" });

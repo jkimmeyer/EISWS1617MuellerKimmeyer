@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="eis1617.muellerkimmeyer.app.DuengerdosierungFragment">
+    tools:context="eis1617.muellerkimmeyer.app.fragmente.DuengerdosierungFragment">
 
     <ScrollView
         android:layout_width="match_parent"

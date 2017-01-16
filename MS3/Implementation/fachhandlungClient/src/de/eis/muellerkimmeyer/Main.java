@@ -2,6 +2,8 @@ package de.eis.muellerkimmeyer;
 
 import javax.swing.JFrame;
 
+import de.eis.muellerkimmeyer.panels.AppFrame;
+
 /*
  *  EISWS1617
  *

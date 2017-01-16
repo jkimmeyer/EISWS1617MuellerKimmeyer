@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="eis1617.muellerkimmeyer.app.RegisterActivity">
+    tools:context="eis1617.muellerkimmeyer.app.activities.RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,6 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnRegister"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
             android:text="Registrieren"/>
 
         <TextView

@@ -4,7 +4,7 @@
     android:id="@+id/activity_first_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="eis1617.muellerkimmeyer.app.FirstLoginActivity">
+    tools:context="eis1617.muellerkimmeyer.app.activities.FirstLoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
